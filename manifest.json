@@ -1,0 +1,16 @@
+{
+  "name": "Retro Player",
+  "short_name": "Player",
+  "description": "O melhor player de música retro responsivo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#008080",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
