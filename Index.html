@@ -80,29 +80,27 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
 .status{padding:6px;background:#eaeaea;border-top:1px solid #999;font-size:13px;text-align:center;}
 .artist-area{display:flex;align-items:center;justify-content:space-between;padding:6px;gap:6px;background:#f2f2f2;border-top:1px solid #ddd;}
 .artist-area .left{font-size:13px;color:#222}
-#playlistSelect,
-#artistSelect,
-.artist-area select {
-  font-family: "MS Sans Serif", "Microsoft Sans Serif", Tahoma, Arial, sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1 !important;
-  padding: 4px 8px !important;
-  height: 28px !important;
-  min-width: 160px !important;
-  box-sizing: border-box !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  background-color: #f2f2f2 !important;
-  color: #000 !important;
-  border: 1px solid #333 !important;
-  border-radius: 2px !important;
-  padding-right: 34px !important;
+select {
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  padding: 4px 8px;
+  height: 28px;
+  width: 160px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding-right: 34px;
   background-image:
     linear-gradient(45deg, transparent 50%, #000 50%),
     linear-gradient(135deg, #000 50%, transparent 50%);
   background-position: calc(100% - 18px) calc(50% - 6px), calc(100% - 12px) calc(50% - 6px);
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .playlist-wrap{position:relative}
 .playlist{
@@ -127,19 +125,42 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
 .playlist li.active{background:#003366}
 .track-title{font-size:15px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:8px;}
 .track-artist{font-size:12px;font-style:italic;color:#aaa}
-.lyrics{background:#0b0b0b;color:#0f0;padding:10px;border:1px solid #000;margin-top:8px;height:160px;overflow:auto;white-space:pre-wrap;font-size:13px}
-.lyrics::-webkit-scrollbar{width:0}
-.lyrics{ -ms-overflow-style:none; scrollbar-width:none; }
+.footer {
+  background: #ddd;
+  border-top: 2px solid #808080;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
 @media (max-width:720px){
+  .app {
+    padding: 0;
+    align-items: stretch;
+  }
   .shell{
     width:100vw;
     height:100vh;
     border-radius:0;
     max-height:100vh;
+    border: none;
+    box-shadow: none;
   }
-  .playlist{height:calc(100vh - 64px - 48px - 8px - 48px - 160px - 80px);}
-  .lyrics{height:180px}
-  .display .cover{width:44px;height:44px}
+  .playlist{
+    height:calc(100vh - 64px - 48px - 8px - 48px - 80px);
+    flex-grow: 1;
+  }
+  .display .cover{
+    width:44px;
+    height:44px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  select {
+    width: 140px;
+    font-size: 12px;
+  }
 }
 .header .autor {
   font-size: 12px;
@@ -186,7 +207,7 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
 
     <div class="status" id="status">Pronto</div>
 
-    <div class="artist-area" style="gap:8px;">
+    <div class="artist-area">
       <div class="left">Filtrar por artista</div>
       <div style="display:flex;gap:6px;align-items:center">
         <select id="artistSelect" title="Filtrar artista"><option value="__all__">Todos</option></select>
@@ -197,8 +218,10 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
     <div class="playlist-wrap">
       <ul class="playlist" id="playlist" role="listbox" aria-label="Playlist"></ul>
     </div>
-
-    <div class="lyrics" id="lyrics" aria-live="polite">Letra carregando...</div>
+    
+    <div class="footer">
+      Retro Player © 2023 - Todos os direitos reservados
+    </div>
   </div>
 </div>
 
@@ -219,14 +242,42 @@ const progressFill = document.getElementById('progressFill');
 const progressWrap = document.getElementById('progressWrap');
 const artistSelect = document.getElementById('artistSelect');
 const artistClear = document.getElementById('artistClear');
-const lyricsEl = document.getElementById('lyrics');
 
 let playlistUrl = localStorage.getItem('selectedPlaylistUrl') || playlistSelect.value;
 let playlistData = [], filteredData = [], current = 0;
 let audio = new Audio();
 let playing = false, shuffle = false;
+let wakeLock = null;
+let currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png'; // URL padrão
 
-const setStatus = (t, ms=2000) => { statusEl.textContent = t; if(ms) setTimeout(()=>{ if(statusEl.textContent === t) statusEl.textContent='Pronto'; }, ms); };
+// Solicitar bloqueio de tela para evitar que a tela desligue
+async function requestWakeLock() {
+  try {
+    if ('wakeLock' in navigator) {
+      wakeLock = await navigator.wakeLock.request('screen');
+      console.log('Wake Lock ativado');
+    }
+  } catch (err) {
+    console.error('Erro ao ativar Wake Lock:', err);
+  }
+}
+
+// Liberar bloqueio de tela
+function releaseWakeLock() {
+  if (wakeLock !== null) {
+    wakeLock.release();
+    wakeLock = null;
+    console.log('Wake Lock liberado');
+  }
+}
+
+const setStatus = (t, ms=2000) => { 
+  statusEl.textContent = t; 
+  if(ms) setTimeout(()=>{ 
+    if(statusEl.textContent === t) statusEl.textContent='Pronto'; 
+  }, ms); 
+};
+
 const safeKey = (a,b) => `rp_${(a||'').replace(/\s+/g,'_')}_${(b||'').replace(/\s+/g,'_')}`;
 
 if('serviceWorker' in navigator){
@@ -237,30 +288,9 @@ if('serviceWorker' in navigator){
 
 playlistSelect.addEventListener('change', async (e)=>{
   const v = e.target.value;
-  if(v === '__custom__'){
-    const u = prompt('Cole a URL do JSON da playlist (array de {title,artist,url}):');
-    if(u && u.trim()){
-      try{
-        new URL(u);
-        playlistUrl = u.trim();
-        localStorage.setItem('selectedPlaylistUrl', playlistUrl);
-        if(![...playlistSelect.options].some(o=>o.value===playlistUrl)){
-          const opt=document.createElement('option');opt.value=playlistUrl;opt.textContent='Playlist custom'; playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
-        }
-        playlistSelect.value = playlistUrl;
-        await loadPlaylist(playlistUrl);
-      }catch(err){
-        alert('URL inválida');
-        playlistSelect.value = localStorage.getItem('selectedPlaylistUrl') || playlistSelect.options[0].value;
-      }
-    } else {
-      playlistSelect.value = localStorage.getItem('selectedPlaylistUrl') || playlistSelect.options[0].value;
-    }
-  } else {
-    playlistUrl = v;
-    localStorage.setItem('selectedPlaylistUrl', playlistUrl);
-    await loadPlaylist(playlistUrl);
-  }
+  playlistUrl = v;
+  localStorage.setItem('selectedPlaylistUrl', playlistUrl);
+  await loadPlaylist(playlistUrl);
 });
 
 async function loadPlaylist(url){
@@ -324,7 +354,8 @@ artistClear.addEventListener('click', ()=>{
   renderPlaylist();
   const idx = filteredData.findIndex(t => t.title === currentTrack.title && t.artist === currentTrack.artist);
   if(idx !== -1) current = idx;
-  highlightCurrent();
+  loadTrack(current);
+  play();
 });
 
 function renderPlaylist(){
@@ -357,9 +388,13 @@ async function loadTrack(idx){
   artistEl.textContent = track.artist;
   yearEl.textContent = '';
   highlightCurrent();
-  fetchCover(track.title, track.artist);
-  fetchLyrics(track.title, track.artist);
-  setMediaSession();
+  
+  // Atualizar MediaSession imediatamente com informações básicas
+  setMediaSession(track);
+  
+  // Buscar capa e depois atualizar MediaSession novamente
+  await fetchCover(track.title, track.artist);
+  
   document.title = `${track.title} - ${track.artist}`;
 }
 
@@ -372,8 +407,20 @@ function highlightCurrent(){
   if(active) active.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
-function play(){ audio.play().catch(()=>{}); playing=true; playBtn.textContent='⏸'; setStatus('Tocando'); }
-function pause(){ audio.pause(); playing=false; playBtn.textContent='▶'; setStatus('Pausado'); }
+function play(){ 
+  audio.play().catch(()=>{}); 
+  playing=true; 
+  playBtn.textContent='⏸'; 
+  setStatus('Tocando');
+  requestWakeLock(); // Ativar wake lock ao tocar
+}
+function pause(){ 
+  audio.pause(); 
+  playing=false; 
+  playBtn.textContent='▶'; 
+  setStatus('Pausado');
+  releaseWakeLock(); // Liberar wake lock ao pausar
+}
 
 playBtn.addEventListener('click', ()=> playing ? pause() : play());
 prevBtn.addEventListener('click', ()=> {
@@ -389,7 +436,11 @@ nextBtn.addEventListener('click', ()=> {
   loadTrack(current);
   play();
 });
-shuffleBtn.addEventListener('click', ()=> { shuffle = !shuffle; shuffleBtn.style.background = shuffle ? '#cfe' : ''; setStatus('Shuffle ' + (shuffle ? 'ON' : 'OFF')); });
+shuffleBtn.addEventListener('click', ()=> { 
+  shuffle = !shuffle; 
+  shuffleBtn.style.background = shuffle ? '#cfe' : ''; 
+  setStatus('Shuffle ' + (shuffle ? 'ON' : 'OFF')); 
+});
 
 progressWrap.addEventListener('click', (e) => {
   if(!audio.duration) return;
@@ -409,8 +460,21 @@ audio.addEventListener('ended', () => {
   play();
 });
 
-function setMediaSession(){
+/* MediaSession com capa - CORRIGIDO */
+function setMediaSession(track, coverUrl = null) {
   if ("mediaSession" in navigator) {
+    // Usar a URL fornecida ou a atual
+    const artworkUrl = coverUrl || currentCoverUrl;
+    
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: track.title,
+      artist: track.artist,
+      album: "Minha Playlist",
+      artwork: [
+        { src: artworkUrl, sizes: "512x512", type: "image/png" }
+      ]
+    });
+
     navigator.mediaSession.setActionHandler('play', ()=> play());
     navigator.mediaSession.setActionHandler('pause', ()=> pause());
     navigator.mediaSession.setActionHandler('previoustrack', ()=> prevBtn.click());
@@ -418,46 +482,38 @@ function setMediaSession(){
   }
 }
 
+/* Last.fm cover fetch - ATUALIZADO */
 async function fetchCover(title, artist){
   const key = safeKey('cover', artist + '_' + title);
   const cached = localStorage.getItem(key);
-  if(cached){ coverEl.style.backgroundImage = `url(${cached})`; return; }
-  try{
-    const q = encodeURIComponent(artist + ' ' + title);
-    const res = await fetch(`https://itunes.apple.com/search?entity=song&limit=1&term=${q}`);
-    const data = await res.json();
-    if(data.results && data.results.length){
-      const url = data.results[0].artworkUrl100;
-      coverEl.style.backgroundImage = `url(${url})`;
-      yearEl.textContent = data.results[0].releaseDate ? new Date(data.results[0].releaseDate).getFullYear() : '';
-      localStorage.setItem(key, url);
-    } else {
-      coverEl.style.backgroundImage = `url(https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png)`;
-      yearEl.textContent = '';
-    }
-  }catch(e){
-    coverEl.style.backgroundImage = `url(https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png)`;
-    yearEl.textContent = '';
+  
+  if(cached){ 
+    coverEl.style.backgroundImage = `url(${cached})`;
+    currentCoverUrl = cached; // Atualizar a URL atual
+    setMediaSession(filteredData[current], cached); // Atualizar MediaSession com a capa correta
+    return; 
   }
-}
-
-async function fetchLyrics(title, artist){
-  const key = safeKey('lyrics', artist + '_' + title);
-  const cached = localStorage.getItem(key);
-  if(cached !== null && cached !== undefined && cached !== ''){ lyricsEl.textContent = cached; return; }
-  lyricsEl.textContent = 'Carregando letra...';
+  
   try{
-    const res = await fetch(`https://api.lyrics.ovh/v1/${encodeURIComponent(artist)}/${encodeURIComponent(title)}`);
+    const apiKey = '685a04193652e98c9e5e598dc6d306ab';
+    const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${apiKey}&artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(title)}&format=json`);
     const data = await res.json();
-    if(data && data.lyrics){
-      lyricsEl.textContent = data.lyrics;
-      localStorage.setItem(key, data.lyrics);
-    } else {
-      lyricsEl.textContent = 'Letra não disponível.';
-      localStorage.setItem(key, '');
-    }
+    const url = data?.track?.album?.image?.slice(-1)[0]?.['#text'] || 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
+    
+    coverEl.style.backgroundImage = `url(${url})`;
+    currentCoverUrl = url; // Atualizar a URL atual
+    
+    // Atualizar MediaSession com a nova capa
+    setMediaSession(filteredData[current], url);
+    
+    yearEl.textContent = data?.track?.wiki?.published ? new Date(data.track.wiki.published).getFullYear() : '';
+    localStorage.setItem(key, url);
   }catch(e){
-    lyricsEl.textContent = 'Erro ao carregar letra.';
+    console.error('Erro ao buscar capa:', e);
+    coverEl.style.backgroundImage = `url(https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png)`;
+    currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
+    setMediaSession(filteredData[current], currentCoverUrl);
+    yearEl.textContent = '';
   }
 }
 
@@ -465,11 +521,24 @@ function escapeHtml(s){
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
+// Gerenciar wake lock quando a página perde/ganha visibilidade
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    releaseWakeLock();
+  } else if (playing) {
+    requestWakeLock();
+  }
+});
+
 (async function init(){
   const saved = localStorage.getItem('selectedPlaylistUrl');
-  if(saved){ playlistUrl = saved;
+  if(saved){ 
+    playlistUrl = saved;
     if(![...playlistSelect.options].some(o=>o.value===playlistUrl)){
-      const opt=document.createElement('option'); opt.value=playlistUrl; opt.textContent='Playlist selecionada'; playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
+      const opt=document.createElement('option'); 
+      opt.value=playlistUrl; 
+      opt.textContent='Playlist selecionada'; 
+      playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
     }
     playlistSelect.value = playlistUrl;
   }
