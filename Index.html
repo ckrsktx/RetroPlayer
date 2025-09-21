@@ -304,7 +304,7 @@ select {
     </div>
     
     <div class="footer">
-      Retro Player © 2023 - Todos os direitos reservados
+      Retro Player © 2025 - Todos os direitos reservados
     </div>
   </div>
 </div>
@@ -786,7 +786,7 @@ playlistSelect.addEventListener('change', async (e)=>{
     if(![...playlistSelect.options].some(o=>o.value===playlistUrl)){
       const opt=document.createElement('option'); 
       opt.value=playlistUrl; 
-      opt.textContent='Playlist selecionada'; 
+      
       // inserir antes da última opção para manter seleção visível
       playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
     }
