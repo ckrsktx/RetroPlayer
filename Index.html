@@ -75,8 +75,36 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
 .controls{display:flex;justify-content:space-around;padding:8px;background:#ddd;border-top:2px solid #808080;}
 .controls button{background:#e0e0e0;border:1px solid #000;padding:6px 10px;border-radius:3px;cursor:pointer;font-weight:bold;font-family:inherit;}
 .controls button:active{background:#cfcfcf}
-.progress-wrap{height:8px;background:#b7b7b7;border-top:1px solid #999;cursor:pointer}
-.progress-fill{height:100%;width:0%;background:var(--primary);transition:width 0.08s linear}
+.progress-wrap{
+  height:16px; /* Aumentado para melhor toque em mobile */
+  background:#b7b7b7;
+  border-top:1px solid #999;
+  cursor:pointer;
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.progress-fill{
+  height:60%; /* Reduzido para melhor visualização */
+  width:0%;
+  background:var(--primary);
+  transition:width 0.08s linear;
+  border-radius:2px;
+}
+.progress-time {
+  position: absolute;
+  bottom: -20px;
+  right: 5px;
+  font-size: 10px;
+  color: #555;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 4px;
+  border-radius: 3px;
+  display: none;
+}
+.progress-wrap:hover .progress-time {
+  display: block;
+}
 .status{padding:6px;background:#eaeaea;border-top:1px solid #999;font-size:13px;text-align:center;}
 .artist-area{display:flex;align-items:center;justify-content:space-between;padding:6px;gap:6px;background:#f2f2f2;border-top:1px solid #ddd;}
 .artist-area .left{font-size:13px;color:#222}
@@ -161,6 +189,12 @@ select {
     width: 140px;
     font-size: 12px;
   }
+  .progress-wrap {
+    height: 20px; /* Mais alto em mobile para melhor toque */
+  }
+  .progress-fill {
+    height: 70%; /* Preenchimento mais visível */
+  }
 }
 .header .autor {
   font-size: 12px;
@@ -203,6 +237,7 @@ select {
 
     <div class="progress-wrap" id="progressWrap" aria-hidden="false">
       <div class="progress-fill" id="progressFill"></div>
+      <div class="progress-time" id="progressTime">0:00 / 0:00</div>
     </div>
 
     <div class="status" id="status">Pronto</div>
@@ -220,7 +255,7 @@ select {
     </div>
     
     <div class="footer">
-      Retro Player © 2023 - Todos os direitos reservados
+      Retro Player © 2025
     </div>
   </div>
 </div>
@@ -240,6 +275,7 @@ const shuffleBtn = document.getElementById('shuffle');
 const statusEl = document.getElementById('status');
 const progressFill = document.getElementById('progressFill');
 const progressWrap = document.getElementById('progressWrap');
+const progressTime = document.getElementById('progressTime');
 const artistSelect = document.getElementById('artistSelect');
 const artistClear = document.getElementById('artistClear');
 
@@ -248,7 +284,8 @@ let playlistData = [], filteredData = [], current = 0;
 let audio = new Audio();
 let playing = false, shuffle = false;
 let wakeLock = null;
-let currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png'; // URL padrão
+let currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
+let isDraggingProgress = false;
 
 // Solicitar bloqueio de tela para evitar que a tela desligue
 async function requestWakeLock() {
@@ -277,6 +314,13 @@ const setStatus = (t, ms=2000) => {
     if(statusEl.textContent === t) statusEl.textContent='Pronto'; 
   }, ms); 
 };
+
+// Formatar tempo em minutos:segundos
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
 
 const safeKey = (a,b) => `rp_${(a||'').replace(/\s+/g,'_')}_${(b||'').replace(/\s+/g,'_')}`;
 
@@ -442,15 +486,54 @@ shuffleBtn.addEventListener('click', ()=> {
   setStatus('Shuffle ' + (shuffle ? 'ON' : 'OFF')); 
 });
 
+// Eventos para a barra de progresso (corrigidos para mobile)
 progressWrap.addEventListener('click', (e) => {
   if(!audio.duration) return;
   const rect = progressWrap.getBoundingClientRect();
   const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
   audio.currentTime = pct * audio.duration;
 });
+
+// Eventos de toque para dispositivos móveis
+progressWrap.addEventListener('touchstart', (e) => {
+  if(!audio.duration) return;
+  e.preventDefault();
+  isDraggingProgress = true;
+  const rect = progressWrap.getBoundingClientRect();
+  const touch = e.touches[0];
+  const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
+  audio.currentTime = pct * audio.duration;
+});
+
+progressWrap.addEventListener('touchmove', (e) => {
+  if(!isDraggingProgress || !audio.duration) return;
+  e.preventDefault();
+  const rect = progressWrap.getBoundingClientRect();
+  const touch = e.touches[0];
+  const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
+  audio.currentTime = pct * audio.duration;
+  
+  // Mostrar tempo durante o arraste
+  progressTime.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  progressTime.style.display = 'block';
+  progressTime.style.left = `${touch.clientX - rect.left}px`;
+});
+
+progressWrap.addEventListener('touchend', () => {
+  isDraggingProgress = false;
+  setTimeout(() => {
+    progressTime.style.display = 'none';
+  }, 1000);
+});
+
 audio.addEventListener('timeupdate', () => {
   const pct = (audio.currentTime / (audio.duration || 1)) * 100;
   progressFill.style.width = pct + '%';
+  
+  // Atualizar texto de tempo
+  if (audio.duration && !isDraggingProgress) {
+    progressTime.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  }
 });
 audio.addEventListener('ended', () => {
   if(filteredData.length===0) return;
