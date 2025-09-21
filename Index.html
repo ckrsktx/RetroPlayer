@@ -18,9 +18,16 @@
   --muted:#777;
   --primary:#000080;
 }
-html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif","Microsoft Sans Serif",Tahoma,Arial,sans-serif;-webkit-font-smoothing:auto;}
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  font-family:"MS Sans Serif","Microsoft Sans Serif",Tahoma,Arial,sans-serif;
+  -webkit-font-smoothing:auto;
+  overflow:hidden;
+}
 .app{
-  min-height:100vh;
+  height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -34,7 +41,8 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
   box-shadow: 4px 4px 0 #808080;
   display:flex;
   flex-direction:column;
-  max-height:96vh;
+  height:100vh;
+  max-height:100vh;
 }
 .header{
   background:var(--primary);
@@ -46,6 +54,7 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
   justify-content:space-between;
   gap:8px;
   font-size:14px;
+  flex-shrink: 0;
 }
 .display{
   display:flex;
@@ -56,6 +65,7 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
   padding:8px;
   font-family:monospace;
   min-height:64px;
+  flex-shrink: 0;
 }
 .display .cover{
   width:48px;height:48px;border:1px solid #333;background:#111 center/cover no-repeat;flex-shrink:0;border-radius:3px;
@@ -72,41 +82,66 @@ html,body{height:100%;margin:0;background:var(--bg);font-family:"MS Sans Serif",
 }
 .display .meta .artist{font-size:13px;font-style:italic;color:#9ae;}
 .display .meta .year{font-size:11px;color:var(--muted)}
-.controls{display:flex;justify-content:space-around;padding:8px;background:#ddd;border-top:2px solid #808080;}
-.controls button{background:#e0e0e0;border:1px solid #000;padding:6px 10px;border-radius:3px;cursor:pointer;font-weight:bold;font-family:inherit;}
+.controls{
+  display:flex;
+  justify-content:space-around;
+  padding:8px;
+  background:#ddd;
+  border-top:2px solid #808080;
+  flex-shrink: 0;
+}
+.controls button{
+  background:#e0e0e0;
+  border:1px solid #000;
+  padding:6px 10px;
+  border-radius:3px;
+  cursor:pointer;
+  font-weight:bold;
+  font-family:inherit;
+}
 .controls button:active{background:#cfcfcf}
 .progress-wrap{
-  height:16px; /* Aumentado para melhor toque em mobile */
+  height:16px;
   background:#b7b7b7;
   border-top:1px solid #999;
   cursor:pointer;
   position:relative;
   display:flex;
   align-items:center;
+  flex-shrink: 0;
 }
 .progress-fill{
-  height:60%; /* Reduzido para melhor visualização */
+  height:60%;
   width:0%;
   background:var(--primary);
   transition:width 0.08s linear;
   border-radius:2px;
 }
-.progress-time {
-  position: absolute;
-  bottom: -20px;
-  right: 5px;
-  font-size: 10px;
+.status{
+  padding:6px;
+  background:#eaeaea;
+  border-top:1px solid #999;
+  font-size:13px;
+  text-align:center;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status .time {
+  font-family: monospace;
   color: #555;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 2px 4px;
-  border-radius: 3px;
-  display: none;
 }
-.progress-wrap:hover .progress-time {
-  display: block;
+.artist-area{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:6px;
+  gap:6px;
+  background:#f2f2f2;
+  border-top:1px solid #ddd;
+  flex-shrink: 0;
 }
-.status{padding:6px;background:#eaeaea;border-top:1px solid #999;font-size:13px;text-align:center;}
-.artist-area{display:flex;align-items:center;justify-content:space-between;padding:6px;gap:6px;background:#f2f2f2;border-top:1px solid #ddd;}
 .artist-area .left{font-size:13px;color:#222}
 select {
   font-family: "MS Sans Serif", "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
@@ -130,15 +165,22 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
-.playlist-wrap{position:relative}
+.playlist-wrap{
+  position:relative;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 .playlist{
   list-style:none;
   margin:0;
-  padding:0;
+  padding:0 0 48px 0;
   background:#111;
   color:#fff;
-  height:220px;
   overflow:auto;
+  flex: 1;
+  box-sizing:border-box;
 }
 .playlist li{
   height:48px;
@@ -160,6 +202,10 @@ select {
   text-align: center;
   font-size: 12px;
   color: #555;
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
 }
 @media (max-width:720px){
   .app {
@@ -174,10 +220,6 @@ select {
     border: none;
     box-shadow: none;
   }
-  .playlist{
-    height:calc(100vh - 64px - 48px - 8px - 48px - 80px);
-    flex-grow: 1;
-  }
   .display .cover{
     width:44px;
     height:44px;
@@ -190,10 +232,14 @@ select {
     font-size: 12px;
   }
   .progress-wrap {
-    height: 20px; /* Mais alto em mobile para melhor toque */
+    height: 20px;
   }
   .progress-fill {
-    height: 70%; /* Preenchimento mais visível */
+    height: 70%;
+  }
+  .status {
+    flex-direction: column;
+    gap: 4px;
   }
 }
 .header .autor {
@@ -213,8 +259,9 @@ select {
       </div>
       <div>
         <select id="playlistSelect" title="Escolha a playlist">
-          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json">Alternative</option>
-          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json">1990s</option>
+          <!-- OBS: URLs de exemplo — se você hospedar suas playlists em outro lugar, substitua aqui -->
+          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/main/AlternativeNow.json">Alternative</option>
+          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/main/1990s.json">1990s</option>
         </select>
       </div>
     </div>
@@ -237,10 +284,12 @@ select {
 
     <div class="progress-wrap" id="progressWrap" aria-hidden="false">
       <div class="progress-fill" id="progressFill"></div>
-      <div class="progress-time" id="progressTime">0:00 / 0:00</div>
     </div>
 
-    <div class="status" id="status">Pronto</div>
+    <div class="status" id="status">
+      <span>Pronto</span>
+      <span class="time" id="timeDisplay">0:00 / 0:00</span>
+    </div>
 
     <div class="artist-area">
       <div class="left">Filtrar por artista</div>
@@ -255,13 +304,13 @@ select {
     </div>
     
     <div class="footer">
-      Retro Player © 2025
+      Retro Player © 2023 - Todos os direitos reservados
     </div>
   </div>
 </div>
 
 <script>
-/* ----------  Retro Player  ---------- */
+/* ----------  Retro Player (com correções completas) ---------- */
 const playlistSelect = document.getElementById('playlistSelect');
 const playlistEl = document.getElementById('playlist');
 const titleEl = document.getElementById('title');
@@ -273,9 +322,9 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const shuffleBtn = document.getElementById('shuffle');
 const statusEl = document.getElementById('status');
+const timeDisplay = document.getElementById('timeDisplay');
 const progressFill = document.getElementById('progressFill');
 const progressWrap = document.getElementById('progressWrap');
-const progressTime = document.getElementById('progressTime');
 const artistSelect = document.getElementById('artistSelect');
 const artistClear = document.getElementById('artistClear');
 
@@ -287,7 +336,72 @@ let wakeLock = null;
 let currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
 let isDraggingProgress = false;
 
-// Solicitar bloqueio de tela para evitar que a tela desligue
+/* ------------------ Helpers ------------------ */
+const safeKey = (a,b) => `rp_${(a||'').replace(/\s+/g,'_')}_${(b||'').replace(/\s+/g,'_')}`;
+
+const setStatus = (t, ms=2000) => { 
+  const statusText = statusEl.querySelector('span:first-child');
+  statusText.textContent = t; 
+  if(ms) setTimeout(()=>{ 
+    if(statusText.textContent === t) statusText.textContent='Pronto'; 
+  }, ms); 
+};
+
+function formatTime(seconds) {
+  if (isNaN(seconds) || seconds === Infinity) return "0:00";
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+function updateTimeDisplay() {
+  if (audio.duration) {
+    timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  } else {
+    timeDisplay.textContent = "0:00 / 0:00";
+  }
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/* Normalize GitHub raw URLs: aceita raw with /refs/heads/ or blob/ and converte */
+function normalizeRawUrl(url){
+  if(!url) return url;
+  try{
+    const u = new URL(url);
+    const host = u.hostname.toLowerCase();
+    // Caso: raw.githubusercontent.com com /refs/heads/ -> remover refs/heads
+    if(host === 'raw.githubusercontent.com'){
+      return url.replace('/refs/heads/', '/');
+    }
+    // Caso: github.com/.../blob/... -> converter para raw.githubusercontent.com/user/repo/branch/path
+    if(host === 'github.com'){
+      // ex: https://github.com/user/repo/blob/main/path/file.json
+      const parts = u.pathname.split('/').filter(Boolean);
+      // parts[0]=user parts[1]=repo parts[2]=blob parts[3]=branch rest = path
+      if(parts.length >= 4 && parts[2] === 'blob'){
+        const user = parts[0], repo = parts[1], branch = parts[3];
+        const path = parts.slice(4).join('/');
+        return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
+      }
+    }
+    // Caso comum: raw link que por engano contém refs/heads em outra posição
+    return url.replace('/refs/heads/', '/');
+  }catch(e){
+    return url;
+  }
+}
+
+/* ------------------ Service Worker (tenta registrar, mas não é obrigatório) ------------------ */
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').then(reg=>{
+    console.log('SW registrado', reg);
+  }).catch(err=>console.warn('SW falha',err));
+}
+
+/* ------------------ Wake Lock ------------------ */
 async function requestWakeLock() {
   try {
     if ('wakeLock' in navigator) {
@@ -298,71 +412,78 @@ async function requestWakeLock() {
     console.error('Erro ao ativar Wake Lock:', err);
   }
 }
-
-// Liberar bloqueio de tela
 function releaseWakeLock() {
   if (wakeLock !== null) {
-    wakeLock.release();
+    try { wakeLock.release(); } catch(e) {}
     wakeLock = null;
     console.log('Wake Lock liberado');
   }
 }
-
-const setStatus = (t, ms=2000) => { 
-  statusEl.textContent = t; 
-  if(ms) setTimeout(()=>{ 
-    if(statusEl.textContent === t) statusEl.textContent='Pronto'; 
-  }, ms); 
-};
-
-// Formatar tempo em minutos:segundos
-function formatTime(seconds) {
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-}
-
-const safeKey = (a,b) => `rp_${(a||'').replace(/\s+/g,'_')}_${(b||'').replace(/\s+/g,'_')}`;
-
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js').then(reg=>{
-    console.log('SW registrado', reg);
-  }).catch(err=>console.warn('SW falha',err));
-}
-
-playlistSelect.addEventListener('change', async (e)=>{
-  const v = e.target.value;
-  playlistUrl = v;
-  localStorage.setItem('selectedPlaylistUrl', playlistUrl);
-  await loadPlaylist(playlistUrl);
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    releaseWakeLock();
+  } else if (playing) {
+    requestWakeLock();
+  }
 });
 
+/* ------------------ Audio listeners (adicionar uma vez) ------------------ */
+audio.addEventListener('timeupdate', () => {
+  updateProgress();
+  updateTimeDisplay();
+});
+audio.addEventListener('ended', () => {
+  playNextTrack();
+});
+audio.addEventListener('error', (e) => {
+  console.error('Erro no áudio:', e);
+  setStatus('Erro ao reproduzir a faixa', 3000);
+  // Tentar avançar para próxima faixa após curto delay
+  setTimeout(playNextTrack, 1200);
+});
+audio.addEventListener('loadedmetadata', updateTimeDisplay);
+
+/* ------------------ Playlist carregar / renderizar ------------------ */
 async function loadPlaylist(url){
+  if(!url) return;
   setStatus('Carregando playlist...');
+  playlistData = []; filteredData = []; current = 0;
   try{
-    const res = await fetch(url);
+    const normalized = normalizeRawUrl(url);
+    const res = await fetch(normalized, {cache: "no-store"});
     if(!res.ok) throw new Error('HTTP '+res.status);
     const json = await res.json();
-    if(!Array.isArray(json)) throw new Error('Formato inválido (esperado array)');
-    playlistData = json.map(t=>({
-      title: String(t.title||'Untitled'),
-      artist: String(t.artist||'Unknown'),
-      url: String(t.url||'')
-    }));
+    let arr = [];
+    if(Array.isArray(json)) arr = json;
+    else if(Array.isArray(json.tracks)) arr = json.tracks;
+    else throw new Error('Formato inválido: esperar array ou {tracks: []}');
+    // Mapear e normalizar cada faixa
+    playlistData = arr.map(t => ({
+      title: String(t.title || t.name || 'Untitled'),
+      artist: String(t.artist || t.art || 'Unknown'),
+      url: String(t.url || t.src || '')
+    })).filter(t => t.url); // remover faixas sem url
+    if(playlistData.length === 0) throw new Error('Playlist vazia ou sem URLs válidas');
+    // Ordenar alfabético por title (opcional)
     playlistData.sort((a,b)=> a.title.localeCompare(b.title));
     filteredData = playlistData.slice();
     populateArtistFilter();
     renderPlaylist();
     current = 0;
-    loadTrack(current);
+    await loadTrack(current);
     playing = false;
     playBtn.textContent = '▶';
     highlightCurrent();
     setStatus('Playlist carregada');
   }catch(err){
-    console.error(err);
+    console.error('Erro ao carregar playlist', err);
     setStatus('Erro ao carregar playlist', 4000);
-    alert('Erro ao carregar playlist: ' + (err.message||err));
+    alert('Erro ao carregar playlist: ' + (err.message || err));
+    // deixar interface vazia
+    playlistEl.innerHTML = '<li style="color:#ccc;padding:12px">Não foi possível carregar a playlist.</li>';
+    titleEl.textContent = 'Falha ao carregar';
+    artistEl.textContent = '';
+    yearEl.textContent = '';
   }
 }
 
@@ -375,118 +496,144 @@ function populateArtistFilter(){
   });
 }
 
-artistSelect.addEventListener('change', ()=>{
-  const artist = artistSelect.value;
-  if(artist === '__all__'){
-    filteredData = playlistData.slice();
-  } else {
-    filteredData = playlistData.filter(t => t.artist === artist);
-  }
-  renderPlaylist();
-  current = 0;
-  loadTrack(current);
-  playing = false;
-  playBtn.textContent = '▶';
-  highlightCurrent();
-});
-
-artistClear.addEventListener('click', ()=>{
-  if(playlistData.length===0) return;
-  const currentTrack = filteredData[current];
-  artistSelect.value = '__all__';
-  filteredData = playlistData.slice();
-  renderPlaylist();
-  const idx = filteredData.findIndex(t => t.title === currentTrack.title && t.artist === currentTrack.artist);
-  if(idx !== -1) current = idx;
-  loadTrack(current);
-  play();
-});
-
 function renderPlaylist(){
   const frag = document.createDocumentFragment();
-  filteredData.forEach((t,i)=>{
+  if(!filteredData || filteredData.length===0){
     const li = document.createElement('li');
-    li.setAttribute('role','option');
-    li.dataset.index = i;
-    li.innerHTML = `<div style="display:flex;flex-direction:column"><span class="track-title">${escapeHtml(t.title)}</span><span class="track-artist">${escapeHtml(t.artist)}</span></div>`;
+    li.style.color = '#ccc';
+    li.style.padding = '12px';
+    li.textContent = 'Sem faixas nesta playlist.';
     frag.appendChild(li);
-  });
+  } else {
+    filteredData.forEach((t,i)=>{
+      const li = document.createElement('li');
+      li.setAttribute('role','option');
+      li.dataset.index = i;
+      li.innerHTML = `<div style="display:flex;flex-direction:column"><span class="track-title">${escapeHtml(t.title)}</span><span class="track-artist">${escapeHtml(t.artist)}</span></div>`;
+      frag.appendChild(li);
+    });
+  }
   playlistEl.innerHTML = '';
   playlistEl.appendChild(frag);
   highlightCurrent();
 }
 
+/* ------------------ Interação com playlist (click) ------------------ */
 playlistEl.addEventListener('click', (e)=>{
   const li = e.target.closest('li');
   if(!li) return;
   const idx = Number(li.dataset.index);
-  if(Number.isFinite(idx)) { loadTrack(idx); play(); }
+  if(Number.isFinite(idx)) {
+    loadTrack(idx).then(()=> play());
+  }
 });
 
+/* ------------------ Carregar faixa (sem recriar audio) ------------------ */
 async function loadTrack(idx){
+  if(!filteredData || filteredData.length===0) return;
   if(idx < 0 || idx >= filteredData.length) return;
   current = idx;
   const track = filteredData[current];
-  audio.src = track.url;
-  titleEl.textContent = track.title;
-  artistEl.textContent = track.artist;
-  yearEl.textContent = '';
-  highlightCurrent();
-  
-  // Atualizar MediaSession imediatamente com informações básicas
-  setMediaSession(track);
-  
-  // Buscar capa e depois atualizar MediaSession novamente
-  await fetchCover(track.title, track.artist);
-  
-  document.title = `${track.title} - ${track.artist}`;
-}
-
-function highlightCurrent(){
-  const children = playlistEl.children;
-  for(let i=0;i<children.length;i++){
-    children[i].classList.toggle('active', Number(children[i].dataset.index) === current);
+  try{
+    // trocar src mantendo mesmo objeto audio
+    audio.pause();
+    audio.src = track.url;
+    try { audio.load(); } catch(e) { /* alguns browsers não requerem */ }
+    
+    titleEl.textContent = track.title;
+    artistEl.textContent = track.artist;
+    yearEl.textContent = '';
+    highlightCurrent();
+    setMediaSession(track);
+    // buscar capa (não bloqueia muito)
+    await fetchCover(track.title, track.artist);
+    document.title = `${track.title} - ${track.artist}`;
+    progressFill.style.width = '0%';
+    updateTimeDisplay();
+  }catch(e){
+    console.error('Erro ao carregar faixa', e);
+    setStatus('Erro ao carregar faixa', 3000);
   }
-  const active = playlistEl.querySelector('li.active');
-  if(active) active.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
-function play(){ 
-  audio.play().catch(()=>{}); 
-  playing=true; 
-  playBtn.textContent='⏸'; 
-  setStatus('Tocando');
-  requestWakeLock(); // Ativar wake lock ao tocar
+/* ------------------ Próxima / Anterior ------------------ */
+function playNextTrack(){
+  if(!filteredData || filteredData.length===0) return;
+  if(shuffle){
+    let newIndex;
+    do {
+      newIndex = Math.floor(Math.random() * filteredData.length);
+    } while (newIndex === current && filteredData.length > 1);
+    current = newIndex;
+  } else {
+    current = (current + 1) % filteredData.length;
+  }
+  loadTrack(current);
+  play();
 }
+
+function playPrevTrack(){
+  if(!filteredData || filteredData.length===0) return;
+  if(shuffle){
+    let newIndex;
+    do {
+      newIndex = Math.floor(Math.random() * filteredData.length);
+    } while (newIndex === current && filteredData.length > 1);
+    current = newIndex;
+  } else {
+    current = (current - 1 + filteredData.length) % filteredData.length;
+  }
+  loadTrack(current);
+  play();
+}
+
+/* ------------------ Play / Pause ------------------ */
+function play(){ 
+  if(!audio.src){
+    // tentar carregar a faixa atual
+    if(filteredData && filteredData.length>0){
+      loadTrack(current);
+    } else {
+      setStatus('Nada para tocar', 2000);
+      return;
+    }
+  }
+  audio.play().then(() => {
+    playing = true; 
+    playBtn.textContent = '⏸'; 
+    setStatus('Tocando');
+    requestWakeLock();
+  }).catch(err => {
+    console.error('Erro ao reproduzir:', err);
+    setStatus('Erro ao reproduzir', 3000);
+  });
+}
+
 function pause(){ 
   audio.pause(); 
-  playing=false; 
-  playBtn.textContent='▶'; 
+  playing = false; 
+  playBtn.textContent = '▶'; 
   setStatus('Pausado');
-  releaseWakeLock(); // Liberar wake lock ao pausar
+  releaseWakeLock();
 }
 
+/* ------------------ Botões ------------------ */
 playBtn.addEventListener('click', ()=> playing ? pause() : play());
-prevBtn.addEventListener('click', ()=> {
-  if(filteredData.length===0) return;
-  current = (current - 1 + filteredData.length) % filteredData.length;
-  loadTrack(current);
-  play();
-});
-nextBtn.addEventListener('click', ()=> {
-  if(filteredData.length===0) return;
-  if(shuffle) current = Math.floor(Math.random() * filteredData.length);
-  else current = (current + 1) % filteredData.length;
-  loadTrack(current);
-  play();
-});
+prevBtn.addEventListener('click', ()=> playPrevTrack());
+nextBtn.addEventListener('click', ()=> playNextTrack());
 shuffleBtn.addEventListener('click', ()=> { 
   shuffle = !shuffle; 
-  shuffleBtn.style.background = shuffle ? '#cfe' : ''; 
+  shuffleBtn.style.background = shuffle ? '#cfe' : '';
   setStatus('Shuffle ' + (shuffle ? 'ON' : 'OFF')); 
 });
 
-// Eventos para a barra de progresso (corrigidos para mobile)
+/* ------------------ Progress bar (click + touch) ------------------ */
+function updateProgress(){
+  const pct = (audio.currentTime / (audio.duration || 1)) * 100;
+  progressFill.style.width = pct + '%';
+  updateTimeDisplay();
+}
+
 progressWrap.addEventListener('click', (e) => {
   if(!audio.duration) return;
   const rect = progressWrap.getBoundingClientRect();
@@ -494,7 +641,6 @@ progressWrap.addEventListener('click', (e) => {
   audio.currentTime = pct * audio.duration;
 });
 
-// Eventos de toque para dispositivos móveis
 progressWrap.addEventListener('touchstart', (e) => {
   if(!audio.duration) return;
   e.preventDefault();
@@ -512,85 +658,110 @@ progressWrap.addEventListener('touchmove', (e) => {
   const touch = e.touches[0];
   const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
   audio.currentTime = pct * audio.duration;
-  
-  // Mostrar tempo durante o arraste
-  progressTime.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
-  progressTime.style.display = 'block';
-  progressTime.style.left = `${touch.clientX - rect.left}px`;
 });
 
 progressWrap.addEventListener('touchend', () => {
   isDraggingProgress = false;
-  setTimeout(() => {
-    progressTime.style.display = 'none';
-  }, 1000);
 });
 
-audio.addEventListener('timeupdate', () => {
-  const pct = (audio.currentTime / (audio.duration || 1)) * 100;
-  progressFill.style.width = pct + '%';
-  
-  // Atualizar texto de tempo
-  if (audio.duration && !isDraggingProgress) {
-    progressTime.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+/* ------------------ Filter / Artist ------------------ */
+artistSelect.addEventListener('change', ()=>{
+  const artist = artistSelect.value;
+  if(artist === '__all__'){
+    filteredData = playlistData.slice();
+  } else {
+    filteredData = playlistData.filter(t => t.artist === artist);
   }
-});
-audio.addEventListener('ended', () => {
-  if(filteredData.length===0) return;
-  if(shuffle) current = Math.floor(Math.random() * filteredData.length);
-  else current = (current + 1) % filteredData.length;
+  renderPlaylist();
+  // carregar primeira faixa do filtro
+  current = 0;
   loadTrack(current);
-  play();
+  pause();
+  highlightCurrent();
 });
 
-/* MediaSession com capa - CORRIGIDO */
-function setMediaSession(track, coverUrl = null) {
-  if ("mediaSession" in navigator) {
-    // Usar a URL fornecida ou a atual
-    const artworkUrl = coverUrl || currentCoverUrl;
-    
-    navigator.mediaSession.metadata = new MediaMetadata({
-      title: track.title,
-      artist: track.artist,
-      album: "Minha Playlist",
-      artwork: [
-        { src: artworkUrl, sizes: "512x512", type: "image/png" }
-      ]
-    });
+artistClear.addEventListener('click', ()=>{
+  if(playlistData.length===0) return;
+  const now = filteredData[current];
+  artistSelect.value = '__all__';
+  filteredData = playlistData.slice();
+  renderPlaylist();
+  // tentar manter a mesma faixa
+  if(now){
+    const idx = filteredData.findIndex(t => t.title === now.title && t.artist === now.artist && t.url === now.url);
+    if(idx !== -1) current = idx;
+    else current = 0;
+  } else current = 0;
+  loadTrack(current);
+  pause();
+  highlightCurrent();
+});
 
-    navigator.mediaSession.setActionHandler('play', ()=> play());
-    navigator.mediaSession.setActionHandler('pause', ()=> pause());
-    navigator.mediaSession.setActionHandler('previoustrack', ()=> prevBtn.click());
-    navigator.mediaSession.setActionHandler('nexttrack', ()=> nextBtn.click());
+/* ------------------ Highlight atual ------------------ */
+function highlightCurrent(){
+  const children = playlistEl.children;
+  for(let i=0;i<children.length;i++){
+    const li = children[i];
+    // caso li sem dataset (mensagem de vazio), limpar active
+    const idx = Number(li.dataset.index);
+    li.classList.toggle('active', Number.isFinite(idx) && idx === current);
+  }
+  const active = playlistEl.querySelector('li.active');
+  if(active) {
+    try { active.scrollIntoView({behavior:'smooth',block:'center'}); } catch(e){}
   }
 }
 
-/* Last.fm cover fetch - ATUALIZADO */
+/* ------------------ Media Session + capa ------------------ */
+function setMediaSession(track, coverUrl = null) {
+  if ("mediaSession" in navigator) {
+    const artworkUrl = coverUrl || currentCoverUrl;
+    try{
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: track.title,
+        artist: track.artist,
+        album: "Minha Playlist",
+        artwork: [
+          { src: artworkUrl, sizes: "512x512", type: "image/png" }
+        ]
+      });
+      navigator.mediaSession.setActionHandler('play', ()=> play());
+      navigator.mediaSession.setActionHandler('pause', ()=> pause());
+      navigator.mediaSession.setActionHandler('previoustrack', ()=> playPrevTrack());
+      navigator.mediaSession.setActionHandler('nexttrack', ()=> playNextTrack());
+    }catch(e){
+      console.warn('MediaSession falhou:', e);
+    }
+  }
+}
+
+/* ------------------ Buscar capa (Last.fm) com cache no localStorage ------------------ */
 async function fetchCover(title, artist){
   const key = safeKey('cover', artist + '_' + title);
   const cached = localStorage.getItem(key);
   
   if(cached){ 
     coverEl.style.backgroundImage = `url(${cached})`;
-    currentCoverUrl = cached; // Atualizar a URL atual
-    setMediaSession(filteredData[current], cached); // Atualizar MediaSession com a capa correta
+    currentCoverUrl = cached;
+    setMediaSession(filteredData[current], cached);
     return; 
   }
   
   try{
+    // Nota: se quiser, coloque sua própria API / chave aqui.
     const apiKey = '685a04193652e98c9e5e598dc6d306ab';
     const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${apiKey}&artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(title)}&format=json`);
+    if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
     const url = data?.track?.album?.image?.slice(-1)[0]?.['#text'] || 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
     
     coverEl.style.backgroundImage = `url(${url})`;
-    currentCoverUrl = url; // Atualizar a URL atual
+    currentCoverUrl = url;
     
-    // Atualizar MediaSession com a nova capa
     setMediaSession(filteredData[current], url);
     
     yearEl.textContent = data?.track?.wiki?.published ? new Date(data.track.wiki.published).getFullYear() : '';
-    localStorage.setItem(key, url);
+    try { localStorage.setItem(key, url); } catch(e){}
   }catch(e){
     console.error('Erro ao buscar capa:', e);
     coverEl.style.backgroundImage = `url(https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png)`;
@@ -600,17 +771,12 @@ async function fetchCover(title, artist){
   }
 }
 
-function escapeHtml(s){
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-// Gerenciar wake lock quando a página perde/ganha visibilidade
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    releaseWakeLock();
-  } else if (playing) {
-    requestWakeLock();
-  }
+/* ------------------ Inicialização ------------------ */
+playlistSelect.addEventListener('change', async (e)=>{
+  const v = e.target.value;
+  playlistUrl = v;
+  localStorage.setItem('selectedPlaylistUrl', playlistUrl);
+  await loadPlaylist(playlistUrl);
 });
 
 (async function init(){
@@ -621,12 +787,23 @@ document.addEventListener('visibilitychange', () => {
       const opt=document.createElement('option'); 
       opt.value=playlistUrl; 
       opt.textContent='Playlist selecionada'; 
+      // inserir antes da última opção para manter seleção visível
       playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
     }
     playlistSelect.value = playlistUrl;
+  } else {
+    playlistSelect.value = playlistSelect.value || playlistUrl;
   }
   await loadPlaylist(playlistUrl);
 })();
+  
+  if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js").then(() => {
+    console.log("Service Worker registrado!");
+  }).catch(err => {
+    console.error("Falha ao registrar o SW:", err);
+  });
+}
 </script>
 </body>
 </html>
