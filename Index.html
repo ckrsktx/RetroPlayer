@@ -79,7 +79,21 @@ const $ = s => document.querySelector(s);
 const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles');
 let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
 
-/* ---------- CAPA + COR DINÂMICA ---------- */
+/* ---------- CORES DA CAPA ---------- */
+function setAccent(color) {
+  document.documentElement.style.setProperty('--accent', color);
+}
+function getPalette(img) {
+  const cv = document.createElement('canvas'), ctx = cv.getContext('2d');
+  cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+  ctx.drawImage(img, 0, 0);
+  const d = ctx.getImageData(0, 0, cv.width, cv.height).data, rgb = [0, 0, 0], n = d.length / 4;
+  for (let i = 0; i < d.length; i += 4) { rgb[0] += d[i]; rgb[1] += d[i + 1]; rgb[2] += d[i + 2]; }
+  rgb.forEach((v, i) => rgb[i] = Math.round(v / n));
+  return `rgb(${rgb.join(',')})`;
+}
+
+/* ---------- CAPA + COR ---------- */
 async function loadTrack() {
   const t = q[idx];
   a.src = t.url;
@@ -92,15 +106,19 @@ async function loadTrack() {
     if (img) {
       capa.src = img;
       disco.style.opacity = 0;
+      capa.onload = () => setAccent(getPalette(capa));
     } else {
       capa.src = '';
       disco.style.opacity = 1;
+      setAccent('#fff');
     }
   } catch {
     capa.src = '';
     disco.style.opacity = 1;
+    setAccent('#fff');
   }
   markOnly();
+  updateSession();
 }
 
 /* ---------- PLAY/PAUSE ---------- */
@@ -133,6 +151,24 @@ function markOnly() {
   document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx));
 }
 
+/* ---------- MEDIA SESSION COMPLETA ---------- */
+let mediaSession = navigator.mediaSession;
+function updateSession() {
+  const t = q[idx];
+  if (!t) return;
+  // metadados
+  mediaSession.metadata = new MediaMetadata({
+    title: t.title,
+    artist: t.artist,
+    artwork: [{ src: capa.src || 'https://i.imgur.com/4GqCIYM.png', sizes: '512x512', type: 'image/jpeg' }]
+  });
+  // ações
+  mediaSession.setActionHandler('play', () => { a.play(); });
+  mediaSession.setActionHandler('pause', () => { a.pause(); });
+  mediaSession.setActionHandler('previoustrack', () => skip(-1));
+  mediaSession.setActionHandler('nexttrack', () => skip(1));
+}
+
 /* ---------- BOLHAS ---------- */
 Object.keys(PLAYLISTS).forEach(pl => {
   const b = document.createElement('span');
@@ -148,11 +184,22 @@ Object.keys(PLAYLISTS).forEach(pl => {
   bubbles.append(b);
 });
 
+/* ---------- SHUFFLE SEM REPETIR ---------- */
+let played = []; // índices já tocados
+function shufflePool() {
+  const pool = q.map((_, i) => i).filter(i => !played.includes(i));
+  if (!pool.length) played = []; // reinicia quando todas tocaram
+  const pick = pool[Math.floor(Math.random() * pool.length)];
+  played.push(pick);
+  return pick;
+}
+
 /* ---------- LOAD PLAYLIST ---------- */
 async function loadPl() {
   q = await (await fetch(PLAYLISTS[currentPl])).json();
-  if (shuf) q = [...q].sort(_ => Math.random() - .5);
-  idx = 0;
+  played = [];
+  if (shuf) idx = shufflePool();
+  else idx = 0;
   renderRoleta();
   loadTrack();
   a.pause(); // aguarda play do usuário
@@ -171,13 +218,17 @@ function renderRoleta() {
   markOnly();
 }
 
-/* ---------- AUDIO EVENTS ---------- */
-a.onplay = updateIcon;
-a.onpause = updateIcon;
-a.onended = () => { idx = (idx + 1) % q.length; loadTrack(); a.play(); };
+/* ---------- AUTO-PRÓXIMO (sem parar) ---------- */
+a.onended = () => {
+  if (shuf) idx = shufflePool();
+  else idx = (idx + 1) % q.length;
+  loadTrack();
+  a.play();
+};
 
 /* ---------- START ---------- */
 loadPl();
 </script>
 </body>
-</html>
+  </html>
+  
