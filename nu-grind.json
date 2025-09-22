@@ -1,5 +1,65 @@
 [
   {
+    "artist": "Chevelle",
+    "title": "Self Destructor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/chevelle_niratias_05_selfdestructor.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "New Divide",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_ha200928_05_newdivide.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Shadow of the Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_ha200739_08shadowoftheday.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "Death by Rock and Roll",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklessthe_deathbyrockandrollsingle_1_deathbyrockandroll.m4a"
+  },
+  {
+    "artist": "Dave Matthews Band",
+    "title": "I Did It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/davematthewsband_al037_1612-13ididit.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "In the End",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/linkinpark_ch0345_intheend.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Crawling Album Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/linkinpark_al037_1614-02crawlingalbumvers.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "What I've Done",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_hb200714_04whativedone.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Castle of Glass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/linkinpark_hb201309_04_castleofglass.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Lost",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_meteora20thanniversaryedition_1_lost.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Up from the Bottom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/linkinpark_fromzerodeluxeedition_12_upfromthebottom.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Faint",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_meteora_07_faint.m4a"
+  },
+  {
     "artist": "Pearl Jam",
     "title": "Alive",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/pearljam_al314_alive.m4a"
