@@ -1,5 +1,70 @@
 [
   {
+    "artist": "Tool",
+    "title": "Schism",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/tool_lateralus_05_schism.m4a"
+  },
+  {
+    "artist": "Silversun Pickups",
+    "title": "Lazy Eye",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/silversunpickups_carnavas_07lazyeye.m4a"
+  },
+  {
+    "artist": "My Chemical Romance",
+    "title": "Welcome to the Black Parade",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/mychemicalromance_ha200645_08welcometotheblack.m4a"
+  },
+  {
+    "artist": "Adema",
+    "title": "Giving In",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/adema_al039_1616-06givingin.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "Holiday",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/greenday_hd611a_06holiday.m4a"
+  },
+  {
+    "artist": "Butthole Surfers",
+    "title": "The Shame of Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/buttholesurfers_al323_theshameoflife.m4a"
+  },
+  {
+    "artist": "Adema",
+    "title": "The Way You Like It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/adema_al0360_749-14thewayyoulikeit.m4a"
+  },
+  {
+    "artist": "Lenny Kravitz",
+    "title": "Dig In",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kravitzlenny_al0310_1617-13digin.m4a"
+  },
+  {
+    "artist": "Nirvana",
+    "title": "You Know You're Right",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nirvana_nirvana_01_youknowyoureright.m4a"
+  },
+  {
+    "artist": "Fall Out Boy",
+    "title": "Thnks fr th Mmrs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/falloutboy_ha200725_03thnksfrthmmrs.m4a"
+  },
+  {
+    "artist": "Mushroomhead",
+    "title": "Sun Doesn't Rise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/mushroomhead_xiii_02_sundoesntrise.m4a"
+  },
+  {
+    "artist": "Tantric",
+    "title": "Breakdown",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tantric_al037_1613-04breakdown.m4a"
+  },
+  {
+    "artist": "Dynamite Hack",
+    "title": "Boyz in the Hood Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/dynamitehack_al033_1607-02boyzinthehoodclea.m4a"
+  },
+  {
     "artist": "Chevelle",
     "title": "Self Destructor",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/chevelle_niratias_05_selfdestructor.m4a"
