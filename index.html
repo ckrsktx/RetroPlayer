@@ -70,8 +70,16 @@
 /* ---------- CONFIG ---------- */
 const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
 const PLAYLISTS = {
-  Alternative: 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
-  '1990s':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json'
+  'Alternative': 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
+  '1990s':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json',
+  'Nu-Grind': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
+  'New Brazil': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
+  'Trip-Hop': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop',
+  'Hip-Hop': 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
+  'Cinema':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json',
+  'Rock': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
+  'Eletronic': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
+  'Jazz': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop'
 };
 /* ---------------------------- */
 
@@ -121,11 +129,14 @@ async function loadTrack() {
   updateSession();
 }
 
-/* ---------- PLAY/PAUSE ---------- */
-playBtn.onclick = () => {
-  a.paused ? a.play() : a.pause();
-  updateIcon();
-};
+/* ---------- PLAY/PAUSE + SINCRONISMO ---------- */
+function play() { a.play(); }
+function pause() { a.pause(); }
+function togglePlay() {
+  a.paused ? play() : pause();
+}
+playBtn.onclick = togglePlay;
+a.onplay = a.onpause = updateIcon;
 function updateIcon() {
   playBtn.innerHTML = a.paused
     ? '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>'
@@ -143,7 +154,7 @@ shufBtn.onclick = () => {
 function skip(d) {
   idx = (idx + d + q.length) % q.length;
   loadTrack();
-  a.play();
+  play(); // <-- garante play após troca
 }
 
 /* ---------- MARCA SÓ QUEM TOCA ---------- */
@@ -163,17 +174,18 @@ function updateSession() {
     artwork: [{ src: capa.src || 'https://i.imgur.com/4GqCIYM.png', sizes: '512x512', type: 'image/jpeg' }]
   });
   // ações
-  mediaSession.setActionHandler('play', () => { a.play(); });
-  mediaSession.setActionHandler('pause', () => { a.pause(); });
+  mediaSession.setActionHandler('play', play);
+  mediaSession.setActionHandler('pause', pause);
   mediaSession.setActionHandler('previoustrack', () => skip(-1));
   mediaSession.setActionHandler('nexttrack', () => skip(1));
 }
 
-/* ---------- BOLHAS ---------- */
+/* ---------- BOLHAS COM QUEBRA AUTOMÁTICA ---------- */
 Object.keys(PLAYLISTS).forEach(pl => {
   const b = document.createElement('span');
   b.className = 'bubble';
   b.textContent = pl;
+  b.style.whiteSpace = 'nowrap'; // evita quebra interna do texto
   b.onclick = () => {
     document.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
     b.classList.add('on');
@@ -184,11 +196,12 @@ Object.keys(PLAYLISTS).forEach(pl => {
   bubbles.append(b);
 });
 
+
 /* ---------- SHUFFLE SEM REPETIR ---------- */
 let played = []; // índices já tocados
 function shufflePool() {
   const pool = q.map((_, i) => i).filter(i => !played.includes(i));
-  if (!pool.length) played = []; // reinicia quando todas tocaram
+  if (!pool.length) played = []; // reinicia quando todas tocadas
   const pick = pool[Math.floor(Math.random() * pool.length)];
   played.push(pick);
   return pick;
@@ -212,7 +225,7 @@ function renderRoleta() {
   q.forEach((t, i) => {
     const li = document.createElement('li');
     li.innerHTML = `<span class="mus">${t.title}</span><span class="art">${t.artist}</span>`;
-    li.onclick = () => { idx = i; loadTrack(); a.play(); };
+    li.onclick = () => { idx = i; loadTrack(); play(); }; // <-- play ao clicar
     roleta.append(li);
   });
   markOnly();
@@ -223,7 +236,7 @@ a.onended = () => {
   if (shuf) idx = shufflePool();
   else idx = (idx + 1) % q.length;
   loadTrack();
-  a.play();
+  play();
 };
 
 /* ---------- START ---------- */
