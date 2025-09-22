@@ -1,809 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="theme-color" content="#008080">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
 <title>Retro Player</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='100%25' height='100%25' fill='%23008080'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='14' fill='white'%3E♪%3C/text%3E%3C/svg%3E">
 <style>
-:root{
-  --bg:#c0c0c0;
-  --panel:#111;
-  --accent:#0f0;
-  --muted:#777;
-  --primary:#000080;
-}
-html,body{
-  height:100%;
-  margin:0;
-  background:var(--bg);
-  font-family:"MS Sans Serif","Microsoft Sans Serif",Tahoma,Arial,sans-serif;
-  -webkit-font-smoothing:auto;
-  overflow:hidden;
-}
-.app{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  box-sizing:border-box;
-}
-.shell{
-  width:360px;
-  background:#e9e9e9;
-  border:2px solid #000;
-  box-shadow: 4px 4px 0 #808080;
-  display:flex;
-  flex-direction:column;
-  height:100vh;
-  max-height:100vh;
-}
-.header{
-  background:var(--primary);
-  color:#fff;
-  padding:6px 8px;
-  font-weight:bold;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:8px;
-  font-size:14px;
-  flex-shrink: 0;
-}
-.display{
-  display:flex;
-  gap:8px;
-  align-items:center;
-  background:#000;
-  color:var(--accent);
-  padding:8px;
-  font-family:monospace;
-  min-height:64px;
-  flex-shrink: 0;
-}
-.display .cover{
-  width:48px;height:48px;border:1px solid #333;background:#111 center/cover no-repeat;flex-shrink:0;border-radius:3px;
-}
-.display .meta{overflow:hidden;display:flex;flex-direction:column;gap:2px;}
-.display .meta .title {
-  font-size:16px;
-  font-weight:bold;
-  color:#fff;
-  overflow-wrap: break-word;
-  white-space: normal;
-  word-break: break-word;
-  max-height: 36px;
-}
-.display .meta .artist{font-size:13px;font-style:italic;color:#9ae;}
-.display .meta .year{font-size:11px;color:var(--muted)}
-.controls{
-  display:flex;
-  justify-content:space-around;
-  padding:8px;
-  background:#ddd;
-  border-top:2px solid #808080;
-  flex-shrink: 0;
-}
-.controls button{
-  background:#e0e0e0;
-  border:1px solid #000;
-  padding:6px 10px;
-  border-radius:3px;
-  cursor:pointer;
-  font-weight:bold;
-  font-family:inherit;
-}
-.controls button:active{background:#cfcfcf}
-.progress-wrap{
-  height:16px;
-  background:#b7b7b7;
-  border-top:1px solid #999;
-  cursor:pointer;
-  position:relative;
-  display:flex;
-  align-items:center;
-  flex-shrink: 0;
-}
-.progress-fill{
-  height:60%;
-  width:0%;
-  background:var(--primary);
-  transition:width 0.08s linear;
-  border-radius:2px;
-}
-.status{
-  padding:6px;
-  background:#eaeaea;
-  border-top:1px solid #999;
-  font-size:13px;
-  text-align:center;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.status .time {
-  font-family: monospace;
-  color: #555;
-}
-.artist-area{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:6px;
-  gap:6px;
-  background:#f2f2f2;
-  border-top:1px solid #ddd;
-  flex-shrink: 0;
-}
-.artist-area .left{font-size:13px;color:#222}
-select {
-  font-family: "MS Sans Serif", "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
-  font-size: 14px;
-  padding: 4px 8px;
-  height: 28px;
-  width: 160px;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  color: #000;
-  border: 1px solid #333;
-  border-radius: 2px;
-  padding-right: 34px;
-  background-image:
-    linear-gradient(45deg, transparent 50%, #000 50%),
-    linear-gradient(135deg, #000 50%, transparent 50%);
-  background-position: calc(100% - 18px) calc(50% - 6px), calc(100% - 12px) calc(50% - 6px);
-  background-size: 6px 6px, 6px 6px;
-  background-repeat: no-repeat;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.playlist-wrap{
-  position:relative;
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.playlist{
-  list-style:none;
-  margin:0;
-  padding:0 0 48px 0;
-  background:#111;
-  color:#fff;
-  overflow:auto;
-  flex: 1;
-  box-sizing:border-box;
-}
-.playlist li{
-  height:48px;
-  display:flex;
-  align-items:center;
-  padding:8px 10px;
-  border-bottom:1px solid #222;
-  box-sizing:border-box;
-  cursor:pointer;
-}
-.playlist li:hover{background:#222}
-.playlist li.active{background:#003366}
-.track-title{font-size:15px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:8px;}
-.track-artist{font-size:12px;font-style:italic;color:#aaa}
-.footer {
-  background: #ddd;
-  border-top: 2px solid #808080;
-  padding: 8px;
-  text-align: center;
-  font-size: 12px;
-  color: #555;
-  flex-shrink: 0;
-  position: sticky;
-  bottom: 0;
-  z-index: 10;
-}
-@media (max-width:720px){
-  .app {
-    padding: 0;
-    align-items: stretch;
-  }
-  .shell{
-    width:100vw;
-    height:100vh;
-    border-radius:0;
-    max-height:100vh;
-    border: none;
-    box-shadow: none;
-  }
-  .display .cover{
-    width:44px;
-    height:44px;
-  }
-  .header {
-    flex-wrap: wrap;
-  }
-  select {
-    width: 140px;
-    font-size: 12px;
-  }
-  .progress-wrap {
-    height: 20px;
-  }
-  .progress-fill {
-    height: 70%;
-  }
-  .status {
-    flex-direction: column;
-    gap: 4px;
-  }
-}
-.header .autor {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 2px;
-}
+  :root{ --accent:#fff; --bg:#000; --fg:#fff }
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent }
+  html,body{ height:100%; overflow:hidden; background:var(--bg); color:var(--fg); font-family:system-ui; display:flex; flex-direction:column; align-items:center; text-align:center }
+  #top{ flex:0 0 auto; height:env(safe-area-inset-top) }
+  #wrap{ flex:1; width:100%; overflow:auto; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 1rem 1rem }
+  #capaWrap{ position:relative; width:min(45vw,9rem); aspect-ratio:1; overflow:hidden; box-shadow:0 0 1.2rem var(--accent); margin-bottom:1rem }
+  #capa{ width:100%; height:100%; object-fit:cover }
+  #disco{ position:absolute; inset:0; background:#111; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .3s }
+  #disco svg{ width:50%; height:50%; stroke:#444; stroke-width:1; fill:none }
+  #bar{ display:flex; gap:.8rem; margin-bottom:.8rem; align-items:center }
+  .btn{ width:2.4rem; height:2.4rem; background:rgba(255,255,255,.08); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer }
+  .btn svg{ width:1.1rem; height:1.1rem; stroke:var(--fg); stroke-width:1.5; fill:none }
+  .btn.on{ background:var(--accent); color:var(--bg) }
+  #info{ margin-bottom:.6rem }
+  #tit{ font-size:1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem }
+  #art{ opacity:.7; font-size:.85rem }
+  #bubbles{ display:flex; gap:.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:.6rem }
+  .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s }
+  .bubble.on{ background:var(--accent); color:var(--bg) }
+  #roleta{ width:100%; max-height:35vh; overflow:auto; list-style:none }
+  li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem }
+  li .mus{ font-size:.95rem; color:var(--fg) }
+  li .art{ font-size:.75rem; color:#aaa }
+  li.on{ color:var(--accent) }
+  footer{ width:100%; padding:.4rem 0; font-size:.55rem; opacity:.4; letter-spacing:1px }
 </style>
 </head>
 <body>
-<div class="app">
-  <div class="shell" role="application" aria-label="Retro Player">
-    <div class="header">
-      <div>
-        Retro Player
-        <div class="autor">por Márcio Rocha</div>
-      </div>
-      <div>
-        <select id="playlistSelect" title="Escolha a playlist">
-          <!-- OBS: URLs de exemplo — se você hospedar suas playlists em outro lugar, substitua aqui -->
-          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/main/AlternativeNow.json">Alternative</option>
-          <option value="https://raw.githubusercontent.com/ckrsktx/PlayerX/main/1990s.json">1990s</option>
-        </select>
-      </div>
-    </div>
 
-    <div class="display" aria-live="polite">
-      <div class="cover" id="cover" aria-hidden="true"></div>
-      <div class="meta">
-        <div class="title" id="title">Carregando...</div>
-        <div class="artist" id="artist"></div>
-        <div class="year" id="year"></div>
-      </div>
-    </div>
+<div id="top"></div>
 
-    <div class="controls" role="group" aria-label="Controles">
-      <button id="prev" title="Anterior">⏮</button>
-      <button id="play" title="Play/Pause">▶</button>
-      <button id="next" title="Próximo">⏭</button>
-      <button id="shuffle" title="Shuffle">🔀</button>
-    </div>
+<div id="wrap">
 
-    <div class="progress-wrap" id="progressWrap" aria-hidden="false">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-
-    <div class="status" id="status">
-      <span>Pronto</span>
-      <span class="time" id="timeDisplay">0:00 / 0:00</span>
-    </div>
-
-    <div class="artist-area">
-      <div class="left">Filtrar por artista</div>
-      <div style="display:flex;gap:6px;align-items:center">
-        <select id="artistSelect" title="Filtrar artista"><option value="__all__">Todos</option></select>
-        <button id="artistClear" title="Limpar filtro" style="padding:4px 8px;font-family:inherit">Limpar</button>
-      </div>
-    </div>
-
-    <div class="playlist-wrap">
-      <ul class="playlist" id="playlist" role="listbox" aria-label="Playlist"></ul>
-    </div>
-    
-    <div class="footer">
-      Retro Player © 2025 - Todos os direitos reservados
+  <div id="capaWrap">
+    <img id="capa" src="https://i.imgur.com/4GqCIYM.png"/>
+    <div id="disco">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#444" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="3" stroke="#444" stroke-width="1" fill="none"/></svg>
     </div>
   </div>
+
+  <div id="bar">
+    <div class="btn" id="prev"><svg viewBox="0 0 24 24"><path d="M19 20L9 12l10-8v16zM5 4v16"/></svg></div>
+    <div class="btn" id="playBtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+    <div class="btn" id="next"><svg viewBox="0 0 24 24"><path d="M5 4l10 8-10 8V4zm14 0v16"/></svg></div>
+    <div class="btn" id="shufBtn"><svg viewBox="0 0 24 24"><path d="M16 3h5v5M4 20L21 3m0 13v5h-5M4 4l5 5"/></svg></div>
+  </div>
+
+  <div id="info">
+    <div id="tit">–</div>
+    <div id="art">–</div>
+  </div>
+
+  <div id="bubbles"></div>
+  <ul id="roleta"></ul>
+
 </div>
 
+<footer>RETRO PLAYER</footer>
+
+<audio id="a" preload="metadata"></audio>
+
 <script>
-/* ----------  Retro Player (com correções completas) ---------- */
-const playlistSelect = document.getElementById('playlistSelect');
-const playlistEl = document.getElementById('playlist');
-const titleEl = document.getElementById('title');
-const artistEl = document.getElementById('artist');
-const yearEl = document.getElementById('year');
-const coverEl = document.getElementById('cover');
-const playBtn = document.getElementById('play');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-const shuffleBtn = document.getElementById('shuffle');
-const statusEl = document.getElementById('status');
-const timeDisplay = document.getElementById('timeDisplay');
-const progressFill = document.getElementById('progressFill');
-const progressWrap = document.getElementById('progressWrap');
-const artistSelect = document.getElementById('artistSelect');
-const artistClear = document.getElementById('artistClear');
-
-let playlistUrl = localStorage.getItem('selectedPlaylistUrl') || playlistSelect.value;
-let playlistData = [], filteredData = [], current = 0;
-let audio = new Audio();
-let playing = false, shuffle = false;
-let wakeLock = null;
-let currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
-let isDraggingProgress = false;
-
-/* ------------------ Helpers ------------------ */
-const safeKey = (a,b) => `rp_${(a||'').replace(/\s+/g,'_')}_${(b||'').replace(/\s+/g,'_')}`;
-
-const setStatus = (t, ms=2000) => { 
-  const statusText = statusEl.querySelector('span:first-child');
-  statusText.textContent = t; 
-  if(ms) setTimeout(()=>{ 
-    if(statusText.textContent === t) statusText.textContent='Pronto'; 
-  }, ms); 
+/* ---------- CONFIG ---------- */
+const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
+const PLAYLISTS = {
+  Alternative: 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
+  '1990s':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json'
 };
+/* ---------------------------- */
 
-function formatTime(seconds) {
-  if (isNaN(seconds) || seconds === Infinity) return "0:00";
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-}
+const $ = s => document.querySelector(s);
+const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles');
+let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
 
-function updateTimeDisplay() {
-  if (audio.duration) {
-    timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
-  } else {
-    timeDisplay.textContent = "0:00 / 0:00";
-  }
-}
-
-function escapeHtml(s){
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-/* Normalize GitHub raw URLs: aceita raw with /refs/heads/ or blob/ and converte */
-function normalizeRawUrl(url){
-  if(!url) return url;
-  try{
-    const u = new URL(url);
-    const host = u.hostname.toLowerCase();
-    // Caso: raw.githubusercontent.com com /refs/heads/ -> remover refs/heads
-    if(host === 'raw.githubusercontent.com'){
-      return url.replace('/refs/heads/', '/');
-    }
-    // Caso: github.com/.../blob/... -> converter para raw.githubusercontent.com/user/repo/branch/path
-    if(host === 'github.com'){
-      // ex: https://github.com/user/repo/blob/main/path/file.json
-      const parts = u.pathname.split('/').filter(Boolean);
-      // parts[0]=user parts[1]=repo parts[2]=blob parts[3]=branch rest = path
-      if(parts.length >= 4 && parts[2] === 'blob'){
-        const user = parts[0], repo = parts[1], branch = parts[3];
-        const path = parts.slice(4).join('/');
-        return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
-      }
-    }
-    // Caso comum: raw link que por engano contém refs/heads em outra posição
-    return url.replace('/refs/heads/', '/');
-  }catch(e){
-    return url;
-  }
-}
-
-/* ------------------ Service Worker (tenta registrar, mas não é obrigatório) ------------------ */
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js').then(reg=>{
-    console.log('SW registrado', reg);
-  }).catch(err=>console.warn('SW falha',err));
-}
-
-/* ------------------ Wake Lock ------------------ */
-async function requestWakeLock() {
+/* ---------- CAPA + COR DINÂMICA ---------- */
+async function loadTrack() {
+  const t = q[idx];
+  a.src = t.url;
+  tit.textContent = t.title;
+  art.textContent = t.artist;
+  /* capa + cor */
   try {
-    if ('wakeLock' in navigator) {
-      wakeLock = await navigator.wakeLock.request('screen');
-      console.log('Wake Lock ativado');
-    }
-  } catch (err) {
-    console.error('Erro ao ativar Wake Lock:', err);
-  }
-}
-function releaseWakeLock() {
-  if (wakeLock !== null) {
-    try { wakeLock.release(); } catch(e) {}
-    wakeLock = null;
-    console.log('Wake Lock liberado');
-  }
-}
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    releaseWakeLock();
-  } else if (playing) {
-    requestWakeLock();
-  }
-});
-
-/* ------------------ Audio listeners (adicionar uma vez) ------------------ */
-audio.addEventListener('timeupdate', () => {
-  updateProgress();
-  updateTimeDisplay();
-});
-audio.addEventListener('ended', () => {
-  playNextTrack();
-});
-audio.addEventListener('error', (e) => {
-  console.error('Erro no áudio:', e);
-  setStatus('Erro ao reproduzir a faixa', 3000);
-  // Tentar avançar para próxima faixa após curto delay
-  setTimeout(playNextTrack, 1200);
-});
-audio.addEventListener('loadedmetadata', updateTimeDisplay);
-
-/* ------------------ Playlist carregar / renderizar ------------------ */
-async function loadPlaylist(url){
-  if(!url) return;
-  setStatus('Carregando playlist...');
-  playlistData = []; filteredData = []; current = 0;
-  try{
-    const normalized = normalizeRawUrl(url);
-    const res = await fetch(normalized, {cache: "no-store"});
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const json = await res.json();
-    let arr = [];
-    if(Array.isArray(json)) arr = json;
-    else if(Array.isArray(json.tracks)) arr = json.tracks;
-    else throw new Error('Formato inválido: esperar array ou {tracks: []}');
-    // Mapear e normalizar cada faixa
-    playlistData = arr.map(t => ({
-      title: String(t.title || t.name || 'Untitled'),
-      artist: String(t.artist || t.art || 'Unknown'),
-      url: String(t.url || t.src || '')
-    })).filter(t => t.url); // remover faixas sem url
-    if(playlistData.length === 0) throw new Error('Playlist vazia ou sem URLs válidas');
-    // Ordenar alfabético por title (opcional)
-    playlistData.sort((a,b)=> a.title.localeCompare(b.title));
-    filteredData = playlistData.slice();
-    populateArtistFilter();
-    renderPlaylist();
-    current = 0;
-    await loadTrack(current);
-    playing = false;
-    playBtn.textContent = '▶';
-    highlightCurrent();
-    setStatus('Playlist carregada');
-  }catch(err){
-    console.error('Erro ao carregar playlist', err);
-    setStatus('Erro ao carregar playlist', 4000);
-    alert('Erro ao carregar playlist: ' + (err.message || err));
-    // deixar interface vazia
-    playlistEl.innerHTML = '<li style="color:#ccc;padding:12px">Não foi possível carregar a playlist.</li>';
-    titleEl.textContent = 'Falha ao carregar';
-    artistEl.textContent = '';
-    yearEl.textContent = '';
-  }
-}
-
-function populateArtistFilter(){
-  const artists = Array.from(new Set(playlistData.map(p=>p.artist))).sort();
-  artistSelect.innerHTML = '<option value="__all__">Todos</option>';
-  artists.forEach(a=>{
-    const opt=document.createElement('option'); opt.value=a; opt.textContent=a;
-    artistSelect.appendChild(opt);
-  });
-}
-
-function renderPlaylist(){
-  const frag = document.createDocumentFragment();
-  if(!filteredData || filteredData.length===0){
-    const li = document.createElement('li');
-    li.style.color = '#ccc';
-    li.style.padding = '12px';
-    li.textContent = 'Sem faixas nesta playlist.';
-    frag.appendChild(li);
-  } else {
-    filteredData.forEach((t,i)=>{
-      const li = document.createElement('li');
-      li.setAttribute('role','option');
-      li.dataset.index = i;
-      li.innerHTML = `<div style="display:flex;flex-direction:column"><span class="track-title">${escapeHtml(t.title)}</span><span class="track-artist">${escapeHtml(t.artist)}</span></div>`;
-      frag.appendChild(li);
-    });
-  }
-  playlistEl.innerHTML = '';
-  playlistEl.appendChild(frag);
-  highlightCurrent();
-}
-
-/* ------------------ Interação com playlist (click) ------------------ */
-playlistEl.addEventListener('click', (e)=>{
-  const li = e.target.closest('li');
-  if(!li) return;
-  const idx = Number(li.dataset.index);
-  if(Number.isFinite(idx)) {
-    loadTrack(idx).then(()=> play());
-  }
-});
-
-/* ------------------ Carregar faixa (sem recriar audio) ------------------ */
-async function loadTrack(idx){
-  if(!filteredData || filteredData.length===0) return;
-  if(idx < 0 || idx >= filteredData.length) return;
-  current = idx;
-  const track = filteredData[current];
-  try{
-    // trocar src mantendo mesmo objeto audio
-    audio.pause();
-    audio.src = track.url;
-    try { audio.load(); } catch(e) { /* alguns browsers não requerem */ }
-    
-    titleEl.textContent = track.title;
-    artistEl.textContent = track.artist;
-    yearEl.textContent = '';
-    highlightCurrent();
-    setMediaSession(track);
-    // buscar capa (não bloqueia muito)
-    await fetchCover(track.title, track.artist);
-    document.title = `${track.title} - ${track.artist}`;
-    progressFill.style.width = '0%';
-    updateTimeDisplay();
-  }catch(e){
-    console.error('Erro ao carregar faixa', e);
-    setStatus('Erro ao carregar faixa', 3000);
-  }
-}
-
-/* ------------------ Próxima / Anterior ------------------ */
-function playNextTrack(){
-  if(!filteredData || filteredData.length===0) return;
-  if(shuffle){
-    let newIndex;
-    do {
-      newIndex = Math.floor(Math.random() * filteredData.length);
-    } while (newIndex === current && filteredData.length > 1);
-    current = newIndex;
-  } else {
-    current = (current + 1) % filteredData.length;
-  }
-  loadTrack(current);
-  play();
-}
-
-function playPrevTrack(){
-  if(!filteredData || filteredData.length===0) return;
-  if(shuffle){
-    let newIndex;
-    do {
-      newIndex = Math.floor(Math.random() * filteredData.length);
-    } while (newIndex === current && filteredData.length > 1);
-    current = newIndex;
-  } else {
-    current = (current - 1 + filteredData.length) % filteredData.length;
-  }
-  loadTrack(current);
-  play();
-}
-
-/* ------------------ Play / Pause ------------------ */
-function play(){ 
-  if(!audio.src){
-    // tentar carregar a faixa atual
-    if(filteredData && filteredData.length>0){
-      loadTrack(current);
+    const url = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.title)}&format=json`;
+    const img = (await (await fetch(url)).json())?.track?.album?.image?.find(x => x.size === 'extralarge')?.['#text'];
+    if (img) {
+      capa.src = img;
+      disco.style.opacity = 0;
     } else {
-      setStatus('Nada para tocar', 2000);
-      return;
+      capa.src = '';
+      disco.style.opacity = 1;
     }
+  } catch {
+    capa.src = '';
+    disco.style.opacity = 1;
   }
-  audio.play().then(() => {
-    playing = true; 
-    playBtn.textContent = '⏸'; 
-    setStatus('Tocando');
-    requestWakeLock();
-  }).catch(err => {
-    console.error('Erro ao reproduzir:', err);
-    setStatus('Erro ao reproduzir', 3000);
+  markOnly();
+}
+
+/* ---------- PLAY/PAUSE ---------- */
+playBtn.onclick = () => {
+  a.paused ? a.play() : a.pause();
+  updateIcon();
+};
+function updateIcon() {
+  playBtn.innerHTML = a.paused
+    ? '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>'
+    : '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+}
+
+/* ---------- CONTROLES ---------- */
+prev.onclick = () => skip(-1);
+next.onclick = () => skip(1);
+shufBtn.onclick = () => {
+  shuf = !shuf;
+  shufBtn.classList.toggle('on', shuf);
+  loadPl();
+};
+function skip(d) {
+  idx = (idx + d + q.length) % q.length;
+  loadTrack();
+  a.play();
+}
+
+/* ---------- MARCA SÓ QUEM TOCA ---------- */
+function markOnly() {
+  document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx));
+}
+
+/* ---------- BOLHAS ---------- */
+Object.keys(PLAYLISTS).forEach(pl => {
+  const b = document.createElement('span');
+  b.className = 'bubble';
+  b.textContent = pl;
+  b.onclick = () => {
+    document.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    currentPl = pl;
+    loadPl();
+  };
+  if (pl === currentPl) b.classList.add('on');
+  bubbles.append(b);
+});
+
+/* ---------- LOAD PLAYLIST ---------- */
+async function loadPl() {
+  q = await (await fetch(PLAYLISTS[currentPl])).json();
+  if (shuf) q = [...q].sort(_ => Math.random() - .5);
+  idx = 0;
+  renderRoleta();
+  loadTrack();
+  a.pause(); // aguarda play do usuário
+  updateIcon();
+}
+
+/* ---------- ROLETA ---------- */
+function renderRoleta() {
+  roleta.innerHTML = '';
+  q.forEach((t, i) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="mus">${t.title}</span><span class="art">${t.artist}</span>`;
+    li.onclick = () => { idx = i; loadTrack(); a.play(); };
+    roleta.append(li);
   });
+  markOnly();
 }
 
-function pause(){ 
-  audio.pause(); 
-  playing = false; 
-  playBtn.textContent = '▶'; 
-  setStatus('Pausado');
-  releaseWakeLock();
-}
+/* ---------- AUDIO EVENTS ---------- */
+a.onplay = updateIcon;
+a.onpause = updateIcon;
+a.onended = () => { idx = (idx + 1) % q.length; loadTrack(); a.play(); };
 
-/* ------------------ Botões ------------------ */
-playBtn.addEventListener('click', ()=> playing ? pause() : play());
-prevBtn.addEventListener('click', ()=> playPrevTrack());
-nextBtn.addEventListener('click', ()=> playNextTrack());
-shuffleBtn.addEventListener('click', ()=> { 
-  shuffle = !shuffle; 
-  shuffleBtn.style.background = shuffle ? '#cfe' : '';
-  setStatus('Shuffle ' + (shuffle ? 'ON' : 'OFF')); 
-});
-
-/* ------------------ Progress bar (click + touch) ------------------ */
-function updateProgress(){
-  const pct = (audio.currentTime / (audio.duration || 1)) * 100;
-  progressFill.style.width = pct + '%';
-  updateTimeDisplay();
-}
-
-progressWrap.addEventListener('click', (e) => {
-  if(!audio.duration) return;
-  const rect = progressWrap.getBoundingClientRect();
-  const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-  audio.currentTime = pct * audio.duration;
-});
-
-progressWrap.addEventListener('touchstart', (e) => {
-  if(!audio.duration) return;
-  e.preventDefault();
-  isDraggingProgress = true;
-  const rect = progressWrap.getBoundingClientRect();
-  const touch = e.touches[0];
-  const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
-  audio.currentTime = pct * audio.duration;
-});
-
-progressWrap.addEventListener('touchmove', (e) => {
-  if(!isDraggingProgress || !audio.duration) return;
-  e.preventDefault();
-  const rect = progressWrap.getBoundingClientRect();
-  const touch = e.touches[0];
-  const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
-  audio.currentTime = pct * audio.duration;
-});
-
-progressWrap.addEventListener('touchend', () => {
-  isDraggingProgress = false;
-});
-
-/* ------------------ Filter / Artist ------------------ */
-artistSelect.addEventListener('change', ()=>{
-  const artist = artistSelect.value;
-  if(artist === '__all__'){
-    filteredData = playlistData.slice();
-  } else {
-    filteredData = playlistData.filter(t => t.artist === artist);
-  }
-  renderPlaylist();
-  // carregar primeira faixa do filtro
-  current = 0;
-  loadTrack(current);
-  pause();
-  highlightCurrent();
-});
-
-artistClear.addEventListener('click', ()=>{
-  if(playlistData.length===0) return;
-  const now = filteredData[current];
-  artistSelect.value = '__all__';
-  filteredData = playlistData.slice();
-  renderPlaylist();
-  // tentar manter a mesma faixa
-  if(now){
-    const idx = filteredData.findIndex(t => t.title === now.title && t.artist === now.artist && t.url === now.url);
-    if(idx !== -1) current = idx;
-    else current = 0;
-  } else current = 0;
-  loadTrack(current);
-  pause();
-  highlightCurrent();
-});
-
-/* ------------------ Highlight atual ------------------ */
-function highlightCurrent(){
-  const children = playlistEl.children;
-  for(let i=0;i<children.length;i++){
-    const li = children[i];
-    // caso li sem dataset (mensagem de vazio), limpar active
-    const idx = Number(li.dataset.index);
-    li.classList.toggle('active', Number.isFinite(idx) && idx === current);
-  }
-  const active = playlistEl.querySelector('li.active');
-  if(active) {
-    try { active.scrollIntoView({behavior:'smooth',block:'center'}); } catch(e){}
-  }
-}
-
-/* ------------------ Media Session + capa ------------------ */
-function setMediaSession(track, coverUrl = null) {
-  if ("mediaSession" in navigator) {
-    const artworkUrl = coverUrl || currentCoverUrl;
-    try{
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: track.title,
-        artist: track.artist,
-        album: "Minha Playlist",
-        artwork: [
-          { src: artworkUrl, sizes: "512x512", type: "image/png" }
-        ]
-      });
-      navigator.mediaSession.setActionHandler('play', ()=> play());
-      navigator.mediaSession.setActionHandler('pause', ()=> pause());
-      navigator.mediaSession.setActionHandler('previoustrack', ()=> playPrevTrack());
-      navigator.mediaSession.setActionHandler('nexttrack', ()=> playNextTrack());
-    }catch(e){
-      console.warn('MediaSession falhou:', e);
-    }
-  }
-}
-
-/* ------------------ Buscar capa (Last.fm) com cache no localStorage ------------------ */
-async function fetchCover(title, artist){
-  const key = safeKey('cover', artist + '_' + title);
-  const cached = localStorage.getItem(key);
-  
-  if(cached){ 
-    coverEl.style.backgroundImage = `url(${cached})`;
-    currentCoverUrl = cached;
-    setMediaSession(filteredData[current], cached);
-    return; 
-  }
-  
-  try{
-    // Nota: se quiser, coloque sua própria API / chave aqui.
-    const apiKey = '685a04193652e98c9e5e598dc6d306ab';
-    const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${apiKey}&artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(title)}&format=json`);
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const data = await res.json();
-    const url = data?.track?.album?.image?.slice(-1)[0]?.['#text'] || 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
-    
-    coverEl.style.backgroundImage = `url(${url})`;
-    currentCoverUrl = url;
-    
-    setMediaSession(filteredData[current], url);
-    
-    yearEl.textContent = data?.track?.wiki?.published ? new Date(data.track.wiki.published).getFullYear() : '';
-    try { localStorage.setItem(key, url); } catch(e){}
-  }catch(e){
-    console.error('Erro ao buscar capa:', e);
-    coverEl.style.backgroundImage = `url(https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png)`;
-    currentCoverUrl = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Music_icon.png';
-    setMediaSession(filteredData[current], currentCoverUrl);
-    yearEl.textContent = '';
-  }
-}
-
-/* ------------------ Inicialização ------------------ */
-playlistSelect.addEventListener('change', async (e)=>{
-  const v = e.target.value;
-  playlistUrl = v;
-  localStorage.setItem('selectedPlaylistUrl', playlistUrl);
-  await loadPlaylist(playlistUrl);
-});
-
-(async function init(){
-  const saved = localStorage.getItem('selectedPlaylistUrl');
-  if(saved){ 
-    playlistUrl = saved;
-    if(![...playlistSelect.options].some(o=>o.value===playlistUrl)){
-      const opt=document.createElement('option'); 
-      opt.value=playlistUrl; 
-      
-      // inserir antes da última opção para manter seleção visível
-      playlistSelect.add(opt, playlistSelect.options[playlistSelect.options.length-1]);
-    }
-    playlistSelect.value = playlistUrl;
-  } else {
-    playlistSelect.value = playlistSelect.value || playlistUrl;
-  }
-  await loadPlaylist(playlistUrl);
-})();
-  
-  if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js").then(() => {
-    console.log("Service Worker registrado!");
-  }).catch(err => {
-    console.error("Falha ao registrar o SW:", err);
-  });
-}
+/* ---------- START ---------- */
+loadPl();
 </script>
 </body>
 </html>
