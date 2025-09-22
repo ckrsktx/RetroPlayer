@@ -225,11 +225,14 @@ function renderRoleta() {
   q.forEach((t, i) => {
     const li = document.createElement('li');
     li.innerHTML = `<span class="mus">${t.title}</span><span class="art">${t.artist}</span>`;
-    li.onclick = () => { idx = i; loadTrack(); play(); }; // <-- play ao clicar
+    li.onclick = () => { idx = i; loadTrack(); play(); };
     roleta.append(li);
   });
   markOnly();
+  // >>> SCROLLA AO TOPO <<<
+  roleta.scrollTop = 0;
 }
+
 
 /* ---------- AUTO-PRÓXIMO (sem parar) ---------- */
 a.onended = () => {
