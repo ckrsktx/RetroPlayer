@@ -50,11 +50,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_mayday_01_mayday.m4a"
   },
   {
-    "artist": "Smash Mouth",
-    "title": "Then the Morning Comes",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashmouth_al032_1603-03thenthemorningcom.m4a"
-  },
-  {
     "artist": "Three Days Grace",
     "title": "The Good Life",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_hb201006_04_thegoodlife.m4a"
@@ -400,29 +395,9 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_meteora_07_faint.m4a"
   },
   {
-    "artist": "Pearl Jam",
-    "title": "Alive",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/pearljam_al314_alive.m4a"
-  },
-  {
-    "artist": "Soundtrack",
-    "title": "Summer Breeze",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtrack/iknowwhatyoudidla_iknowwhatyoudidla_02summerbreeze.m4a"
-  },
-  {
     "artist": "Nine Inch Nails",
     "title": "Head Like a Hole",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nineinchnails_al323_headlikeahole.m4a"
-  },
-  {
-    "artist": "Smashing Pumpkins",
-    "title": "Cherub Rock",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al0361_795-05cherubrock.m4a"
-  },
-  {
-    "artist": "Ministry",
-    "title": "Jesus Built My Hotrod",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/ministry_psalm69_05_jesusbuiltmyhotrod.m4a"
   },
   {
     "artist": "Staind",
@@ -430,64 +405,14 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staind_al038_1615-08outsidestudiovers.m4a"
   },
   {
-    "artist": "Prodigy",
-    "title": "Smack My Bitch Up Clean",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigy_al331_smackmybitchupcle.m4a"
-  },
-  {
-    "artist": "Alice in Chains",
-    "title": "Angry Chair",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/aliceinchains_al0361_795-08angrychair.m4a"
-  },
-  {
-    "artist": "Alice in Chains",
-    "title": "Don't Follow",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/aliceinchains_al0362_796-16dontfollow.m4a"
-  },
-  {
-    "artist": "Cult",
-    "title": "She Sells Sanctuary",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/cult_al310_shesellssanctuary.m4a"
-  },
-  {
-    "artist": "Candlebox",
-    "title": "Far Behind",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/candlebox_al313_farbehind.m4a"
-  },
-  {
-    "artist": "Blink-182",
-    "title": "Adam's Song",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al033_1606-06adamssong.m4a"
-  },
-  {
-    "artist": "Stone Temple Pilots",
-    "title": "Lady Picture Show",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/stonetemplepilots_al0342_709-09ladypictureshow.m4a"
-  },
-  {
     "artist": "White Zombie",
     "title": "More Human Than Human",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/whitezombie_al0349_699-09morehumanthanhuma.m4a"
   },
   {
-    "artist": "Helmet",
-    "title": "Unsung",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/helmet_al0340_678-04unsung.m4a"
-  },
-  {
-    "artist": "Stone Temple Pilots",
-    "title": "Down",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/stonetemplepilots_al0356_733-07down.m4a"
-  },
-  {
     "artist": "Korn",
     "title": "Got the Life",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/korn_al0354_725-05gotthelife.m4a"
-  },
-  {
-    "artist": "Prodigy",
-    "title": "Firestarter",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigy_al327_firestarter.m4a"
   },
   {
     "artist": "311",
@@ -523,20 +448,5 @@
     "artist": "Cold",
     "title": "No One",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/cold_al038_1614-07noone.m4a"
-  },
-  {
-    "artist": "Primus",
-    "title": "Jerry Was a Race Car Driver",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/primus_al329_jerrywasaracecard.m4a"
-  },
-  {
-    "artist": "Living Colour",
-    "title": "Time's Up",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/livingcolour_timesup_01_timesup.m4a"
-  },
-  {
-    "artist": "Stone Temple Pilots",
-    "title": "Vasoline",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/stonetemplepilots_al0347_693-09vasoline.m4a"
   }
 ]
