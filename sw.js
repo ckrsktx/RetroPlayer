@@ -1,34 +1,30 @@
-// Retro Player – Service Worker (off-line + wake-lock)
-const CACHE = 'retro-v1';
-const urlsToCache = ['.', 'manifest.json'];
+const CACHE = "retro-player-v1";
+const FILES = [
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/sw.js"
+];
 
-// instalação/off-line
-self.addEventListener('install', e => {
+// instala
+self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE).then(c => c.addAll(FILES))
   );
-  self.skipWaiting(); // ativa imediatamente
 });
 
-self.addEventListener('activate', e => {
-  e.waitUntil(self.clients.claim()); // assume todas as abas
+// ativa
+self.addEventListener("activate", e => {
+  e.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
+    )
+  );
 });
 
-// off-line first
-self.addEventListener('fetch', e => {
+// fetch
+self.addEventListener("fetch", e => {
   e.respondWith(
-    caches.match(e.request).then(resp => resp || fetch(e.request))
+    caches.match(e.request).then(r => r || fetch(e.request))
   );
-});
-
-// mantém CPU ativa quando a tela apaga (Wake Lock nativo)
-self.addEventListener('message', async ev => {
-  if (ev.data === 'acquire-wake-lock') {
-    try {
-      const lock = await navigator.wakeLock.request('screen');
-      lock.addEventListener('release', () => console.log('WakeLock released'));
-    } catch (e) {
-      console.warn('Wake Lock não disponível', e);
-    }
-  }
 });
