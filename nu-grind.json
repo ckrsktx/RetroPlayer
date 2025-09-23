@@ -1,5 +1,80 @@
 [
   {
+    "artist": "Avenged Sevenfold",
+    "title": "Nightmare",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/avengedsevenfol_hb201021_04_nightmare.m4a"
+  },
+  {
+    "artist": "Nine Inch Nails",
+    "title": "The Day the World Went Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/nineinchnails_thefragile_02_thedaytheworldwentaway.m4a"
+  },
+  {
+    "artist": "Kid Rock",
+    "title": "Cowboy Clean Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kidrock_al0356_732-08cowboycleanedit.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Words as Weapons",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_hb201419_06_wordsasweapons.m4a"
+  },
+  {
+    "artist": "Korn",
+    "title": "Freak on a Leash Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/korn_al0355_728-03freakonaleashclea.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "Heaven Knows",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklesst_hb201347_02_heavenknows.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Denial",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sevendust_al0356_732-12denial.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Waffle Radio Mix",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sevendust_al0357_735-11waffleradiomix.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Decay",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/sevendust_hb201303_01_decay.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "Mayday",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_mayday_01_mayday.m4a"
+  },
+  {
+    "artist": "Smash Mouth",
+    "title": "Then the Morning Comes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashmouth_al032_1603-03thenthemorningcom.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "The Good Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_hb201006_04_thegoodlife.m4a"
+  },
+  {
+    "artist": "Static-X",
+    "title": "Push It Radio Death Trip",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staticx_al0356_732-17pushitradiodeatht.m4a"
+  },
+  {
+    "artist": "System of a Down",
+    "title": "Sugar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/systemofadown_al323_sugar.m4a"
+  },
+  {
+    "artist": "Blink-182",
+    "title": "What's My Age Again Album",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al0355_730-02whatsmyageagainal.m4a"
+  },
+  {
     "artist": "Foo Fighters",
     "title": "Rescued",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_buthereweare_1_rescued.m4a"
