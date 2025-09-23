@@ -185,11 +185,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/braxtontoni_chrgold49_unbreakmyheartfad.m4a"
   },
   {
-    "artist": "Joan Osborne",
-    "title": "One of Us",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/osbornejoan_ch0310_oneofus.m4a"
-  },
-  {
     "artist": "The Cranberries",
     "title": "Zombie",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/cranberries_al312_zombie.m4a"
@@ -208,11 +203,6 @@
     "artist": "Rod Stewart",
     "title": "Rhythm of My Heart",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/stewartrod_chrgold27_rhythmofmyheart.m4a"
-  },
-  {
-    "artist": "Semisonic",
-    "title": "Closing Time",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/semisonic_ch0316_closingtime.m4a"
   },
   {
     "artist": "Will Smith",
@@ -249,110 +239,109 @@
     "title": "I'm Too Sexy",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/rightsaidfred_up_01_imtoosexy.m4a"
   },
-    {
-      "artist": "K-Ci & JoJo",
-      "title": "All My Life",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/kciandjojo_chrgold55_allmylifeweddingm.m4a"
-    },
-    {
-      "artist": "4 Non Blondes",
-      "title": "What's Up",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/4nonblondes_ch0327_whatsup.m4a"
-    },
-    {
-      "artist": "Bonnie Raitt",
-      "title": "I Can't Make You Love Me",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/raittbonnie_chrgold37_icantmakeyoulovem.m4a"
-    },
-    {
-      "artist": "Dave Matthews Band",
-      "title": "Ants Marching",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/matthewsdave_ch0310_antsmarching.m4a"
-    },
-    {
-      "artist": "Lisa Stansfield",
-      "title": "All Around the World",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/stansfieldlisa_affection_5_allaroundtheworld.m4a"
-    },
-    {
-      "artist": "LeAnn Rimes",
-      "title": "How Do I Live",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/rimesleann_ch0313_howdoilive.m4a"
-    },
-    {
-      "artist": "Fastball",
-      "title": "The Way",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/fastball_al0346_722-07theway.m4a"
-    },
-    {
-      "artist": "Sheryl Crow",
-      "title": "All I Wanna Do (Remix)",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/crowsheryl_chrgold51_alliwannadoremix.m4a"
-    },
-    {
-      "artist": "Haddaway",
-      "title": "What Is Love",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/haddaway_ch0349_whatislove.m4a"
-    },
-    {
-      "artist": "Quad City DJ's",
-      "title": "C'mon N' Ride It (The Train)",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/quadcitydjs_ch036_cmonnrideitthetra.m4a"
-    },
-    {
-      "artist": "CeCe Peniston",
-      "title": "Finally",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/penistoncece_ch037_finally.m4a"
-    },
-    {
-      "artist": "Meredith Brooks",
-      "title": "Bitch",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/brooksmeredith_ch0313_bitch.m4a"
-    },
-    {
-      "artist": "Shania Twain",
-      "title": "That Don't Impress Me Much",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/twainshania_ch0320_thatdontimpressme.m4a"
-    },
-    {
-      "artist": "Nelson",
-      "title": "Love and Affection",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/nelson_aftertherain_01_cantlivewithoutyourloveandaffection.m4a"
-    },
-    {
-      "artist": "Michael Bolton",
-      "title": "When a Man Loves a Woman",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boltonmichael_chrgold37_whenamanlovesawom.m4a"
-    },
-    
-    {
-      "artist": "Corona",
-      "title": "The Rhythm of the Night",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/corona_ch0310_therhythmofthenig.m4a"
-    },
-    {
-      "artist": "EMF",
-      "title": "Unbelievable",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/emf_ch035_unbelievable.m4a"
-    },
-    {
-      "artist": "Ace of Base",
-      "title": "All That She Wants",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aceofbase_chrgold50_allthatshewants.m4a"
-    },
-    {
-      "artist": "UB40",
-      "title": "Can't Help Falling in Love",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/ub40_chrgold33_canthelpfallingin.m4a"
-    },
-    {
-      "artist": "Mr. Big",
-      "title": "To Be With You",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/mrbig_chrgold45_tobewithyou.m4a"
-    },
-    {
-      "artist": "Marc Anthony",
-      "title": "I Need to Know",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/anthonymarc_chrgold59_ineedtoknow.m4a"
-    },
-  ]
+  {
+    "artist": "K-Ci & JoJo",
+    "title": "All My Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/kciandjojo_chrgold55_allmylifeweddingm.m4a"
+  },
+  {
+    "artist": "4 Non Blondes",
+    "title": "What's Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/4nonblondes_ch0327_whatsup.m4a"
+  },
+  {
+    "artist": "Bonnie Raitt",
+    "title": "I Can't Make You Love Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/raittbonnie_chrgold37_icantmakeyoulovem.m4a"
+  },
+  {
+    "artist": "Dave Matthews Band",
+    "title": "Ants Marching",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/matthewsdave_ch0310_antsmarching.m4a"
+  },
+  {
+    "artist": "Lisa Stansfield",
+    "title": "All Around the World",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/stansfieldlisa_affection_5_allaroundtheworld.m4a"
+  },
+  {
+    "artist": "LeAnn Rimes",
+    "title": "How Do I Live",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/rimesleann_ch0313_howdoilive.m4a"
+  },
+  {
+    "artist": "Fastball",
+    "title": "The Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/fastball_al0346_722-07theway.m4a"
+  },
+  {
+    "artist": "Sheryl Crow",
+    "title": "All I Wanna Do (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/crowsheryl_chrgold51_alliwannadoremix.m4a"
+  },
+  {
+    "artist": "Haddaway",
+    "title": "What Is Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/haddaway_ch0349_whatislove.m4a"
+  },
+  {
+    "artist": "Quad City DJ's",
+    "title": "C'mon N' Ride It (The Train)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/quadcitydjs_ch036_cmonnrideitthetra.m4a"
+  },
+  {
+    "artist": "CeCe Peniston",
+    "title": "Finally",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/penistoncece_ch037_finally.m4a"
+  },
+  {
+    "artist": "Meredith Brooks",
+    "title": "Bitch",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/brooksmeredith_ch0313_bitch.m4a"
+  },
+  {
+    "artist": "Shania Twain",
+    "title": "That Don't Impress Me Much",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/twainshania_ch0320_thatdontimpressme.m4a"
+  },
+  {
+    "artist": "Nelson",
+    "title": "Love and Affection",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/nelson_aftertherain_01_cantlivewithoutyourloveandaffection.m4a"
+  },
+  {
+    "artist": "Michael Bolton",
+    "title": "When a Man Loves a Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boltonmichael_chrgold37_whenamanlovesawom.m4a"
+  },
+  {
+    "artist": "Corona",
+    "title": "The Rhythm of the Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/corona_ch0310_therhythmofthenig.m4a"
+  },
+  {
+    "artist": "EMF",
+    "title": "Unbelievable",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/emf_ch035_unbelievable.m4a"
+  },
+  {
+    "artist": "Ace of Base",
+    "title": "All That She Wants",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aceofbase_chrgold50_allthatshewants.m4a"
+  },
+  {
+    "artist": "UB40",
+    "title": "Can't Help Falling in Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/ub40_chrgold33_canthelpfallingin.m4a"
+  },
+  {
+    "artist": "Mr. Big",
+    "title": "To Be With You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/mrbig_chrgold45_tobewithyou.m4a"
+  },
+  {
+    "artist": "Marc Anthony",
+    "title": "I Need to Know",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/anthonymarc_chrgold59_ineedtoknow.m4a"
+  }
+]
