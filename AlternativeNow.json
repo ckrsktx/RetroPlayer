@@ -1,43 +1,8 @@
 [
   {
-    "title": "Plastic Boxes",
-    "artist": "Highly Suspect",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/highlysuspect_asabovesobelow_05_plasticboxes.m4a"
-  },
-  {
     "title": "Showtime",
     "artist": "Catfish and the Bottlemen",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/catfishandthebottlemen_showtimesingle_1_showtime.m4a"
-  },
-  {
-    "title": "Panoramic View",
-    "artist": "AWOLNATION",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/awolnation_panoramicviewsingle_01_panoramicview.m4a"
-  },
-  {
-    "title": "Houdini",
-    "artist": "Eminem",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/eminem_houdinisingle_01_houdiniclean.m4a"
-  },
-  {
-    "title": "Summertime Voodoo",
-    "artist": "Highly Suspect",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/highlysuspect_asabovesobelow_01_summertimevoodoo.m4a"
-  },
-  {
-    "title": "Take Me In",
-    "artist": "blink-182",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_onemoretimepart2_27_takemeinclean.m4a"
-  },
-  {
-    "title": "Dark Matter",
-    "artist": "Pearl Jam",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/pearljam_darkmatter_4_darkmatter.m4a"
-  },
-  {
-    "title": "Toksik",
-    "artist": "Starset",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/starset_toksiksingle_19_toksik.m4a"
   },
   {
     "title": "Savage",
@@ -60,11 +25,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/turnstile_neverenough_01_neverenough.m4a"
   },
   {
-    "title": "Aneurysm",
-    "artist": "Nirvana",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nirvana_smellsliketeens_03_aneurysm.m4a"
-  },
-  {
     "title": "Everything You Want",
     "artist": "Vertical Horizon",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/verticalhorizon_al031_1602-03everythingyouwant.m4a"
@@ -85,19 +45,9 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/idles_tangk_02_gifthorseclean.m4a"
   },
   {
-    "title": "Up All Night",
-    "artist": "Bay James",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/bayjames_changesallthetime_09_upallnight.m4a"
-  },
-  {
     "title": "Stuck in My Head",
     "artist": "Sleep Theory",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sleeptheory_stuckinmyheadsingle_01_stuckinmyhead.m4a"
-  },
-  {
-    "title": "Today's Song",
-    "artist": "Foo Fighters",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_todayssongsingle_01_todayssong.m4a"
   },
   {
     "title": "God Needs the Devil",
@@ -108,11 +58,6 @@
     "title": "Every Little Thing I Say I Do",
     "artist": "Dayglow",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/dayglow_everylittlethingisayidosingle_01_everylittlethingisayido.m4a"
-  },
-  {
-    "title": "The Death of Peace of Mind (Rock Mix)",
-    "artist": "Bad Omens",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/badomens__01_thedeathofpeaceofmindrockmix.m4a"
   },
   {
     "title": "Slow and Easy",
@@ -130,11 +75,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/arrowsinaction_ithinkivebeenherebefore_01_cheekbones.m4a"
   },
   {
-    "title": "Heavy is the Crown",
-    "artist": "Linkin Park",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_04_heavyisthecrow.m4a"
-  },
-  {
     "title": "Get the Message",
     "artist": "Paradox The",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paradoxthe_getthemessagesingle_01_getthemessage.m4a"
@@ -143,11 +83,6 @@
     "title": "Bloom Baby Bloom",
     "artist": "Wolf Alice",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/wolfalice_theclearing_02_bloombabybloom.m4a"
-  },
-  {
-    "title": "Bobby Sox",
-    "artist": "Green Day",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/greenday_saviors_03_bobbysox.m4a"
   },
   {
     "title": "Downstairs",
@@ -180,19 +115,9 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hardy_quit_05_psychoclean.m4a"
   },
   {
-    "title": "The Emptiness Machine",
-    "artist": "Linkin Park",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_02_theemptinessmachine.m4a"
-  },
-  {
     "title": "Catch These Fists",
     "artist": "Wet Leg",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/wetleg_moisturizer_03_catchthesefists.m4a"
-  },
-  {
-    "title": "All My Life",
-    "artist": "Falling In Reverse",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/fallinginreverse_popularmonster_03_allmylife.m4a"
   },
   {
     "title": "This Movie Sucks",
@@ -203,11 +128,6 @@
     "title": "Good Things",
     "artist": "Ekoh Lospirit",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/ekohlospirit_pressure_05_goodthingsclean.m4a"
-  },
-  {
-    "title": "Hell Is Empty",
-    "artist": "Memphis May Fire",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/memphismayfire_shapeshifter_05_hellisempty.m4a"
   },
   {
     "title": "Barbarian",
@@ -229,39 +149,11 @@
     "duration": "4:15"
   },
   {
-    "title": "Even If It Kills Me",
-    "artist": "Papa Roach",
-    "album": "Even If It Kills Me",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_evenifitkillsmesingle_01_evenifitkillsme.m4a",
-    "duration": "3:28"
-  },
-  {
-    "title": "As Alive As You Need Me...",
-    "artist": "Nine Inch Nails",
-    "album": "Tron: Ares (OST)",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nineinchnails_tronaresoriginalmotionpicturesoundtrack_01_asaliveasyouneedmetoberadioedit.m4a",
-    "duration": "3:51"
-  },
-  {
-    "title": "Make It All Right",
-    "artist": "The Offspring",
-    "album": "Supercharged",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/offspringthe_supercharged_04_makeitallright.m4a",
-    "duration": "3:33"
-  },
-  {
     "title": "Too Sweet",
     "artist": "Hozier",
     "album": "Unreal Unearth: Unheard",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/hozier_unrealunearthunheard_01_toosweetradioedit.m4a",
     "duration": "4:12"
-  },
-  {
-    "title": "Hot Stuff",
-    "artist": "Blue October",
-    "album": "Hot Stuff",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blueoctober_hotstuffsingle_01_hotstuff.m4a",
-    "duration": "3:45"
   },
   {
     "title": "Murder on the Dancefloor...",
@@ -299,32 +191,11 @@
     "duration": "3:28"
   },
   {
-    "title": "Easy Come Easy Go",
-    "artist": "The All-American Rejects",
-    "album": "Easy Come Easy Go",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/allamericanrejectsthe_easycomeeasygosingle_01_easycomeeasygo.m4a",
-    "duration": "3:51"
-  },
-  {
-    "title": "I Will Not Break",
-    "artist": "Disturbed",
-    "album": "I Will Not Break",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_iwillnotbreaksingle_01_iwillnotbreak.m4a",
-    "duration": "3:42"
-  },
-  {
     "title": "Champagne",
     "artist": "Declan McKenna",
     "album": "Champagne, That’s Life",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/mckennadeclan_champagnethatslife_01_champagne.m4a",
     "duration": "4:15"
-  },
-  {
-    "title": "Awaken",
-    "artist": "Breaking Benjamin",
-    "album": "Awaken",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/breakingbenjamin_awakensingle_01_awaken.m4a",
-    "duration": "3:28"
   },
   {
     "title": "Lucy",
@@ -348,25 +219,11 @@
     "duration": "4:12"
   },
   {
-    "title": "Dilemma",
-    "artist": "Green Day",
-    "album": "Saviors",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/greenday_saviors_14_dilemma.m4a",
-    "duration": "3:45"
-  },
-  {
     "title": "Rainbow",
     "artist": "Cage the Elephant",
     "album": "Neon Pill",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/cagetheelephant_neonpill_01_rainbow.m4a",
     "duration": "4:03"
-  },
-  {
-    "title": "Leave a Light On (Talk Away...",
-    "artist": "Papa Roach",
-    "album": "Ego Trip",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_egotrip_10_leavealightontalkawaythedark.m4a",
-    "duration": "3:29"
   },
   {
     "title": "Not Sorry",
@@ -418,39 +275,11 @@
     "duration": "3:45"
   },
   {
-    "title": "After Life",
-    "artist": "Evanescence",
-    "album": "After Life",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/evanescence_afterlifefromthenetflixseriesdevilmaycry_01_afterlifefromthenetflixseriesdevilmaycry.m4a",
-    "duration": "3:42"
-  },
-  {
     "title": "Car Song",
     "artist": "Atarist",
     "album": "Car Song",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ataristhe_carsongsingle_01_carsong.m4a",
     "duration": "4:15"
-  },
-  {
-    "title": "Feels Like I'm Falling in Love",
-    "artist": "Coldplay",
-    "album": "Moon Music",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/coldplay_moonmusic_02_feelslikeimfallinginloveradioedit.m4a",
-    "duration": "3:28"
-  },
-  {
-    "title": "Killing Fields",
-    "artist": "Shinedown",
-    "album": "Killing Fields",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_killingfieldssingle_01_killingfields.m4a",
-    "duration": "3:51"
-  },
-  {
-    "title": "Under You",
-    "artist": "Foo Fighters",
-    "album": "But Here We Are",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_buthereweare_02_underyou.m4a",
-    "duration": "3:33"
   },
   {
     "title": "Make My Country Rock",
@@ -474,32 +303,11 @@
     "duration": "4:03"
   },
   {
-    "title": "Landmines",
-    "artist": "Sum 41",
-    "album": "Landmines",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/sum41_landminessingle_01_landmines.m4a",
-    "duration": "3:29"
-  },
-  {
     "title": "The Weather",
     "artist": "All Time Low",
     "album": "The Weather",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/alltimelow_theweathersingle_01_theweatherclean.m4a",
     "duration": "3:31"
-  },
-  {
-    "title": "Looking Out for #1",
-    "artist": "The Offspring",
-    "album": "Supercharged",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/offspringthe_supercharged_01_lookingoutfor1.m4a",
-    "duration": "4:15"
-  },
-  {
-    "title": "All in My Head",
-    "artist": "Modern Rock Radio November 2024",
-    "album": "All in My Head",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/_modernrockradionovember2024_02_allinmyheadclean.m4a",
-    "duration": "4:15"
   },
   {
     "title": "Ripple",
@@ -550,14 +358,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/darethe_girlssingle_01_girls.m4a",
     "duration": "3:29"
   },
-
-  {
-        "title": "Emergência Rock Version",
-        "artist": "Sleep Token",
-        "album": "Even in Arcadia",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sleeptoken_eveninarcadia_02_emergencerockversion.m4a",
-        "duration": "3:42"
-    },
     {
         "title": "Never End",
         "artist": "Justice",
@@ -580,25 +380,11 @@
         "duration": "3:51"
     },
     {
-        "title": "Satanized",
-        "artist": "Ghost",
-        "album": "Skeleta",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ghost_skeleta_03_satanizedradioedit.m4a",
-        "duration": "3:33"
-    },
-    {
         "title": "Love",
         "artist": "OK Go",
         "album": "And the Adjacent Possible",
         "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/okgo_andtheadjacentpossible_03_love.m4a",
         "duration": "4:12"
-    },
-    {
-        "title": "Feel Like That",
-        "artist": "Sublime with Stick Figure",
-        "album": "Feel Like That",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/sublimestickfigure_feellikethatsingle_01_feellikethatradioedit.m4a",
-        "duration": "3:45"
     },
     {
         "title": "Lost in Space",
@@ -650,25 +436,11 @@
         "duration": "3:47"
     },
     {
-        "title": "Apologies",
-        "artist": "Three Days Grace",
-        "album": "Alienation",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_alienation_02_apologies.m4a",
-        "duration": "3:31"
-    },
-    {
         "title": "Blurry Lights",
         "artist": "Ax and the Hatchetmen",
         "album": "Blurry Lights",
         "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/axandthehatchetmen_blurrylightssingle_01_blurrylights.m4a",
         "duration": "3:52"
-    },
-    {
-        "title": "Up from the Bottom",
-        "artist": "Linkin Park",
-        "album": "From Zero (Deluxe Edition)",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/linkinpark_fromzerodeluxeedition_12_upfromthebottom.m4a",
-        "duration": "3:29"
     },
     {
         "title": "World Apart",
@@ -699,13 +471,6 @@
         "duration": "3:44"
     },
     {
-        "title": "Rejects",
-        "artist": "Good Charlotte",
-        "album": "Motel Du Cap",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/goodcharlotte_motelducap_02_rejects.m4a",
-        "duration": "3:39"
-    },
-    {
         "title": "Above the Lake",
         "artist": "James and the Cold Gun",
         "album": "Face in the Mirror",
@@ -732,19 +497,6 @@
         "album": "Bad Apple",
         "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/whitcombcameron_badapple_01_badapple.m4a",
         "duration": "3:25"
-    },
-    {
-        "title": "Ensenada",
-        "artist": "Sublime",
-        "album": "Ensenada",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sublime_ensenadasingle_01_ensenada.m4a",
-        "duration": "4:18"
-    },
-    {
-        "title": "Like a Lullaby",
-        "artist": "Third Eye Blind",
-        "album": "Like a Lullaby",
-        "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/thirdeyeblind_likealullabysingle_01_likealullaby.m4a",
-        "duration": "4:05"
     }
+    
 ]
