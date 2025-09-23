@@ -1,5 +1,95 @@
 [
   {
+    "artist": "Foo Fighters",
+    "title": "Rescued",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_buthereweare_1_rescued.m4a"
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "Waiting on a War",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_medicineatmidnight_04_waitingonawar.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Survivor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_versatile_9_survivor.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Change in the House of Flies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_al034_1608-07changeinthehouseo.m4a"
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "The Glass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_butherewearesingle_05_theglass.m4a"
+  },
+  {
+    "artist": "Bad Omens",
+    "title": "Specter Radio Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/badomens_impose_02_specterradioedit.m4a"
+  },
+  {
+    "artist": "Mt. Joy",
+    "title": "Lucy Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/mtjoy_hopewehavefun_07_lucyclean.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Infinite Source",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_privatemusic_04_infinitesource.m4a"
+  },
+  {
+    "artist": "Royal Blood",
+    "title": "Trouble's Coming",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/royalblood_troublescomingsingle_1_troublescoming.m4a"
+  },
+  {
+    "artist": "Ayron Jones",
+    "title": "Mercy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/jonesayron_mercysingle_1_mercy.m4a"
+  },
+  {
+    "artist": "Jelly Roll",
+    "title": "Dead Man Walking",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/jellyroll_balladsofthebroken_01_deadmanwalking.m4a"
+  },
+  {
+    "artist": "Ghost & Def Leppard",
+    "title": "Spillways",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ghostdefleppard_spillwayssingle_01_spillways.m4a"
+  },
+  {
+    "artist": "Bad Wolves",
+    "title": "Sober",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/badwolves_nation_7_sober.m4a"
+  },
+  {
+    "artist": "Volbeat",
+    "title": "Die to Live",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/volbeat_rewindreplayrebound_01_dietolive.m4a"
+  },
+  {
+    "artist": "The Lumineers",
+    "title": "A Hole Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/lumineersthe_automatic_02_aholeclean.m4a"
+  },
+  {
+    "artist": "All Time Low",
+    "title": "The Weather Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/alltimelow_theweathersingle_01_theweatherclean.m4a"
+  },
+  {
+    "artist": "Hardy",
+    "title": "Jack Clean Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hardy_jacksingle_01_jackcleanedit.m4a"
+  },
+  {
+    "artist": "AJR",
+    "title": "Betty",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/ajr_bettysingle_01_betty.m4a"
+  },
+  {
     "artist": "Metallica",
     "title": "72 Seasons",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/metallica_72seasons_1_72seasons.m4a"
