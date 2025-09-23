@@ -1,13 +1,143 @@
 [
   {
-    "artist": "Fatboy Slim",
-    "title": "Praise You",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/fatboyslim_al312_praiseyou.m4a"
+    "artist": "George Michael",
+    "title": "Freedom 90",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/michaelgeorge_listenwithoutpr_02_freedom90.m4a"
   },
   {
-    "artist": "Collective Soul",
-    "title": "Shine",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/collectivesoul_ch039_shine.m4a"
+    "artist": "Whitney Houston",
+    "title": "I'm Every Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/houstonwhitney_chrgold14_imeverywoman.m4a"
+  },
+  {
+    "artist": "U2",
+    "title": "One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/u2_ch0352_one.m4a"
+  },
+  {
+    "artist": "Rod Stewart",
+    "title": "Downtown Train",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/stewartrod_chrgold27_downtowntrain.m4a"
+  },
+  {
+    "artist": "Damn Yankees",
+    "title": "High Enough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/damnyankees_ch034_highenough.m4a"
+  },
+  {
+    "artist": "Poe",
+    "title": "Angry Johnny",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/poe_al321_angryjohnny.m4a"
+  },
+  {
+    "artist": "Jon Secada",
+    "title": "Just Another Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/secadajon_chrgold45_justanotherday.m4a"
+  },
+  {
+    "artist": "Marc Cohn",
+    "title": "Walking in Memphis",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/cohnmarc_chrgold44_walkinginmemphis.m4a"
+  },
+  {
+    "artist": "The Cranberries",
+    "title": "Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/cranberriesthe_ch0349_dreams.m4a"
+  },
+  {
+    "artist": "Bryan Adams",
+    "title": "(Everything I Do) I Do It For You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/adamsbryan_chrgold01_everythingidoidoi.m4a"
+  },
+  {
+    "artist": "Paperboy",
+    "title": "Ditty",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/paperboy_ch0360_ditty.m4a"
+  },
+  {
+    "artist": "DJ Jazzy Jeff & The Fresh Prince",
+    "title": "Summertime",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/djjazzyjeffandthe_ch0363_summertime.m4a"
+  },
+  {
+    "artist": "Gin Blossoms",
+    "title": "Found Out About You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/ginblossoms_ch0349_foundoutaboutyou.m4a"
+  },
+  {
+    "artist": "DNA feat. Suzanne Vega",
+    "title": "Tom's Diner",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/dna_ch034_tomsdiner.m4a"
+  },
+  {
+    "artist": "Everything",
+    "title": "Hooch",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/everything_ch0317_hooch.m4a"
+  },
+  {
+    "artist": "Belly",
+    "title": "Feed the Tree",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/belly_al323_feedthetree.m4a"
+  },
+  {
+    "artist": "Republica",
+    "title": "Ready to Go",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/republica_al336_readytogosingleve.m4a"
+  },
+  {
+    "artist": "Technotronic",
+    "title": "Pump Up the Jam",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/technotronic_ch037_pumpupthejam.m4a"
+  },
+  {
+    "artist": "Deee-Lite",
+    "title": "Groove Is in the Heart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/deeelite_ch034_grooveisinthehear.m4a"
+  },
+  {
+    "artist": "Salt-N-Pepa",
+    "title": "Let's Talk About Sex",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/saltnpepa_ch0361_letstalkaboutsex.m4a"
+  },
+  {
+    "artist": "Len",
+    "title": "Steal My Sunshine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/len_al313_stealmysunshine.m4a"
+  },
+  {
+    "artist": "Melissa Etheridge",
+    "title": "Come to My Window",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/etheridgemelissa_ch0353_cometomywindow.m4a"
+  },
+  {
+    "artist": "Donna Lewis",
+    "title": "I Love You Always Forever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lewisdonna_chrgold54_iloveyoualwaysfor.m4a"
+  },
+  {
+    "artist": "Toad The Wet Sprocket",
+    "title": "All I Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/toadthewetsprocke_ch0351_alliwant.m4a"
+  },
+  {
+    "artist": "Big Audio Dynamite",
+    "title": "Rush",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/bigaudiodynamitei_al337_rushsingleversion.m4a"
+  },
+  {
+    "artist": "Pavement",
+    "title": "Cut Your Hair",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/pavement_crookedraincrooke_04cutyourhair.m4a"
+  },
+  {
+    "artist": "Squirrel Nut Zippers",
+    "title": "Hell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/squirrelnutzipp_hot_00_hell.m4a"
+  },
+  {
+    "artist": "Brian Setzer Orchestra",
+    "title": "Jump Jive an' Wail",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/setzerbrian_thedirtyboogie_06_jumpjiveanwail.m4a"
   },
   {
     "artist": "Eric Clapton",
@@ -25,16 +155,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/hawkinssophieb_ch0351_damniwishiwasyour.m4a"
   },
   {
-    "artist": "Collective Soul",
-    "title": "December",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/collectivesoul_al0365_9501-04decemberedit.m4a"
-  },
-  {
-    "artist": "The Notorious B.I.G.",
-    "title": "Mo Money Mo Problems",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/notoriousbig_ch0324_momoneymoproblems.m4a"
-  },
-  {
     "artist": "Enigma",
     "title": "Return to Innocence",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/enigma_thecrossofchanges_03_returntoinnocence.m4a"
@@ -43,11 +163,6 @@
     "artist": "Mariah Carey",
     "title": "Emotions",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/careymariah_chrgold42_emotions.m4a"
-  },
-  {
-    "artist": "Snow",
-    "title": "Informer",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/snow_ch037_informer.m4a"
   },
   {
     "artist": "Will Smith",
@@ -60,34 +175,9 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/rembrandtsthe_chrgold45_illbethereforyou.m4a"
   },
   {
-    "artist": "Guns N' Roses",
-    "title": "Live and Let Die",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/gunsnroses_crgold006_liveandletdie.m4a"
-  },
-  {
-    "artist": "Madonna",
-    "title": "Justify My Love",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/madonna_celebration_17_justifymylove.m4a"
-  },
-  {
     "artist": "Selena",
     "title": "I Could Fall in Love",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/selena_chrgold53_icouldfallinlove.m4a"
-  },
-  {
-    "artist": "Nirvana",
-    "title": "Smells Like Teen Spirit",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/nirvana_ch0329_smellsliketeenspi.m4a"
-  },
-  {
-    "artist": "Eminem",
-    "title": "My Name Is",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/eminem_al329_mynameisxtraclean.m4a"
-  },
-  {
-    "artist": "R.E.M.",
-    "title": "Losing My Religion",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/rem_ch035_losingmyreligion.m4a"
   },
   {
     "artist": "Toni Braxton",
@@ -95,19 +185,9 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/braxtontoni_chrgold49_unbreakmyheartfad.m4a"
   },
   {
-    "artist": "Aaliyah",
-    "title": "Are You That Somebody",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/aaliyah_ch0317_areyouthatsomebod.m4a"
-  },
-  {
     "artist": "Joan Osborne",
     "title": "One of Us",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/osbornejoan_ch0310_oneofus.m4a"
-  },
-  {
-    "artist": "Oasis",
-    "title": "Wonderwall",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/oasis_ch0310_wonderwall.m4a"
   },
   {
     "artist": "The Cranberries",
@@ -118,21 +198,6 @@
     "artist": "Black Box",
     "title": "Everybody Everybody",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/blackbox_ch037_everybodyeverybod.m4a"
-  },
-  {
-    "artist": "Sugar Ray",
-    "title": "Fly",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/sugarray_ch0314_fly.m4a"
-  },
-  {
-    "artist": "Goo Goo Dolls",
-    "title": "Name",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/googoodolls_ch0352_name.m4a"
-  },
-  {
-    "artist": "2Pac",
-    "title": "How Do U Want It",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/2pac_alleyezonme_05_howdouwantitradioedit.m4a"
   },
   {
     "artist": "La Bouche",
@@ -170,11 +235,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/cranberriesthe_ch0353_linger.m4a"
   },
   {
-    "artist": "Boyz II Men",
-    "title": "On Bended Knee",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boyziimen_chrgold44_onbendedkneeradio.m4a"
-  },
-  {
     "artist": "Sheryl Crow",
     "title": "Everyday Is a Winding Road",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/crowsheryl_ch0312_everydayisawindin.m4a"
@@ -183,31 +243,6 @@
     "artist": "Rod Stewart",
     "title": "Have I Told You Lately",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/stewartrod_chrgold27_haveitoldyoulatel.m4a"
-  },
-  {
-    "artist": "Radiohead",
-    "title": "Creep",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/radiohead_al314_creep.m4a"
-  },
-  {
-    "artist": "Green Day",
-    "title": "Longview",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/greenday_al0347_693-02longviewveryclean.m4a"
-  },
-  {
-    "artist": "Backstreet Boys",
-    "title": "Everybody (Backstreet's Back)",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/backstreetboys_ch0315_everybodybackstre.m4a"
-  },
-  {
-    "artist": "Goo Goo Dolls",
-    "title": "Slide",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/googoodolls_ch0318_slide.m4a"
-  },
-  {
-    "artist": "Sublime",
-    "title": "What I Got",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/sublime_sublime_02_whatigot.m4a"
   },
   {
     "artist": "Right Said Fred",
@@ -220,11 +255,6 @@
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/kciandjojo_chrgold55_allmylifeweddingm.m4a"
     },
     {
-      "artist": "Oasis",
-      "title": "Champagne Supernova",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/oasis_al0351_705-03champagnesupernov.m4a"
-    },
-    {
       "artist": "4 Non Blondes",
       "title": "What's Up",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/4nonblondes_ch0327_whatsup.m4a"
@@ -235,11 +265,6 @@
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/raittbonnie_chrgold37_icantmakeyoulovem.m4a"
     },
     {
-      "artist": "Naughty By Nature",
-      "title": "O.P.P.",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/naughtybynature_ch0323_opp.m4a"
-    },
-    {
       "artist": "Dave Matthews Band",
       "title": "Ants Marching",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/matthewsdave_ch0310_antsmarching.m4a"
@@ -248,31 +273,6 @@
       "artist": "Lisa Stansfield",
       "title": "All Around the World",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/stansfieldlisa_affection_5_allaroundtheworld.m4a"
-    },
-    {
-      "artist": "Live",
-      "title": "Lightning Crashes",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/live_ch0310_lightningcrashes.m4a"
-    },
-    {
-      "artist": "Soul Asylum",
-      "title": "Runaway Train",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/soulasylum_ch0348_runawaytrain.m4a"
-    },
-    {
-      "artist": "Alanis Morissette",
-      "title": "Head Over Feet",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/morissettealanis_ch0353_headoverfeet.m4a"
-    },
-    {
-      "artist": "Depeche Mode",
-      "title": "Enjoy the Silence",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/depechemode_ch0348_enjoythesilence.m4a"
-    },
-    {
-      "artist": "Smashing Pumpkins",
-      "title": "1979",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/smashingpumpkins_ch0311_1979.m4a"
     },
     {
       "artist": "LeAnn Rimes",
@@ -305,11 +305,6 @@
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/penistoncece_ch037_finally.m4a"
     },
     {
-      "artist": "Fatboy Slim",
-      "title": "The Rockafeller Skank",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/fatboyslim_al314_therockafellerska.m4a"
-    },
-    {
       "artist": "Meredith Brooks",
       "title": "Bitch",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/brooksmeredith_ch0313_bitch.m4a"
@@ -318,16 +313,6 @@
       "artist": "Shania Twain",
       "title": "That Don't Impress Me Much",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/twainshania_ch0320_thatdontimpressme.m4a"
-    },
-    {
-      "artist": "Dr. Dre",
-      "title": "Nuthin' But a 'G' Thang",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/drdre_ch0324_nuthinbutagthang.m4a"
-    },
-    {
-      "artist": "Spice Girls",
-      "title": "Say You'll Be There",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/spicegirls_spice_02_sayyoullbethere.m4a"
     },
     {
       "artist": "Nelson",
@@ -339,31 +324,7 @@
       "title": "When a Man Loves a Woman",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boltonmichael_chrgold37_whenamanlovesawom.m4a"
     },
-    {
-      "artist": "Matchbox Twenty",
-      "title": "3AM",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/matchbox20_chrgold55_3am.m4a"
-    },
-    {
-      "artist": "Depeche Mode",
-      "title": "Personal Jesus",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/depechemode_al313_personaljesus.m4a"
-    },
-    {
-      "artist": "Third Eye Blind",
-      "title": "Semi-Charmed Life",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/thirdeyeblind_ch0313_semicharmedlife.m4a"
-    },
-    {
-      "artist": "Usher",
-      "title": "You Make Me Wanna",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/usher_ch0314_youmakemewanna.m4a"
-    },
-    {
-      "artist": "Backstreet Boys",
-      "title": "I Want It That Way",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/backstreetboys_ch0320_iwantitthatway.m4a"
-    },
+    
     {
       "artist": "Corona",
       "title": "The Rhythm of the Night",
@@ -390,28 +351,8 @@
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/mrbig_chrgold45_tobewithyou.m4a"
     },
     {
-      "artist": "Pearl Jam",
-      "title": "Last Kiss",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/pearljam_ch0321_lastkiss.m4a"
-    },
-    {
       "artist": "Marc Anthony",
       "title": "I Need to Know",
       "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/anthonymarc_chrgold59_ineedtoknow.m4a"
     },
-    {
-      "artist": "Jay-Z",
-      "title": "Hard Knock Life (Ghetto Anthem)",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jayz_ch0323_hardknocklifeghet.m4a"
-    },
-    {
-      "artist": "Boyz II Men",
-      "title": "It's So Hard to Say Goodbye to Yesterday",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boyziimen_chrgold45_itssohardtosaygoo.m4a"
-    },
-    {
-      "artist": "Foo Fighters",
-      "title": "Big Me",
-      "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/foofighters_al0345_704-07bigme.m4a"
-    }
   ]
