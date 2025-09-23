@@ -1,5 +1,130 @@
 [
   {
+    "artist": "Boogie Down Productions",
+    "title": "My Philosophy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/boogiedownproduct_aretrospective_01myphilosophy.m4a"
+  },
+  {
+    "artist": "Dr. Dre",
+    "title": "The Message",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/drdre_2001_22themessage.m4a"
+  },
+  {
+    "artist": "Mobb Deep",
+    "title": "Shook Ones Pt. II",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/mobbdeep_theinfamous_15shookonesptii.m4a"
+  },
+  {
+    "artist": "Eminem",
+    "title": "Sing for the Moment",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/eminem_gd826_08singforthe.m4a"
+  },
+  {
+    "artist": "Digable Planets",
+    "title": "Where I'm From (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/digableplanets_beyondthespectrum_05whereimfromremix.m4a"
+  },
+  {
+    "artist": "Ghostface Killah",
+    "title": "Daytona 500",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/ghostfacekillah_ironman_11daytona500.m4a"
+  },
+  {
+    "artist": "Blackalicious",
+    "title": "Deception",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/blackalicious_a2g_05deception.m4a"
+  },
+  {
+    "artist": "The Beatnuts",
+    "title": "Get Funky (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/beatnutsthe_thebeatnutsremixe_02getfunkyremix.m4a"
+  },
+  {
+    "artist": "Eminem",
+    "title": "My Name Is",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/eminem_theslimshadylp_02mynameis.m4a"
+  },
+  {
+    "artist": "Ludacris",
+    "title": "Diamond in the Rough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ludacris_hd565a_13diamondinthe.m4a"
+  },
+  {
+    "artist": "Eminem",
+    "title": "Not Afraid",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/eminem_ha201019_20_notafraid.m4a"
+  },
+  {
+    "artist": "Snoop Dogg",
+    "title": "Who Am I? (What's My Name?)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/snoopdogg_doggystyle_10whoamiwhatsmyname.m4a"
+  },
+  {
+    "artist": "Clipsela, Markendrick & Pusha T, Malice",
+    "title": "Chains and Whips (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/clipselamarkendrickpushatmalice_letgodsortemout_02_chainsandwhipsclean.m4a"
+  },
+  {
+    "artist": "A Tribe Called Quest",
+    "title": "Footprints",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/tribecalledquesta_peoplesinstinctiv_04footprints.m4a"
+  },
+  {
+    "artist": "De La Soul",
+    "title": "Ego Trippin' Part Two",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/delasoul_buhloonemindstate_07egotrippinparttwo.m4a"
+  },
+  {
+    "artist": "Consequence",
+    "title": "Callin' Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/consequence_dontquityourdayjo_01callinme.m4a"
+  },
+  {
+    "artist": "Grae Jean",
+    "title": "Love Thirst",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/graejean_ha200822_12_lovethirst.m4a"
+  },
+  {
+    "artist": "Atmosphere",
+    "title": "I Love You Like a Brother",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/atmospere_southsiders_05_iloveyoulikeabrother.m4a"
+  },
+  {
+    "artist": "Gang Starr",
+    "title": "Jazz Music",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/gangstarr_nomoremrniceguy_02jazzmusic.m4a"
+  },
+  {
+    "artist": "Redman",
+    "title": "Time 4 Sum Aksion",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/redman_whuttheealbum_02time4sumaksion.m4a"
+  },
+  {
+    "artist": "Audio Two",
+    "title": "Top Billin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/audiotwo_whatmorecanisay_01topbillin.m4a"
+  },
+  {
+    "artist": "Lockj",
+    "title": "Money (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lockj_moneysingle_01_moneyclean.m4a"
+  },
+  {
+    "artist": "Nice & Smooth",
+    "title": "Sometimes I Rhyme Slow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/niceandsmooth_defjam2_11sometimesirhymesl.m4a"
+  },
+  {
+    "artist": "Beastie Boys",
+    "title": "Just a Test",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/beastieboys_hellonasty_05_justatest.m4a"
+  },
+  {
+    "artist": "Random Axe",
+    "title": "The Karate Kid",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/randomaxe_randomaxe_09_thekaratekid.m4a"
+  },
+  {
     "artist": "Median",
     "title": "Brenda's Baby",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/median_mediansrelief_08brendasbaby.m4a"
