@@ -1,5 +1,115 @@
 [
   {
+    "artist": "Metallica",
+    "title": "72 Seasons",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/metallica_72seasons_1_72seasons.m4a"
+  },
+  {
+    "artist": "Ozzy Osbourne",
+    "title": "Under the Graveyard",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/osbourneozzy_underthegraveyardsingle_1_underthegraveyard.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "And So It Went",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklessthe_deathbyrockandroll_3_andsoitwent.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Ohms",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/deftones_ohms_10_ohms.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "A Symptom of Being Human Album Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_planetzero_10_asymptomofbeinghumanalbumversion.m4a"
+  },
+  {
+    "artist": "Breaking Benjamin",
+    "title": "Far Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/breakingbenjamin_aurora_03_faraway.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Afterlife",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeathpunch_afterlifesingle_01_afterlife.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Unstoppable",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_divisive_4_unstoppable.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Eye of the Storm",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_eyeofthestormsingle_01_eyeofthestorm.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Black Summer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/redhotchilipeppers_unlimitedlove_01_blacksummer.m4a"
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "Under You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_buthereweare_02_underyou.m4a"
+  },
+  {
+    "artist": "Daughtry",
+    "title": "Artificial",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/daughtry_artificialsingle_01_artificial.m4a"
+  },
+  {
+    "artist": "Pearl Jam",
+    "title": "Dark Matter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/pearljam_darkmatter_4_darkmatter.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Cruise and Bloodied",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_sivispacemparabellum_2_cruisedandbloodied.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "So Called Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_socalledlifesingle_01_socalledlife.m4a"
+  },
+  {
+    "artist": "Corey Taylor",
+    "title": "Black Eyes Blue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/taylorcorey_cmft_02_blackeyesblue.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "Dilemma",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/greenday_saviors_14_dilemma.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Dead Don't Die",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_planetzero_06_deaddontdie.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "A Little Bit Off",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeathpunch_f8_5_alittlebitoff.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Lowest in Me Clean Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/staind_lowestinmesingle_1_lowestinmecleanedit.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Leave a Light on Talk Away the Dark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_egotrip_10_leavealightontalkawaythedark.m4a"
+  },
+  {
+    "artist": "Nothing More",
+    "title": "If It Doesn't Hurt",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/nothingmore_ifitdoesnthurtsingle_1_ifitdoesnthurt.m4a"
+  },
+  {
     "artist": "Tool",
     "title": "Schism",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/tool_lateralus_05_schism.m4a"
