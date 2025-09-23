@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<link rel="manifest" href="manifest.json">
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
 <title>Retro Player</title>
 <style>
   :root{ --accent:#fff; --bg:#000; --fg:#fff }
-  *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent }
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; user-select:none }
   html,body{ height:100%; overflow:hidden; background:var(--bg); color:var(--fg); font-family:system-ui; display:flex; flex-direction:column; align-items:center; text-align:center }
   #top{ flex:0 0 auto; height:env(safe-area-inset-top) }
   #wrap{ flex:1; width:100%; overflow:auto; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 1rem 1rem }
@@ -19,56 +25,22 @@
   .btn svg{ width:1.1rem; height:1.1rem; stroke:var(--fg); stroke-width:1.5; fill:none }
   .btn.on{ background:var(--accent); color:var(--bg) }
   #info{ margin-bottom:.6rem }
-  #tit{ font-size:1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem }
-  #art{ opacity:.7; font-size:.85rem }
-  .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s }
+  #tit{ font-size:1.1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem }
+  #art{ opacity:.7; font-size:.85rem; font-style:italic }
+  #bubbles{ display:flex; gap:.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:1rem; max-width:90vw }
+  .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s; white-space:nowrap }
   .bubble.on{ background:var(--accent); color:var(--bg) }
-  /* scroll invisível na playlist */
-#roleta {
-  width: 100%;
-  max-height: 35vh;
-  overflow: auto;
-  scrollbar-width: none; /* Firefox */
-}
-#roleta::-webkit-scrollbar {
-  display: none; /* Chrome / Edge / Safari */
-}
-
-/* quebra automática das bolhas – não estoura largura */
-/* Bolhas - adicione margin-bottom */
-#bubbles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-  justify-content: center;
-  max-width: 100%;
-  padding: 0 .5rem;
-  margin-bottom: 1rem; /* ESPAÇO antes da playlist */
-}
-
-/* Lista - adicione background e espaçamento */
-#roleta li {
-  display: flex;
-  flex-direction: column;
-  padding: .4rem .6rem;
-  cursor: pointer;
-  gap: .1rem;
-  background: rgba(255,255,255,.03); /* Fundo semi-transparente */
-  border-radius: .25rem;
-  margin-bottom: .15rem; /* Espaço entre itens */
-}
-
-/* Item em execução - destaque suave */
-#roleta li.on {
-  background: rgba(255,255,255,.08);
-}
-
-
-  li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem }
-  li .mus{ font-size:.95rem; color:var(--fg) }
-  li .art{ font-size:.75rem; color:#aaa }
-  li.on{ color:var(--accent) }
+  #roleta{ width:100%; max-height:35vh; overflow:auto; list-style:none; scrollbar-width:none }
+  #roleta::-webkit-scrollbar{ display:none }
+  li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem; background:rgba(255,255,255,.03); border-radius:.25rem; margin-bottom:.15rem }
+  li.on{ color:#00ffff !important; font-weight:600 }
   footer{ width:100%; padding:.4rem 0; font-size:.55rem; opacity:.4; letter-spacing:1px }
+
+  /* caixa flutuante de playlists */
+  #pickBox{ position:fixed; inset:0; background:rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:10 }
+  #pickBox.on{ display:flex }
+  #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
+  #pickContent .bubble{ margin:0 }
 </style>
 </head>
 <body>
@@ -78,7 +50,7 @@
 <div id="wrap">
 
   <div id="capaWrap">
-    <img id="capa" src="https://i.imgur.com/4GqCIYM.png"/>
+    <img id="capa" src="https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg"/>
     <div id="disco">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#444" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="3" stroke="#444" stroke-width="1" fill="none"/></svg>
     </div>
@@ -96,7 +68,10 @@
     <div id="art">–</div>
   </div>
 
-  <div id="bubbles"></div>
+  <!-- escolha de playlist -->
+  <div id="pickBox"><div id="pickContent"></div></div>
+  <div id="bubbles"><span class="bubble" id="pickTrigger">escolha a playlist</span></div>
+
   <ul id="roleta"></ul>
 
 </div>
@@ -109,7 +84,7 @@
 /* ---------- CONFIG ---------- */
 const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
 const PLAYLISTS = {
-  'Alternative': 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
+  Alternative: 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
   '1990s':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json',
   'Nu-Grind': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
   'New Brazil': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
@@ -119,10 +94,11 @@ const PLAYLISTS = {
   'Rock': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json',
   'Eletronic': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json'
 };
+
 /* ---------------------------- */
 
 const $ = s => document.querySelector(s);
-const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles');
+const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
 let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
 
 /* ---------- CORES DA CAPA ---------- */
@@ -138,7 +114,6 @@ function getPalette(img) {
   rgb.forEach((v, i) => rgb[i] = Math.round(v / n));
   return `rgb(${rgb.join(',')})`;
 }
-
 /* ---------- CAPA + COR ---------- */
 async function loadTrack() {
   const t = q[idx];
@@ -146,29 +121,32 @@ async function loadTrack() {
   tit.textContent = t.title;
   art.textContent = t.artist;
   document.title = `${t.title} – ${t.artist} | Retro Player`;
-
-  /* capa + cor */
+  
   try {
     const url = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.title)}&format=json`;
-    const img = (await (await fetch(url)).json())?.track?.album?.image?.find(x => x.size === 'extralarge')?.['#text'];
-    if (img) {
+    const res = await fetch(url);
+    const data = await res.json();
+    const img = data?.track?.album?.image?.find(x => x.size === 'extralarge')?.['#text'];
+    
+    if (img && img.trim() !== '') {
       capa.src = img;
       disco.style.opacity = 0;
       capa.onload = () => setAccent(getPalette(capa));
     } else {
-      capa.src = '';
-      disco.style.opacity = 1;
-      setAccent('#fff');
+      capa.src = "https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg"; // capa padrão
+      disco.style.opacity = 0; // nunca mostra o disco
+      setAccent("#00ffff");
     }
   } catch {
-    capa.src = '';
-    disco.style.opacity = 1;
-    setAccent('#fff');
+    capa.src = "https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg";
+    disco.style.opacity = 0; // nunca mostra o disco
+    setAccent("#00ffff");
   }
+
+  centerTrack();
   markOnly();
   updateSession();
 }
-
 /* ---------- PLAY/PAUSE + SINCRONISMO ---------- */
 function play() { a.play(); }
 function pause() { a.pause(); }
@@ -194,7 +172,13 @@ shufBtn.onclick = () => {
 function skip(d) {
   idx = (idx + d + q.length) % q.length;
   loadTrack();
-  play(); // <-- garante play após troca
+  play();
+}
+
+/* ---------- CENTRA FAIXA NA PLAYLIST ---------- */
+function centerTrack() {
+  const li = roleta.children[idx];
+  if (li) li.scrollIntoView({ block: 'center', behavior: 'smooth' });
 }
 
 /* ---------- MARCA SÓ QUEM TOCA ---------- */
@@ -207,41 +191,43 @@ let mediaSession = navigator.mediaSession;
 function updateSession() {
   const t = q[idx];
   if (!t) return;
-  // metadados
   mediaSession.metadata = new MediaMetadata({
     title: t.title,
     artist: t.artist,
-    artwork: [{ src: capa.src || 'https://i.imgur.com/4GqCIYM.png', sizes: '512x512', type: 'image/jpeg' }]
+    artwork: [{ src: capa.src || 'https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg', sizes: '512x512', type: 'image/jpeg' }]
   });
-  // ações
   mediaSession.setActionHandler('play', play);
   mediaSession.setActionHandler('pause', pause);
   mediaSession.setActionHandler('previoustrack', () => skip(-1));
   mediaSession.setActionHandler('nexttrack', () => skip(1));
 }
 
-/* ---------- BOLHAS COM QUEBRA AUTOMÁTICA ---------- */
-Object.keys(PLAYLISTS).forEach(pl => {
-  const b = document.createElement('span');
-  b.className = 'bubble';
-  b.textContent = pl;
-  b.style.whiteSpace = 'nowrap'; // evita quebra interna do texto
-  b.onclick = () => {
-    document.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
-    b.classList.add('on');
-    currentPl = pl;
-    loadPl();
-  };
-  if (pl === currentPl) b.classList.add('on');
-  bubbles.append(b);
-});
-
+/* ---------- BOLHAS + CAIXA FLUTUANTE ---------- */
+function buildPickBox() {
+  pickContent.innerHTML = '';
+  Object.keys(PLAYLISTS).forEach(pl => {
+    const b = document.createElement('span');
+    b.className = 'bubble';
+    b.textContent = pl;
+    b.onclick = () => {
+      document.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      currentPl = pl;
+      loadPl();
+      pickBox.classList.remove('on');
+    };
+    if (pl === currentPl) b.classList.add('on');
+    pickContent.append(b);
+  });
+}
+pickTrigger.onclick = () => { buildPickBox(); pickBox.classList.add('on'); };
+pickBox.onclick = (e) => { if (e.target === pickBox) pickBox.classList.remove('on'); };
 
 /* ---------- SHUFFLE SEM REPETIR ---------- */
-let played = []; // índices já tocados
+let played = [];
 function shufflePool() {
   const pool = q.map((_, i) => i).filter(i => !played.includes(i));
-  if (!pool.length) played = []; // reinicia quando todas tocadas
+  if (!pool.length) played = [];
   const pick = pool[Math.floor(Math.random() * pool.length)];
   played.push(pick);
   return pick;
@@ -257,6 +243,8 @@ async function loadPl() {
   loadTrack();
   a.pause(); // aguarda play do usuário
   updateIcon();
+  // ↓↓↓ atualiza texto do trigger
+  pickTrigger.textContent = `Playlist - ${currentPl}`;
 }
 
 /* ---------- ROLETA ---------- */
@@ -264,17 +252,15 @@ function renderRoleta() {
   roleta.innerHTML = '';
   q.forEach((t, i) => {
     const li = document.createElement('li');
-    li.innerHTML = `<span class="mus">${t.title}</span><span class="art">${t.artist}</span>`;
+    li.innerHTML = `<span class="mus" style="color:#00ffff;font-size:1rem">${t.title}</span><span class="art" style="font-size:.8rem;font-style:italic">${t.artist}</span>`;
     li.onclick = () => { idx = i; loadTrack(); play(); };
     roleta.append(li);
   });
   markOnly();
-  // >>> SCROLLA AO TOPO <<<
-  roleta.scrollTop = 0;
+  centerTrack();
 }
 
-
-/* ---------- AUTO-PRÓXIMO (sem parar) ---------- */
+/* ---------- AUTO-PRÓXIMO ---------- */
 a.onended = () => {
   if (shuf) idx = shufflePool();
   else idx = (idx + 1) % q.length;
