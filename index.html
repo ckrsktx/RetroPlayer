@@ -21,10 +21,49 @@
   #info{ margin-bottom:.6rem }
   #tit{ font-size:1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem }
   #art{ opacity:.7; font-size:.85rem }
-  #bubbles{ display:flex; gap:.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:.6rem }
   .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s }
   .bubble.on{ background:var(--accent); color:var(--bg) }
-  #roleta{ width:100%; max-height:35vh; overflow:auto; list-style:none }
+  /* scroll invisível na playlist */
+#roleta {
+  width: 100%;
+  max-height: 35vh;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+}
+#roleta::-webkit-scrollbar {
+  display: none; /* Chrome / Edge / Safari */
+}
+
+/* quebra automática das bolhas – não estoura largura */
+/* Bolhas - adicione margin-bottom */
+#bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 .5rem;
+  margin-bottom: 1rem; /* ESPAÇO antes da playlist */
+}
+
+/* Lista - adicione background e espaçamento */
+#roleta li {
+  display: flex;
+  flex-direction: column;
+  padding: .4rem .6rem;
+  cursor: pointer;
+  gap: .1rem;
+  background: rgba(255,255,255,.03); /* Fundo semi-transparente */
+  border-radius: .25rem;
+  margin-bottom: .15rem; /* Espaço entre itens */
+}
+
+/* Item em execução - destaque suave */
+#roleta li.on {
+  background: rgba(255,255,255,.08);
+}
+
+
   li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem }
   li .mus{ font-size:.95rem; color:var(--fg) }
   li .art{ font-size:.75rem; color:#aaa }
@@ -106,6 +145,8 @@ async function loadTrack() {
   a.src = t.url;
   tit.textContent = t.title;
   art.textContent = t.artist;
+  document.title = `${t.title} – ${t.artist} | Retro Player`;
+
   /* capa + cor */
   try {
     const url = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.title)}&format=json`;
