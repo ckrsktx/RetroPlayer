@@ -1,17 +1,21 @@
 {
   "name": "Retro Player",
-  "short_name": "Retro",
-  "description": "Player minimalista que roda com tela desligada",
+  "short_name": "RetroPlayer",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
+  "theme_color": "#00ffff",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23fff' font-size='200' font-family='sans-serif'%3E▶%3C/text%3E%3C/svg%3E",
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ]
 }
