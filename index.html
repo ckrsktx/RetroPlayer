@@ -41,6 +41,19 @@ if ("serviceWorker" in navigator) {
   #pickBox.on{ display:flex }
   #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
   #pickContent .bubble{ margin:0 }
+  #refreshBtn {
+    margin: 0.8rem 0;
+    padding: 0.6rem 1rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+  #refreshBtn:hover { opacity: 0.8; }
 </style>
 </head>
 <body>
@@ -73,7 +86,7 @@ if ("serviceWorker" in navigator) {
   <div id="bubbles"><span class="bubble" id="pickTrigger">escolha a playlist</span></div>
 
   <ul id="roleta"></ul>
-
+<button id="refreshBtn" class="refresh">Atualizar Playlist</button>
 </div>
 
 <footer>RETRO PLAYER</footer>
@@ -270,6 +283,20 @@ a.onended = () => {
 
 /* ---------- START ---------- */
 loadPl();
+
+/* ---------- BOTÃO ATUALIZAR PLAYLIST ---------- */
+document.getElementById("refreshBtn").onclick = async () => {
+  if ('caches' in window) {
+    const keys = await caches.keys();
+    await Promise.all(keys.map(key => caches.delete(key)));
+  }
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.getRegistration().then(reg => {
+      if (reg) reg.update(); // força atualizar SW
+    });
+  }
+  location.reload(true); // recarrega do servidor
+};
 </script>
 </body>
 </html>
