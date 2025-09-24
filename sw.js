@@ -25,27 +25,19 @@ self.addEventListener("activate", e => {
 });
 
 // 4) Fetch – cache-first para tudo, MENOS playlist.json
-self.addEventListener("fetch", e => {
-  const url = new URL(e.request.url);
+self.addEventListener("fetch", event => {
+  const url = new URL(event.request.url);
 
-  // playlist.json → network-first
-  if (url.pathname.endsWith("playlist.json")) {
-    e.respondWith(
-      fetch(e.request)
-        .then(netRes => {
-          // atualiza o cache com a versão nova
-          return caches.open(CACHE).then(cache => {
-            cache.put(e.request, netRes.clone());
-            return netRes;
-          });
-        })
-        .catch(() => caches.match(e.request)) // fallback offline
-    );
+  // Nunca cacheia JSON das playlists
+  if (url.pathname.endsWith(".json")) {
+    event.respondWith(fetch(event.request)); 
     return;
   }
 
-  // demais recursos → cache-first normal
-  e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request))
+  // Cache first para outros arquivos
+  event.respondWith(
+    caches.match(event.request).then(res =>
+      res || fetch(event.request).catch(() => res)
+    )
   );
 });
