@@ -1,5 +1,110 @@
 [
   {
+    "artist": "Allman Brothers Band",
+    "title": "Jessica",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/allmanbrothersban_crgold066_jessica.m4a"
+  },
+  {
+    "artist": "U2",
+    "title": "Sunday Bloody Sunday",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/u2_al317_sundaybloodysunda.m4a"
+  },
+  {
+    "artist": "Peter Gabriel",
+    "title": "Solsbury Hill",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/gabrielpeter_crgold043_solsburyhill.m4a"
+  },
+  {
+    "artist": "Midnight Oil",
+    "title": "Blue Sky Mine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/midnightoil_blueskymining_01_blueskymine.m4a"
+  },
+  {
+    "artist": "Oasis",
+    "title": "Wonderwall",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/oasis_al312_wonderwall.m4a"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/fleetwoodmac_gd110_11dreams.m4a"
+  },
+  {
+    "artist": "George Harrison",
+    "title": "What Is Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/harrisongeorge_ol0330_508-19whatislife.m4a"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "title": "1979",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al312_1979.m4a"
+  },
+  {
+    "artist": "The Kinks",
+    "title": "Lola",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/kinksthe_crgold057_lola.m4a"
+  },
+  {
+    "artist": "Santana",
+    "title": "Smooth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/santana_crgold004_smoothradioedit.m4a"
+  },
+  {
+    "artist": "Franz Ferdinand",
+    "title": "Take Me Out",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/franzferdinand_franzferdinand_03_takemeout.m4a"
+  },
+  {
+    "artist": "Death Cab for Cutie",
+    "title": "Gold Rush",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/deathcabforcutie_hb201825_08_goldrush.m4a"
+  },
+  {
+    "artist": "Empire Records",
+    "title": "A Girl Like You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/empirerecords_empirerecordsor_03_agirllikeyou.m4a"
+  },
+  {
+    "artist": "3 Doors Down",
+    "title": "Kryptonite",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/3doorsdown_al033_1606-01kryptonite.m4a"
+  },
+  {
+    "artist": "Coldplay",
+    "title": "Feels Like I'm Falling In Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/coldplay_moonmusic_02_feelslikeimfallinginloveradioedit.m4a"
+  },
+  {
+    "artist": "World Party",
+    "title": "Is It Like Today",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/worldparty_bang_02_isitliketodaysingleversion.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Scar Tissue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/redhotchilipepper_al0355_730-06scartissuealbumve.m4a"
+  },
+  {
+    "artist": "Spoon",
+    "title": "Wild",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/spoon_luciferonthesofa_04_wild.m4a"
+  },
+  {
+    "artist": "UB40",
+    "title": "The Way You Do The Things",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/ub40_ch034_thewayyoudothethi.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "When I Come Around",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/greenday_al0348_696-10whenicomearoundal.m4a"
+  },
+  {
+    "artist": "Suki Waterhouse",
+    "title": "Super Sad",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/waterhousesuki_memiorofasparklemuffin_02_supersad.m4a"
+  },
+  {
     "artist": "Soundgarden",
     "title": "Black Hole Sun",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_al311_blackholesun.m4a"
