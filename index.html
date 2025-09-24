@@ -1,15 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <link rel="manifest" href="manifest.json">
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
-</script>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
 <title>Retro Player</title>
+<link rel="manifest" href="manifest.json">
 <style>
   :root{ --accent:#fff; --bg:#000; --fg:#fff }
   *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; user-select:none }
@@ -41,19 +36,9 @@ if ("serviceWorker" in navigator) {
   #pickBox.on{ display:flex }
   #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
   #pickContent .bubble{ margin:0 }
-  #refreshBtn {
-    margin: 0.8rem 0;
-    padding: 0.6rem 1rem;
-    background: var(--accent);
-    color: var(--bg);
-    border: none;
-    border-radius: 1.5rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity .2s;
-  }
-  #refreshBtn:hover { opacity: 0.8; }
+
+  /* botão atualizar */
+  #atualizar{ margin:1rem 0 .5rem; padding:.5rem 1rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:2rem; font-size:.8rem; cursor:pointer }
 </style>
 </head>
 <body>
@@ -86,7 +71,10 @@ if ("serviceWorker" in navigator) {
   <div id="bubbles"><span class="bubble" id="pickTrigger">escolha a playlist</span></div>
 
   <ul id="roleta"></ul>
-<button id="refreshBtn" class="refresh">Atualizar Playlist</button>
+
+  <!-- BOTÃO ATUALIZAR -->
+  <button id="atualizar">Atualizar Playlist</button>
+
 </div>
 
 <footer>RETRO PLAYER</footer>
@@ -99,17 +87,16 @@ const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
 const PLAYLISTS = {
   Alternative: 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
   '1990s':     'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json',
-  'Nu-Grind': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
-  'New Brazil': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
-  'Trip-Hop': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop',
-  'Hip-Hop': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json',
-  'Movies 90s': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json',
-  'Rock': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json',
-  'Eletronic': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json'
+  'Nu-Grind':  'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
+  'New Brazil':'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
+  'Trip-Hop':  'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop',
+  'Hip-Hop':   'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json',
+  'Movies 90s':'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json',
+  Rock:        'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json',
+  Eletronic:   'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json'
 };
 
 /* ---------------------------- */
-
 const $ = s => document.querySelector(s);
 const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
 let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
@@ -146,13 +133,13 @@ async function loadTrack() {
       disco.style.opacity = 0;
       capa.onload = () => setAccent(getPalette(capa));
     } else {
-      capa.src = "https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg"; // capa padrão
-      disco.style.opacity = 0; // nunca mostra o disco
+      capa.src = "https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg";
+      disco.style.opacity = 0;
       setAccent("#00ffff");
     }
   } catch {
     capa.src = "https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg";
-    disco.style.opacity = 0; // nunca mostra o disco
+    disco.style.opacity = 0;
     setAccent("#00ffff");
   }
 
@@ -199,7 +186,7 @@ function markOnly() {
   document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx));
 }
 
-/* ---------- MEDIA SESSION COMPLETA ---------- */
+/* ---------- MEDIA SESSION ---------- */
 let mediaSession = navigator.mediaSession;
 function updateSession() {
   const t = q[idx];
@@ -236,7 +223,7 @@ function buildPickBox() {
 pickTrigger.onclick = () => { buildPickBox(); pickBox.classList.add('on'); };
 pickBox.onclick = (e) => { if (e.target === pickBox) pickBox.classList.remove('on'); };
 
-/* ---------- SHUFFLE SEM REPETIR ---------- */
+/* ---------- SHUFFLE ---------- */
 let played = [];
 function shufflePool() {
   const pool = q.map((_, i) => i).filter(i => !played.includes(i));
@@ -254,9 +241,8 @@ async function loadPl() {
   else idx = 0;
   renderRoleta();
   loadTrack();
-  a.pause(); // aguarda play do usuário
+  a.pause();
   updateIcon();
-  // ↓↓↓ atualiza texto do trigger
   pickTrigger.textContent = `Playlist - ${currentPl}`;
 }
 
@@ -281,22 +267,24 @@ a.onended = () => {
   play();
 };
 
+/* ---------- ATUALIZAR PLAYLIST ---------- */
+$('#atualizar').onclick = async () => {
+  // limpa todos os caches
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
+    navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
+  }
+  // reload sem cache
+  location.reload(true);
+};
+
 /* ---------- START ---------- */
 loadPl();
 
-/* ---------- BOTÃO ATUALIZAR PLAYLIST ---------- */
-document.getElementById("refreshBtn").onclick = async () => {
-  if ('caches' in window) {
-    const keys = await caches.keys();
-    await Promise.all(keys.map(key => caches.delete(key)));
-  }
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.getRegistration().then(reg => {
-      if (reg) reg.update(); // força atualizar SW
-    });
-  }
-  location.reload(true); // recarrega do servidor
-};
+/* ---------- REGISTRA SERVICE WORKER ---------- */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
 </script>
 </body>
 </html>
