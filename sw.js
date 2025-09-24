@@ -1,4 +1,4 @@
-const CACHE = "retro-player-v1";
+const CACHE = "retro-player-v2";
 
 // 1) Arquivos estáticos (playlist.json REMOVIDO)
 const FILES = [
