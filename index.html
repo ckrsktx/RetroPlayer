@@ -84,16 +84,34 @@
 <script>
 /* ---------- CONFIG ---------- */
 const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
-const PLAYLISTS = {
-  Alternative: 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/AlternativeNow.json',
-  '1990s': 'https://raw.githubusercontent.com/ckrsktx/PlayerX/refs/heads/main/1990s.json',
-  'Nu-Grind': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json',
-  'New Brazil':'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json',
-  'Trip-Hop': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop',
-  'Hip-Hop': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json',
-  'Movies 90s': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json',
-  'Rock': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json',
-  'Eletronic': 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json'
+/* ---------- SUBSTITUA O BLOCO CONST PLAYLISTS ---------- */
+let PLAYLISTS = {}; // será preenchido
+
+async function loadPlaylistsMeta() {
+  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/main/playlists.json?t=' + Date.now();
+  const res = await fetch(metaUrl);
+  PLAYLISTS = await res.json();
+}
+
+/* ---------- ATUALIZAR PLAYLIST (nova versão) ---------- */
+$('#atualizar').onclick = async () => {
+  // 1) atualiza o objeto PLAYLISTS
+  await loadPlaylistsMeta();
+  // 2) limpa caches
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
+    navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
+  }
+  // 3) recarrega a playlist ativa
+  const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
+  try {
+    const res = await fetch(busted);
+    q = await res.json();
+    played = []; idx = 0;
+    renderRoleta(); loadTrack();
+  } catch (e) {
+    alert('Erro ao buscar nova versão.');
+  }
 };
 
 /* ---------------------------- */
@@ -277,8 +295,11 @@ $('#atualizar').onclick = async () => {
   // reload sem cache
   location.reload(true);
 };
-
 /* ---------- START ---------- */
+(async () => {
+  await loadPlaylistsMeta(); // <-- carrega URLs atualizadas
+  loadPl();
+})();
 loadPl();
 
 /* ---------- REGISTRA SERVICE WORKER ---------- */
