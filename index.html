@@ -34,9 +34,7 @@
   /* caixa flutuante de playlists */
   #pickBox{ position:fixed; inset:0; background:rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:10 }
   #pickBox.on{ display:flex }
-  #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; 
-
-justify-content:center }
+  #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
   #pickContent .bubble{ margin:0 }
 
   /* botão atualizar */
@@ -90,9 +88,7 @@ let PLAYLISTS = {}; // será carregado dinamicamente
 
 /* ---------------------------- */
 const $ = s => document.querySelector(s);
-const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = 
-
-$('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
+const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
 let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
 
 /* ---------- CARREGA OBJETO PLAYLISTS ---------- */
@@ -117,7 +113,6 @@ function getPalette(img) {
 }
 
 /* ---------- CAPA: LAST.FM → ITUNES ---------- */
-/* ---------- CAPA: LAST.FM → ITUNES ---------- */
 async function loadTrack() {
   const t = q[idx];
   a.src = t.url;
@@ -127,7 +122,7 @@ async function loadTrack() {
 
   let img = '';
   try {
-    // 1) LAST.FM
+    // Last.fm
     const fm = await fetch(
       `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.title)}&format=json`
     ).then(r => r.json());
@@ -136,7 +131,7 @@ async function loadTrack() {
 
   if (!img) {
     try {
-      // 2) ITUNES
+      // iTunes
       const it = await fetch(
         `https://itunes.apple.com/search?term=${encodeURIComponent(t.artist + ' ' + t.title)}&limit=1&entity=song`
       ).then(r => r.json());
@@ -158,6 +153,7 @@ async function loadTrack() {
   markOnly();
   updateSession();
 }
+
 /* ---------- PLAY/PAUSE ---------- */
 function play() { a.play(); }
 function pause() { a.pause(); }
@@ -213,41 +209,28 @@ function updateSession() {
 
 /* ---------- CAIXA DE ESCOLHA ---------- */
 function buildPickBox() {
-  pickContent.innerHTML = '';                 // limpa lista antiga
-  Object.keys(PLAYLISTS).forEach(pl => {      // percorre 
-
-objeto atualizado
+  pickContent.innerHTML = '';
+  Object.keys(PLAYLISTS).forEach(pl => {
     const b = document.createElement('span');
     b.className = 'bubble';
     b.textContent = pl;
     b.onclick = () => {
-      // remove marcação antiga
-      
-
-pickContent.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
-      b.classList.add('on');                  // marca a selecionada
-      currentPl = pl;                         // 
-
-altera playlist ativa
-      loadPl();                               // carrega a nova lista
-      pickBox.classList.remove('on');         // fecha caixa
+      pickContent.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      currentPl = pl;
+      loadPl();
+      pickBox.classList.remove('on');
     };
-    if (pl === currentPl) 
-
-b.classList.add('on'); // já deixa marcada
+    if (pl === currentPl) b.classList.add('on');
     pickContent.append(b);
   });
 }
 
-/* abre a caixa e já marca a atual */
 pickTrigger.onclick = () => {
   buildPickBox();
   pickBox.classList.add('on');
 };
 
-/* 
-
-fecha caixa se clicar no fundo */
 pickBox.onclick = (e) => {
   if (e.target === pickBox) pickBox.classList.remove('on');
 };
@@ -297,37 +280,28 @@ a.onended = () => {
   play();
 };
 
-
-/* ---------- ATUALIZAR PLAYLIST (com novas playlists) ---------- */
+/* ---------- ATUALIZAR PLAYLIST ---------- */
 $('#atualizar').onclick = async () => {
-  await loadPlaylistsMeta();                  // 1) atualiza URLs + novas chaves
-  if 
-
-('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+  await loadPlaylistsMeta();
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
     await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
-    
-
-navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
+    navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
   }
   const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
   try {
     const res = await fetch(busted);
-    q = await 
-
-res.json();
+    q = await res.json();
     played = []; idx = 0;
     renderRoleta(); loadTrack();
-    buildPickBox();                           // 2) redesenha caixa com novas playlists
+    buildPickBox();
   } catch (e) {
-    alert('Erro ao buscar 
-
-nova versão.');
+    alert('Erro ao buscar nova versão.');
   }
 };
 
 /* ---------- START ---------- */
 (async () => {
-  await loadPlaylistsMeta(); // carrega URLs atualizadas
+  await loadPlaylistsMeta();
   loadPl();
 })();
 
