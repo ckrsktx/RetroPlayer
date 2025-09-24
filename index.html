@@ -97,7 +97,7 @@ let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
 
 /* ---------- CARREGA OBJETO PLAYLISTS ---------- */
 async function loadPlaylistsMeta() {
-  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/main/playlists.json?t=' + Date.now();
+  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json?t=' + Date.now();
   const res = await fetch(metaUrl);
   PLAYLISTS = await res.json();
 }
