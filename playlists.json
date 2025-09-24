@@ -7,5 +7,6 @@
   "Hip-Hop":      "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json",
   "Movies 90s":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json",
   "Rock":         "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
-  "Eletronic":    "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json"
+  "Eletronic":    "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
+  "Pop":          "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json"
 }
