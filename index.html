@@ -88,7 +88,7 @@ const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
 let PLAYLISTS = {}; // será preenchido
 
 async function loadPlaylistsMeta() {
-  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/main/playlists.json?t=' + Date.now();
+  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json' + Date.now();
   const res = await fetch(metaUrl);
   PLAYLISTS = await res.json();
 }
