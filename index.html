@@ -84,40 +84,19 @@
 <script>
 /* ---------- CONFIG ---------- */
 const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
-/* ---------- SUBSTITUA O BLOCO CONST PLAYLISTS ---------- */
-let PLAYLISTS = {}; // será preenchido
-
-async function loadPlaylistsMeta() {
-  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json' + Date.now();
-  const res = await fetch(metaUrl);
-  PLAYLISTS = await res.json();
-}
-
-/* ---------- ATUALIZAR PLAYLIST (nova versão) ---------- */
-$('#atualizar').onclick = async () => {
-  // 1) atualiza o objeto PLAYLISTS
-  await loadPlaylistsMeta();
-  // 2) limpa caches
-  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-    await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
-    navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
-  }
-  // 3) recarrega a playlist ativa
-  const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
-  try {
-    const res = await fetch(busted);
-    q = await res.json();
-    played = []; idx = 0;
-    renderRoleta(); loadTrack();
-  } catch (e) {
-    alert('Erro ao buscar nova versão.');
-  }
-};
+let PLAYLISTS = {}; // será carregado dinamicamente
 
 /* ---------------------------- */
 const $ = s => document.querySelector(s);
 const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
 let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
+
+/* ---------- CARREGA OBJETO PLAYLISTS ---------- */
+async function loadPlaylistsMeta() {
+  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json?t=' + Date.now();
+  const res = await fetch(metaUrl);
+  PLAYLISTS = await res.json();
+}
 
 /* ---------- CORES DA CAPA ---------- */
 function setAccent(color) {
@@ -165,12 +144,10 @@ async function loadTrack() {
   markOnly();
   updateSession();
 }
-/* ---------- PLAY/PAUSE + SINCRONISMO ---------- */
+/* ---------- PLAY/PAUSE ---------- */
 function play() { a.play(); }
 function pause() { a.pause(); }
-function togglePlay() {
-  a.paused ? play() : pause();
-}
+function togglePlay() { a.paused ? play() : pause(); }
 playBtn.onclick = togglePlay;
 a.onplay = a.onpause = updateIcon;
 function updateIcon() {
@@ -193,13 +170,13 @@ function skip(d) {
   play();
 }
 
-/* ---------- CENTRA FAIXA NA PLAYLIST ---------- */
+/* ---------- CENTRA FAIXA ---------- */
 function centerTrack() {
   const li = roleta.children[idx];
   if (li) li.scrollIntoView({ block: 'center', behavior: 'smooth' });
 }
 
-/* ---------- MARCA SÓ QUEM TOCA ---------- */
+/* ---------- MARCA FAIXA ATIVA ---------- */
 function markOnly() {
   document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx));
 }
@@ -220,7 +197,7 @@ function updateSession() {
   mediaSession.setActionHandler('nexttrack', () => skip(1));
 }
 
-/* ---------- BOLHAS + CAIXA FLUTUANTE ---------- */
+/* ---------- CAIXA DE ESCOLHA ---------- */
 function buildPickBox() {
   pickContent.innerHTML = '';
   Object.keys(PLAYLISTS).forEach(pl => {
@@ -253,7 +230,8 @@ function shufflePool() {
 
 /* ---------- LOAD PLAYLIST ---------- */
 async function loadPl() {
-  q = await (await fetch(PLAYLISTS[currentPl])).json();
+  const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
+  q = await (await fetch(busted)).json();
   played = [];
   if (shuf) idx = shufflePool();
   else idx = 0;
@@ -287,20 +265,30 @@ a.onended = () => {
 
 /* ---------- ATUALIZAR PLAYLIST ---------- */
 $('#atualizar').onclick = async () => {
-  // limpa todos os caches
+  // 1) atualiza o objeto PLAYLISTS
+  await loadPlaylistsMeta();
+  // 2) limpa caches
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
     await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
     navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
   }
-  // reload sem cache
-  location.reload(true);
+  // 3) recarrega a playlist ativa
+  const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
+  try {
+    const res = await fetch(busted);
+    q = await res.json();
+    played = []; idx = 0;
+    renderRoleta(); loadTrack();
+  } catch (e) {
+    alert('Erro ao buscar nova versão.');
+  }
 };
+
 /* ---------- START ---------- */
 (async () => {
-  await loadPlaylistsMeta(); // <-- carrega URLs atualizadas
+  await loadPlaylistsMeta(); // carrega URLs atualizadas
   loadPl();
 })();
-loadPl();
 
 /* ---------- REGISTRA SERVICE WORKER ---------- */
 if ('serviceWorker' in navigator) {
