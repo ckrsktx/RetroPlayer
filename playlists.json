@@ -9,5 +9,6 @@
   "Rock":         "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
   "Eletronic":    "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
   "Pop":          "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
-  "Retro Dance":  "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json"
+  "Retro Dance":  "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json",
+  "Christian Rock": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/christian-rock"
 }
