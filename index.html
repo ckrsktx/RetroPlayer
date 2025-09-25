@@ -1,57 +1,49 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
-<title>Retro Player</title>
-<link rel="manifest" href="manifest.json">
-<style>
-  :root{ --accent:#fff; --bg:#000; --fg:#fff }
-  *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; user-select:none }
-  html,body{ height:100%; overflow:hidden; background:var(--bg); color:var(--fg); font-family:system-ui; display:flex; flex-direction:column; align-items:center; text-align:center }
-  #top{ flex:0 0 auto; height:env(safe-area-inset-top) }
-  #wrap{ flex:1; width:100%; overflow:auto; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 1rem 1rem }
-  #capaWrap{ position:relative; width:min(45vw,9rem); aspect-ratio:1; overflow:hidden; box-shadow:0 0 1.2rem var(--accent); margin-bottom:1rem }
-  #capa{ width:100%; height:100%; object-fit:cover }
-  #disco{ position:absolute; inset:0; background:#111; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .3s }
-  #disco svg{ width:50%; height:50%; stroke:#444; stroke-width:1; fill:none }
-  #bar{ display:flex; gap:.8rem; margin-bottom:.8rem; align-items:center }
-  .btn{ width:2.4rem; height:2.4rem; background:rgba(255,255,255,.08); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer }
-  .btn svg{ width:1.1rem; height:1.1rem; stroke:var(--fg); stroke-width:1.5; fill:none }
-  .btn.on{ background:var(--accent); color:var(--bg) }
-  #info{ margin-bottom:.6rem }
-  #tit{ font-size:1.1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem }
-  #art{ opacity:.7; font-size:.85rem; font-style:italic }
-  #bubbles{ display:flex; gap:.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:1rem; max-width:90vw }
-  .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s; white-space:nowrap }
-  .bubble.on{ background:var(--accent); color:var(--bg) }
-  #roleta{ width:100%; max-height:35vh; overflow:auto; list-style:none; scrollbar-width:none }
-  #roleta::-webkit-scrollbar{ display:none }
-  li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem; background:rgba(255,255,255,.03); border-radius:.25rem; margin-bottom:.15rem }
-  li.on{ color:#ff00ff !important; font-weight:600 }
-  footer{ width:100%; padding:.4rem 0; font-size:.55rem; opacity:.4; letter-spacing:1px }
-
-  /* caixa flutuante de playlists */
-  #pickBox{ position:fixed; inset:0; background:rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:10 }
-  #pickBox.on{ display:flex }
-  #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
-  #pickContent .bubble{ margin:0 }
-
-  /* botão atualizar */
-  #atualizar{ margin:1rem 0 .5rem; padding:.5rem 1rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:2rem; font-size:.8rem; cursor:pointer }
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"/>
+  <title>Retro Player</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root{ --accent:#fff; --bg:#000; --fg:#fff }
+    *{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; user-select:none }
+    html,body{ height:100%; overflow:hidden; background:var(--bg); color:var(--fg); font-family:system-ui; display:flex; flex-direction:column; align-items:center; text-align:center }
+    #top{ flex:0 0 auto; height:env(safe-area-inset-top) }
+    #wrap{ flex:1; width:100%; overflow:auto; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:0 1rem 1rem }
+    #capaWrap{ position:relative; width:min(45vw,9rem); aspect-ratio:1; overflow:hidden; box-shadow:0 0 1.2rem var(--accent); margin-top:1rem; margin-bottom:1rem }
+    #capa{ width:100%; height:100%; object-fit:cover }
+    #disco{ position:absolute; inset:0; background:#111; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .3s }
+    #disco svg{ width:50%; height:50%; stroke:#444; stroke-width:1; fill:none }
+    #bar{ display:flex; gap:.8rem; margin-bottom:.8rem; align-items:center }
+    .btn{ width:2.4rem; height:2.4rem; background:rgba(255,255,255,.08); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer }
+    .btn svg{ width:1.1rem; height:1.1rem; stroke:var(--fg); stroke-width:1.5; fill:none }
+    .btn.on{ background:var(--accent); color:var(--bg) }
+    #info{ margin-bottom:.6rem; max-width:90vw }
+    #tit{ font-size:1.1rem; font-weight:600; letter-spacing:.5px; margin-bottom:.1rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+    #art{ opacity:.7; font-size:.85rem; font-style:italic }
+    #bubbles{ display:flex; gap:.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:1rem; max-width:90vw }
+    .bubble{ padding:.25rem .6rem; border:1px solid var(--accent); border-radius:2rem; font-size:.7rem; cursor:pointer; transition:background .2s; white-space:nowrap }
+    .bubble.on{ background:var(--accent); color:var(--bg) }
+    #roleta{ width:100%; max-height:35vh; overflow:auto; list-style:none; scrollbar-width:none }
+    #roleta::-webkit-scrollbar{ display:none }
+    li{ display:flex; flex-direction:column; padding:.3rem 0; cursor:pointer; gap:.1rem; background:rgba(255,255,255,.03); border-radius:.25rem; margin-bottom:.15rem }
+    li.on{ color:#ff00ff !important; font-weight:600 }
+    footer{ width:100%; padding:.4rem 0; font-size:.55rem; opacity:.4; letter-spacing:1px }
+    #pickBox{ position:fixed; inset:0; background:rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:10 }
+    #pickBox.on{ display:flex }
+    #pickContent{ background:#111; border:1px solid var(--accent); border-radius:1rem; padding:1rem; max-width:90vw; max-height:70vh; overflow:auto; display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center }
+    #pickContent .bubble{ margin:0 }
+    #btnWrap{ width:100%; display:flex; justify-content:center; padding:.8rem 0 1.2rem }
+    #atualizar{ padding:.5rem 1rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:2rem; font-size:.8rem; cursor:pointer }
+  </style>
 </head>
 <body>
-
 <div id="top"></div>
-
 <div id="wrap">
-
   <div id="capaWrap">
     <img id="capa" src="https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg"/>
-    <div id="disco">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#444" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="3" stroke="#444" stroke-width="1" fill="none"/></svg>
-    </div>
+    <div id="disco"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#444" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="3" stroke="#444" stroke-width="1" fill="none"/></svg></div>
   </div>
 
   <div id="bar">
@@ -66,39 +58,30 @@
     <div id="art">–</div>
   </div>
 
-  <!-- escolha de playlist -->
-  <div id="pickBox"><div id="pickContent"></div></div>
   <div id="bubbles"><span class="bubble" id="pickTrigger">escolha a playlist</span></div>
-
   <ul id="roleta"></ul>
 
-  <!-- BOTÃO ATUALIZAR -->
-  <button id="atualizar">Atualizar Playlist</button>
-
+  <div id="btnWrap">
+    <button id="atualizar">Atualizar Playlist</button>
+  </div>
 </div>
 
 <footer>RETRO PLAYER</footer>
-
+<div id="pickBox"><div id="pickContent"></div></div>
 <audio id="a" preload="metadata"></audio>
 
 <script>
-/* ---------- CONFIG ---------- */
-const API_KEY = '685a04193652e98c9e5e598dc6d306ab';
-let PLAYLISTS = {}; // será carregado dinamicamente
-
-/* ---------------------------- */
+const PLAYLIST_META = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json';
+let PLAYLISTS = {};
 const $ = s => document.querySelector(s);
-const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), bubbles = $('#bubbles'), pickBox = $('#pickBox'), pickContent = $('#pickContent'), pickTrigger = $('#pickTrigger');
-let q = [], idx = 0, shuf = false, currentPl = 'Alternative';
+const a = $('#a'), capa = $('#capa'), disco = $('#disco'), tit = $('#tit'), art = $('#art'), playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'), shufBtn = $('#shufBtn'), roleta = $('#roleta'), pickTrigger = $('#pickTrigger'), pickBox = $('#pickBox'), pickContent = $('#pickContent');
+let q = [], idx = 0, shuf = false, currentPl = 'Alternative', played = [];
 
-/* ---------- CARREGA OBJETO PLAYLISTS ---------- */
 async function loadPlaylistsMeta() {
-  const metaUrl = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json?t=' + Date.now();
-  const res = await fetch(metaUrl);
+  const res = await fetch(PLAYLIST_META + '?t=' + Date.now());
   PLAYLISTS = await res.json();
 }
 
-/* ---------- CORES DA CAPA ---------- */
 function setAccent(color) {
   document.documentElement.style.setProperty('--accent', color);
 }
@@ -111,31 +94,30 @@ function getPalette(img) {
   rgb.forEach((v, i) => rgb[i] = Math.round(v / n));
   return `rgb(${rgb.join(',')})`;
 }
+function fitText(el, max = 28) {
+  el.style.fontSize = el.textContent.length > max ? '.95rem' : '1.1rem';
+}
 
-/* ---------- CAPA: LAST.FM → ITUNES ---------- */
 async function loadTrack() {
   const t = q[idx];
   a.src = t.url;
   tit.textContent = t.title;
   art.textContent = t.artist;
   document.title = `${t.title} – ${t.artist} | Retro Player`;
+  fitText(tit);
 
   let img = '';
+  // 1º Deezer
   try {
-    // Last.fm
-    const fm = await fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${encodeURIComponent(t.artist)}&track=${encodeURIComponent(t.title)}&format=json`
-    ).then(r => r.json());
-    img = fm?.track?.album?.image?.find(x => x.size === 'extralarge')?.['#text'] || '';
+    const dz = await fetch(`https://api.deezer.com/search/track?q=${encodeURIComponent(t.artist + ' ' + t.title)}&limit=1`).then(r => r.json());
+    img = dz.data?.[0]?.album?.cover_xl || '';
   } catch {}
 
+  // 2º iTunes
   if (!img) {
     try {
-      // iTunes
-      const it = await fetch(
-        `https://itunes.apple.com/search?term=${encodeURIComponent(t.artist + ' ' + t.title)}&limit=1&entity=song`
-      ).then(r => r.json());
-      img = it?.results?.[0]?.artworkUrl100?.replace('100x100', '600x600') || '';
+      const it = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(t.artist + ' ' + t.title)}&limit=1&entity=song`).then(r => r.json());
+      img = it.results?.[0]?.artworkUrl100?.replace('100x100', '600x600') || '';
     } catch {}
   }
 
@@ -149,12 +131,9 @@ async function loadTrack() {
     setAccent('#00ffff');
   }
 
-  centerTrack();
-  markOnly();
-  updateSession();
+  centerTrack(); markOnly(); updateSession();
 }
 
-/* ---------- PLAY/PAUSE ---------- */
 function play() { a.play(); }
 function pause() { a.pause(); }
 function togglePlay() { a.paused ? play() : pause(); }
@@ -166,48 +145,28 @@ function updateIcon() {
     : '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
 }
 
-/* ---------- CONTROLES ---------- */
 prev.onclick = () => skip(-1);
 next.onclick = () => skip(1);
-shufBtn.onclick = () => {
-  shuf = !shuf;
-  shufBtn.classList.toggle('on', shuf);
-  loadPl();
-};
-function skip(d) {
-  idx = (idx + d + q.length) % q.length;
-  loadTrack();
-  play();
-}
+shufBtn.onclick = () => { shuf = !shuf; shufBtn.classList.toggle('on', shuf); loadPl(); };
+function skip(d) { idx = (idx + d + q.length) % q.length; loadTrack(); play(); }
 
-/* ---------- CENTRA FAIXA ---------- */
-function centerTrack() {
-  const li = roleta.children[idx];
-  if (li) li.scrollIntoView({ block: 'center', behavior: 'smooth' });
-}
+function centerTrack() { const li = roleta.children[idx]; if (li) li.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+function markOnly() { document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx)); }
 
-/* ---------- MARCA FAIXA ATIVA ---------- */
-function markOnly() {
-  document.querySelectorAll('li').forEach((li, i) => li.classList.toggle('on', i === idx));
-}
-
-/* ---------- MEDIA SESSION ---------- */
-let mediaSession = navigator.mediaSession;
 function updateSession() {
   const t = q[idx];
   if (!t) return;
-  mediaSession.metadata = new MediaMetadata({
+  navigator.mediaSession.metadata = new MediaMetadata({
     title: t.title,
     artist: t.artist,
     artwork: [{ src: capa.src || 'https://i.ibb.co/VW1Hn4MF/Screenshot-2025-09-23-10-00-03-283-com-miui-gallery-edit.jpg', sizes: '512x512', type: 'image/jpeg' }]
   });
-  mediaSession.setActionHandler('play', play);
-  mediaSession.setActionHandler('pause', pause);
-  mediaSession.setActionHandler('previoustrack', () => skip(-1));
-  mediaSession.setActionHandler('nexttrack', () => skip(1));
+  navigator.mediaSession.setActionHandler('play', play);
+  navigator.mediaSession.setActionHandler('pause', pause);
+  navigator.mediaSession.setActionHandler('previoustrack', () => skip(-1));
+  navigator.mediaSession.setActionHandler('nexttrack', () => skip(1));
 }
 
-/* ---------- CAIXA DE ESCOLHA ---------- */
 function buildPickBox() {
   pickContent.innerHTML = '';
   Object.keys(PLAYLISTS).forEach(pl => {
@@ -215,7 +174,7 @@ function buildPickBox() {
     b.className = 'bubble';
     b.textContent = pl;
     b.onclick = () => {
-      pickContent.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
+      document.querySelectorAll('.bubble').forEach(x => x.classList.remove('on'));
       b.classList.add('on');
       currentPl = pl;
       loadPl();
@@ -225,18 +184,9 @@ function buildPickBox() {
     pickContent.append(b);
   });
 }
+pickTrigger.onclick = () => { buildPickBox(); pickBox.classList.add('on'); };
+pickBox.onclick = (e) => { if (e.target === pickBox) pickBox.classList.remove('on'); };
 
-pickTrigger.onclick = () => {
-  buildPickBox();
-  pickBox.classList.add('on');
-};
-
-pickBox.onclick = (e) => {
-  if (e.target === pickBox) pickBox.classList.remove('on');
-};
-
-/* ---------- SHUFFLE ---------- */
-let played = [];
 function shufflePool() {
   const pool = q.map((_, i) => i).filter(i => !played.includes(i));
   if (!pool.length) played = [];
@@ -245,13 +195,11 @@ function shufflePool() {
   return pick;
 }
 
-/* ---------- LOAD PLAYLIST ---------- */
 async function loadPl() {
   const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
   q = await (await fetch(busted)).json();
   played = [];
-  if (shuf) idx = shufflePool();
-  else idx = 0;
+  idx = shuf ? shufflePool() : 0;
   renderRoleta();
   loadTrack();
   a.pause();
@@ -259,7 +207,6 @@ async function loadPl() {
   pickTrigger.textContent = `Playlist - ${currentPl}`;
 }
 
-/* ---------- ROLETA ---------- */
 function renderRoleta() {
   roleta.innerHTML = '';
   q.forEach((t, i) => {
@@ -268,46 +215,40 @@ function renderRoleta() {
     li.onclick = () => { idx = i; loadTrack(); play(); };
     roleta.append(li);
   });
-  markOnly();
-  centerTrack();
+  markOnly(); centerTrack();
 }
 
-/* ---------- AUTO-PRÓXIMO ---------- */
 a.onended = () => {
   if (shuf) idx = shufflePool();
   else idx = (idx + 1) % q.length;
-  loadTrack();
-  play();
+  loadTrack(); play();
 };
 
-/* ---------- ATUALIZAR PLAYLIST ---------- */
 $('#atualizar').onclick = async () => {
   await loadPlaylistsMeta();
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
     await caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
-    navigator.serviceWorker.controller.postMessage({cmd:'SKIP_WAITING'});
+    navigator.serviceWorker.controller.postMessage({ cmd: 'SKIP_WAITING' });
   }
   const busted = PLAYLISTS[currentPl] + '?t=' + Date.now();
   try {
     const res = await fetch(busted);
     q = await res.json();
     played = []; idx = 0;
-    renderRoleta(); loadTrack();
-    buildPickBox();
+    shuf = false; shufBtn.classList.remove('on');
+    renderRoleta(); loadTrack(); updateIcon();
   } catch (e) {
     alert('Erro ao buscar nova versão.');
   }
 };
 
-/* ---------- START ---------- */
 (async () => {
   await loadPlaylistsMeta();
   loadPl();
 })();
 
-/* ---------- REGISTRA SERVICE WORKER ---------- */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
+  navigator.serviceWorker.register('sw.js');
 }
 </script>
 </body>
