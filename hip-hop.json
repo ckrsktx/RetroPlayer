@@ -1,5 +1,200 @@
 [
   {
+    "artist": "Outkast",
+    "title": "Aquemini",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/outkast_aquemini_05aquemini.m4a"
+  },
+  {
+    "artist": "Bonecrusher",
+    "title": "Never Scared",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bonecrusher_gd826_11neverscared.m4a"
+  },
+  {
+    "artist": "Dr. Octagon",
+    "title": "Waiting List (DJ Shadow Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/droctagon_droctagonecologys_19waitinglistdjshad.m4a"
+  },
+  {
+    "artist": "Heltah Skeltah",
+    "title": "Leflaur Leflah Eshkoshka",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/heltahskeltah_bootcampcliksgrea_06leflaurleflaheshk.m4a"
+  },
+  {
+    "artist": "Lauryn Hill",
+    "title": "Everything Is Everything",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/hilllauryn_themiseducationof_13everythingisevery.m4a"
+  },
+  {
+    "artist": "Boogie Down Productions",
+    "title": "Jack of Spades",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/boogiedownproduct_aretrospective_08jackofspades.m4a"
+  },
+  {
+    "artist": "De La Soul",
+    "title": "Itzsoweezee (Hot)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/delasoul_stakesishigh_11itzsoweezeehott.m4a"
+  },
+  {
+    "artist": "Ice-T",
+    "title": "O.G. Original Gangster",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/icet_ogoriginalgangste_10ogoriginalgangste.m4a"
+  },
+  {
+    "artist": "Xzibit",
+    "title": "Bird's Eye View",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/xzibit_atthespeedoflife_10birdseyeview.m4a"
+  },
+  {
+    "artist": "Nas",
+    "title": "Ether",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/nas_stillmatic_02ether.m4a"
+  },
+  {
+    "artist": "Mos Def",
+    "title": "Auditorium",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/mosdef_theecstatic_03_auditorium.m4a"
+  },
+  {
+    "artist": "DMX, Method Man, Nas, Ja Rule",
+    "title": "Grand Finale",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/dmxmethodmannasjarule_bellyoriginalmotionpicturesoundtrack_03_grandfinale.m4a"
+  },
+  {
+    "artist": "DMX",
+    "title": "Party Up (Up in Here)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/dmx_andthentherewasx_07_partyupupinhereoriginal.m4a"
+  },
+  {
+    "artist": "Naughty by Nature",
+    "title": "O.P.P.",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/naughtybynature_naturesfinestgrea_02opp.m4a"
+  },
+  {
+    "artist": "Snoop Dogg",
+    "title": "Lodi Dodi",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/snoopdogg_doggystyle_07lodidodi.m4a"
+  },
+  {
+    "artist": "Black Sheep",
+    "title": "Similak Child",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/blacksheep_awolfinsheepsclot_09similakchild.m4a"
+  },
+  {
+    "artist": "2Pac",
+    "title": "Keep Ya Head Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/2pac_2pacgreatesthitsd_01keepyaheadup.m4a"
+  },
+  {
+    "artist": "Rick Ross",
+    "title": "Magnificent",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/rickross_ha200908_12_magnificent.m4a"
+  },
+  {
+    "artist": "Rick Ross",
+    "title": "Hustlin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/rossrick_ha200611_17hustlin.m4a"
+  },
+  {
+    "artist": "Jay-Z",
+    "title": "Swagga Like Us",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jayz_ha200847_19_swaggalikeus.m4a"
+  },
+  {
+    "artist": "Sadat X",
+    "title": "Stages and Lights",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/sadatx_wildcowboys_11stagesandlights.m4a"
+  },
+  {
+    "artist": "Fiasco & Lupe",
+    "title": "Battle Scars",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/fiascolupe_foodliquoriithe_11_battlescars.m4a"
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "C.R.E.A.M.",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/wutangclan_enterthewutang36c_08cream.m4a"
+  },
+  {
+    "artist": "The High and Mighty",
+    "title": "B-Boy Document",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/highandmightythe_soundbombingii_04bboydocument.m4a"
+  },
+  {
+    "artist": "Drake",
+    "title": "Nokia (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/drake_omeexyongs4u_14_nokiaclean.m4a"
+  },
+  {
+    "artist": "Chance the Rapper, Lil Wayne,mino",
+    "title": "Tree (Radio Edit)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/chancetherapperlilwaynesmino_treesingle_01_treeradioedit.m4a"
+  },
+  {
+    "artist": "Kid Cudi",
+    "title": "Make Her Say",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/kidcudi_ha200923_10_makehersay.m4a"
+  },
+  {
+    "artist": "2 Chainz",
+    "title": "Proud",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/2chainz_ha201808_11_proud.m4a"
+  },
+  {
+    "artist": "Lord Sothe Underground",
+    "title": "Tic Toc",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/lordsortheundergr_keepersofthefunk_03tictoc.m4a"
+  },
+  {
+    "artist": "Cole & Keyshia",
+    "title": "You Complete Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/colekeyshia_ha200901_16_youcompleteme.m4a"
+  },
+  {
+    "artist": "DMX",
+    "title": "Pump Ya Fist",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/dmx_hitdisc621_19pumpyafist.m4a"
+  },
+  {
+    "artist": "Eric B. & Rakim",
+    "title": "Move the Crowd",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/ericbandrakim_paidinfull_05movethecrowd.m4a"
+  },
+  {
+    "artist": "Drake",
+    "title": "Sandra's Rose",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/drake_scorpion_110_sandrasrose.m4a"
+  },
+  {
+    "artist": "Black Star",
+    "title": "Definition",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/blackstar_mosdeftalibkwelia_03definition.m4a"
+  },
+  {
+    "artist": "Rae Sremmurd",
+    "title": "Swang",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/raesremmurd_ha201705_13_swang.m4a"
+  },
+  {
+    "artist": "Jackboys, Scott Travis",
+    "title": "Shyne (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/jackboysscotttravis_jackboys2_14_shyneclean.m4a"
+  },
+  {
+    "artist": "Jay-Z",
+    "title": "Cashmere Thoughts",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/jayz_reasonabledoubt_12cashmerethoughts.m4a"
+  },
+  {
+    "artist": "Busta Rhymes",
+    "title": "Aaahhhh",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bustarhymes_ha201701_11_aaahhhh.m4a"
+  },
+  {
+    "artist": "Loe Shimmy",
+    "title": "3AM (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/loeshimmy_rockstarjunkie_09_3amclean.m4a"
+  },
+  {
     "artist": "Boogie Down Productions",
     "title": "My Philosophy",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/boogiedownproduct_aretrospective_01myphilosophy.m4a"
