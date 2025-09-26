@@ -1,5 +1,110 @@
 [
   {
+    "artist": "Foo Fighters",
+    "title": "The Pretender",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/foofighters_hb200732_03thepretender.m4a"
+  },
+  {
+    "artist": "Creed",
+    "title": "With Arms Wide Open",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/creed_al034_1607-05witharmswideopen.m4a"
+  },
+  {
+    "artist": "AC/DC",
+    "title": "Rock N Roll Train",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/acdc_hb200836_02_rocknrolltrain.m4a"
+  },
+  {
+    "artist": "3 Doors Down",
+    "title": "When I'm Gone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/3doorsdown_gd1907_005whenimgone.m4a"
+  },
+  {
+    "artist": "Nickelback",
+    "title": "Rockstar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/nickelback_ha200642_01rockstar.m4a"
+  },
+  {
+    "artist": "Muse",
+    "title": "Uprising",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/muse_ha200939_03_uprising.m4a"
+  },
+  {
+    "artist": "Velvet Revolver",
+    "title": "Slither",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/velvetrevolver_hd580a_12slither.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Tell Me Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumma_02tellmebaby.m4a"
+  },
+  {
+    "artist": "Jet",
+    "title": "Cold Hard Bitch",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/jet_getborn_09_coldhardbitch.m4a"
+  },
+  {
+    "artist": "Dave Matthews Band",
+    "title": "The Space Between",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/davematthewsband_al038_1614-10thespacebetween.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "I Hate Everything About You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_threedaysgrace_03_ihateeverythingaboutyou.m4a"
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "Seven Nation Army",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/whitestripesthe_elephant_01sevennationarmy.m4a"
+  },
+  {
+    "artist": "Audioslave",
+    "title": "Cochise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/audioslave_audioslave_01_cochise.m4a"
+  },
+  {
+    "artist": "The Killers",
+    "title": "When You Were Young",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/killersthe_ha200630_02whenyouwereyoung.m4a"
+  },
+  {
+    "artist": "The Raconteurs",
+    "title": "Steady As She Goes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/raconteurs_ha200614_03steadyasshegoes.m4a"
+  },
+  {
+    "artist": "Evanescence",
+    "title": "Call Me When You're Sober",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/evanescence_ha200632_08callmewhenyoureso.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "Boulevard of Broken Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/greenday_hd593a_09boulevardofbroken.m4a"
+  },
+  {
+    "artist": "Lifehouse",
+    "title": "First Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lifehouse_ha200718_05firsttime.m4a"
+  },
+  {
+    "artist": "Weezer",
+    "title": "Island in the Sun",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/weezer_al039_1617-04islandinthesun.m4a"
+  },
+  {
+    "artist": "All American Rejects",
+    "title": "Dirty Little Secret",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/allamericanreject_hd627a_05dirtylittlesecret.m4a"
+  },
+  {
+    "artist": "Jimmy Eat World",
+    "title": "The Middle",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/jimmyeatworld_al0358_747-08themiddle.m4a"
+  },
+  {
     "artist": "Allman Brothers Band",
     "title": "Jessica",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/allmanbrothersban_crgold066_jessica.m4a"
