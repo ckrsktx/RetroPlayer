@@ -1,5 +1,75 @@
 [
   {
+    "artist": "The Wallflowers",
+    "title": "One Headlight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/wallflowers_al0366_9502-01oneheadlight.m4a"
+  },
+  {
+    "artist": "Céline Dion",
+    "title": "Because You Loved Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/dionceline_ch0354_becauseyoulovedme.m4a"
+  },
+  {
+    "artist": "Primitive Radio Gods",
+    "title": "Standing Outside a Broken Phone Booth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/primitiveradiogod_al0353_707-03standingoutsideap.m4a"
+  },
+  {
+    "artist": "En Vogue",
+    "title": "My Lovin' (You're Never Gonna Get It)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/envogue_ch036_mylovinyourenever.m4a"
+  },
+  {
+    "artist": "The B-52's",
+    "title": "Roam",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/b52sthe_likeomigodthe80sp_20roam.m4a"
+  },
+  {
+    "artist": "Santana",
+    "title": "Smooth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/santana_chrgold58_smooth.m4a"
+  },
+  {
+    "artist": "P.M. Dawn",
+    "title": "Set Adrift on Memory Bliss",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/pmdawn_ch035_setadriftonmemory.m4a"
+  },
+  {
+    "artist": "Amy Grant",
+    "title": "Baby Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/grantamy_chrgold42_babybaby.m4a"
+  },
+  {
+    "artist": "Toni Braxton",
+    "title": "You Mean the World to Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/braxtontoni_chrgold49_youmeantheworldto.m4a"
+  },
+  {
+    "artist": "Roxette",
+    "title": "It Must Have Been Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/roxette_chrgold36_itmusthavebeenlov.m4a"
+  },
+  {
+    "artist": "INXS",
+    "title": "Suicide Blonde",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/inxs_x_01_suicideblonde.m4a"
+  },
+  {
+    "artist": "Boyz II Men",
+    "title": "I'll Make Love to You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/boyziimen_ch0353_illmakelovetoyou.m4a"
+  },
+  {
+    "artist": "Sarah McLachlan",
+    "title": "I Will Remember You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/mclachlansarah_ch0320_iwillrememberyou.m4a"
+  },
+  {
+    "artist": "Shania Twain",
+    "title": "You're Still the One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/twainshania_ch0315_yourestilltheone.m4a"
+  },
+  {
     "artist": "George Michael",
     "title": "Freedom 90",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/michaelgeorge_listenwithoutpr_02_freedom90.m4a"
