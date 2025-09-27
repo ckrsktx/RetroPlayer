@@ -1,6 +1,76 @@
 [
   {
     "artist": "DJ Shadow",
+    "title": "Napalm Brain/Scatter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_12napalmbrainscatte.m4a"
+  },
+  {
+    "artist": "Kruder & Dorfmeister",
+    "title": "Alex Reece Jazz Mast",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/kruderanddorfmeis_thekdsessionspart_02alexreecejazzmast.m4a"
+  },
+  {
+    "artist": "Howie B",
+    "title": "Take Your Partner By The Hand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/howieb_turnthedarkoff_05_takeyourpartnerbythehand.m4a"
+  },
+  {
+    "artist": "Step Disk",
+    "title": "Furvert",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/stepdisk_thetriphoptestpart2_03_furvert.m4a"
+  },
+  {
+    "artist": "DJ Krush",
+    "title": "Keeping The Motion",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/djkrush_krush_02_keepingthemotion.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Dubiliscous Groove",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/crystalmethodthe_thetriphoptestpart1_08_dubiliscousgroove.m4a"
+  },
+  {
+    "artist": "UNKLE",
+    "title": "Rabbit In Your Headlights",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/unkle_psyencefiction_11rabbitinyourheadl.m4a"
+  },
+  {
+    "artist": "DJ Vadim",
+    "title": "Headz Still Ain't Ready",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djvadim_ussrrepertoirethetheoryofverticality_03_headzstillaintready.m4a"
+  },
+  {
+    "artist": "RJD2",
+    "title": "Good Times Roll Pt.2",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/rjd2_deadringer_04goodtimesrollpt2.m4a"
+  },
+  {
+    "artist": "DJ Food",
+    "title": "Sunvibes (Attica Blues Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djfood_ninjacutsfunkjazzticaltricknology_03_sunvibesatticabluesremix.m4a"
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Lately",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/massiveattack_bluelines_08_lately.m4a"
+  },
+  {
+    "artist": "Goldfrapp",
+    "title": "Utopia",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/goldfrapp_feltmountain_08utopia.m4a"
+  },
+  {
+    "artist": "Prince Paul",
+    "title": "Drinks/Escapism",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/princepaul_psychoanalysiswha_11drinksescapism.m4a"
+  },
+  {
+    "artist": "UNKLE",
+    "title": "Getting Ahead In The",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/unkle_psyencefiction_06gettingaheadinthe.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
     "title": "Influx",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djshadow_preemptivestrike_01_influx.m4a"
   },
