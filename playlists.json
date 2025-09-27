@@ -1,11 +1,11 @@
 {
   "Alternative":  "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/AlternativeNow.json",
-  "1990s":        "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/1990s.json",
+  "90s":        "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/1990s.json",
   "Nu-Grind":     "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json",
   "New Brazil":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json",
   "Trip-Hop":     "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop",
   "Hip-Hop":      "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json",
-  "Movies 90s":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json",
+  "Cinema":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json",
   "Rock":         "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
   "Eletronic":    "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
   "Pop":          "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
