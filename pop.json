@@ -1,5 +1,190 @@
 [
   {
+    "artist": "Beyoncé",
+    "title": "Drunk in Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/beyonce_beyonc_03_drunkinlove.m4a"
+  },
+  {
+    "artist": "Young Money",
+    "title": "Every Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/youngmoney_ha200917_10_everygirl.m4a"
+  },
+  {
+    "artist": "Busta Rhymes",
+    "title": "I Know What You Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bustarhymes_gd825_08iknowwhatyou.m4a"
+  },
+  {
+    "artist": "Chris Brown",
+    "title": "Forever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/brownchris_ha200815_12forever.m4a"
+  },
+  {
+    "artist": "Amy Winehouse",
+    "title": "You Know I'm No Good",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/winehouseamy_backtoblack_02youknowimnogood.m4a"
+  },
+  {
+    "artist": "Next",
+    "title": "Wifey",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/next_ch0335_wifey.m4a"
+  },
+  {
+    "artist": "Sisqó",
+    "title": "Thong Song",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/sisqo_ch0334_thongsong.m4a"
+  },
+  {
+    "artist": "Sean Paul",
+    "title": "When You Gonna Give It Up To Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/seanpaul_ha200626_17whenyougonnagivei.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Born to Make You Happy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/spearsbritney_babyonemoretime_05borntomakeyouhapp.m4a"
+  },
+  {
+    "artist": "Pitbull",
+    "title": "I Know You Want Me (Calle Ocho)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/pitbull_rebelution_03_iknowyouwantmecalleo.m4a"
+  },
+  {
+    "artist": "Leona Lewis",
+    "title": "Bleeding Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lewisleona_ha200815_05bleedinglove.m4a"
+  },
+  {
+    "artist": "Evanescence",
+    "title": "Bring Me to Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/evanescence_gd1909_16bringmetolife.m4a"
+  },
+  {
+    "artist": "Beyoncé",
+    "title": "Deja Vu",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/beyonce_ha200625_19dejavu.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Angel",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/madonna_likeavirgin_02_angel.m4a"
+  },
+  {
+    "artist": "Fort Minor",
+    "title": "Where'd You Go",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fortminor_ha200613_08wheredyougo.m4a"
+  },
+  {
+    "artist": "Mariah Carey",
+    "title": "Shake It Off",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/careymariah_hd624a_18shakeitoff.m4a"
+  },
+  {
+    "artist": "Matchbox Twenty",
+    "title": "Unwell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/matchbox20_morethanyouthin_10_unwell.m4a"
+  },
+  {
+    "artist": "Pharrell",
+    "title": "Frontin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/pharrell_gd828_03frontin-radio.m4a"
+  },
+  {
+    "artist": "T-Pain",
+    "title": "Buy U a Drank",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/tpain_ha200716_10buyuadrankshawtys.m4a"
+  },
+  {
+    "artist": "Alicia Keys",
+    "title": "If I Ain't Got You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/aliciakeys_hd579a_04ifiaintgotyou.m4a"
+  },
+  {
+    "artist": "Christina Aguilera",
+    "title": "Ain't No Other Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/aguilerachristina_ha200623_08aintnootherman.m4a"
+  },
+  {
+    "artist": "Ruben Studdard",
+    "title": "Flying Without Wings",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/rubenstuddard_gd1911_14flyingwithout.m4a"
+  },
+  {
+    "artist": "Bloodhound Gang",
+    "title": "The Bad Touch",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/bloodhoundgang_al033_1605-02thebadtouchthe.m4a"
+  },
+  {
+    "artist": "Lady Gaga",
+    "title": "LoveGame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ladygaga_ha200918_12_lovegame.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Oops!...I Did It Again",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/spearsbritney_ch0334_oopsididitagain.m4a"
+  },
+  {
+    "artist": "Timbaland",
+    "title": "Give It to Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/timbaland_ha200705_12giveittome.m4a"
+  },
+  {
+    "artist": "Cam'ron",
+    "title": "Oh Boy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/camron_comehomewithme_08_ohboy.m4a"
+  },
+  {
+    "artist": "Pink",
+    "title": "There You Go",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/pink_ch0334_thereyougo.m4a"
+  },
+  {
+    "artist": "M.I.A.",
+    "title": "Paper Planes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/mia_hb200831_04_paperplanes.m4a"
+  },
+  {
+    "artist": "Gwen Stefani",
+    "title": "Hollaback Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stefanigwen_hd617a_11hollabackgirl.m4a"
+  },
+  {
+    "artist": "NSYNC",
+    "title": "Bye Bye Bye",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/nsync_ch0334_01byebyebye.m4a"
+  },
+  {
+    "artist": "Carrie Underwood",
+    "title": "Before He Cheats",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/underwoodcarrie_ha200647_07beforehecheats.m4a"
+  },
+  {
+    "artist": "Shania Twain",
+    "title": "You're Still the One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/twainshania_ch0315_yourestilltheone.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "4 Minutes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/madonna_ha200812_084minutes.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Circus",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/spearsbritney_ha200850_11_circus.m4a"
+  },
+  {
+    "artist": "Metro Station",
+    "title": "Shake It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/metrostation_ha200825_01_shakeit.m4a"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "He Could Be the One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/cyrusmiley_hannahmontana3_04_hecouldbetheone.m4a"
+  },
+  {
     "artist": "Color Me Badd",
     "title": "I Adore Mi Amor",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/colormebadd_cmb_04_iadoremiamor.m4a"
