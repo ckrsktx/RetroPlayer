@@ -1,5 +1,120 @@
 [
   {
+    "artist": "Eddie Vedder",
+    "title": "Guaranteed",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/intothewild_intothewild_11_guaranteed.m4a"
+  },
+  {
+    "artist": "Simon & Garfunkel",
+    "title": "Scarborough Fair/Canticle",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/graduatethe_thegraduateorig_09_scarboroughfaircanti.m4a"
+  },
+  {
+    "artist": "Lennie Niehaus",
+    "title": "Claudia's Theme",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/unforgiven_varsesarabandea_03_claudiastheme.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "The Beautiful Ones",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/purplerain_purplerainorigi_03_thebeautifulones.m4a"
+  },
+  {
+    "artist": "James Newton Howard",
+    "title": "Hey Look Out, It's Kong/Kong in the Big Apple",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/kingkong_kingkongorigina_16_heylookoutitskongkon.m4a"
+  },
+  {
+    "artist": "Bob Seger",
+    "title": "Roll Me Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/armageddon_armageddonorigi_05_rollmeaway.m4a"
+  },
+  {
+    "artist": "Paul Westerberg",
+    "title": "Dyslexic Heart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/singles_singlesoriginal_04_dyslexicheart.m4a"
+  },
+  {
+    "artist": "Tchaikovsky",
+    "title": "Waltz of the Flowers",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/fantasia_fantasiaorigina_07_waltzoftheflowers.m4a"
+  },
+  {
+    "artist": "Jack White & Alicia Keys",
+    "title": "Another Way to Die",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/quantumofsolace_quantumofsolace_24_anotherwaytodie.m4a"
+  },
+  {
+    "artist": "Lou Reed",
+    "title": "Perfect Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/trainspotting_trainspottingor_08_perfectday.m4a"
+  },
+  {
+    "artist": "Robbie Williams",
+    "title": "Beyond the Sea",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/beyondthesea_beyondtheseaori_06_beyondthesea.m4a"
+  },
+  {
+    "artist": "Aaliyah",
+    "title": "Rock the Boat",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/milk_milkoriginalmot_03_rocktheboat.m4a"
+  },
+  {
+    "artist": "Gabrielle",
+    "title": "Out of Reach",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/bridgetjonessdi_bridgetjonessdi_09_outofreach.m4a"
+  },
+  {
+    "artist": "Cliff Martinez",
+    "title": "Rubber Head",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/drive_driveoriginalmo_06_rubberhead.m4a"
+  },
+  {
+    "artist": "Pam Grier",
+    "title": "Long Time Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/jackiebrown_jackiebrownorig_08_longtimewoman.m4a"
+  },
+  {
+    "artist": "Mychael Danna",
+    "title": "Tsimtsum",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/lifeofpi_lifeofpiorigina_12_tsimtsum.m4a"
+  },
+  {
+    "artist": "Nicholas Hooper",
+    "title": "The Ministry of Magic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/harrypotterandt_harrypotterandt_15_theministryofmagic.m4a"
+  },
+  {
+    "artist": "Audrey Hepburn",
+    "title": "Moon River",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/breakfastattiff_breakfastattiff_01_moonriver.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "Rings of Knowledge",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/epic2013_epicoriginalmot_12_ringsofknowledge.m4a"
+  },
+  {
+    "artist": "Dusty Springfield",
+    "title": "Son of a Preacher Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/pulpfiction_pulpfictionorig_07_sonofapreacherman.m4a"
+  },
+  {
+    "artist": "Ennio Morricone",
+    "title": "The Strength of the Righteous",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/untouchablesthe_theuntouchables_08_thestrengthoftherigh.m4a"
+  },
+  {
+    "artist": "Johnny Burnette",
+    "title": "You're Sixteen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/burnettejohnny_gd613_15youresixteen.m4a"
+  },
+  {
+    "artist": "Mark Mothersbaugh",
+    "title": "111 Archer Avenue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/royaltenenbaums_theroyaltenenba_01_111archeravenue.m4a"
+  },
+  {
     "artist": "American Beauty OST",
     "title": "We Haven't Turned Around",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/americanbeauty_americanbeautyo_10_wehaventturnedaround.m4a"
