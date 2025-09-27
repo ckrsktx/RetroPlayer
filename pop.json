@@ -1,5 +1,219 @@
-
 [
+  {
+    "artist": "Color Me Badd",
+    "title": "I Adore Mi Amor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/colormebadd_cmb_04_iadoremiamor.m4a"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "title": "Cry Me a River",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/timberlakejustin_gd823_12crymeariver.m4a"
+  },
+  {
+    "artist": "Selena",
+    "title": "Dreaming of You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/selena_chrgold53_dreamingofyouradi.m4a"
+  },
+  {
+    "artist": "Ricky Martin",
+    "title": "She Bangs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/martinricky_soundloaded_01_shebangs.m4a"
+  },
+  {
+    "artist": "Ricky Martin",
+    "title": "The Cup of Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/martinricky_lacopadelavida_01_thecupoflifeenglishradioedit.m4a"
+  },
+  {
+    "artist": "Destiny's Child",
+    "title": "Say My Name",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/destinyschild_ch0333_saymyname.m4a"
+  },
+  {
+    "artist": "Soul For Real",
+    "title": "Candy Rain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/soulforreal_blockpartyvolum_06_candyrain.m4a"
+  },
+  {
+    "artist": "TLC",
+    "title": "Creep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/tlc_ch0310_creep.m4a"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "title": "Rock Your Body",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/timberlakejustin_gd825_04rockyourbody.m4a"
+  },
+  {
+    "artist": "Jodeci",
+    "title": "Feenin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/jodeci_diaryofamadband_03_feenin.m4a"
+  },
+  {
+    "artist": "Hanson",
+    "title": "Where's the Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/hanson_middleofnowhere_05_wheresthelove.m4a"
+  },
+  {
+    "artist": "Monica",
+    "title": "For You I Will",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/monica_chrgold53_foryouiwill.m4a"
+  },
+  {
+    "artist": "Monica",
+    "title": "Angel of Mine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/monica_ch0319_angelofmine.m4a"
+  },
+  {
+    "artist": "Enrique Iglesias",
+    "title": "Hero",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/iglesiasenrique_ch0344_04hero.m4a"
+  },
+  {
+    "artist": "O-Town",
+    "title": "All or Nothing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/otown_ch0340_allornothing.m4a"
+  },
+  {
+    "artist": "LFO",
+    "title": "Every Other Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/lfo_ch0341_everyothertime.m4a"
+  },
+  {
+    "artist": "Avril Lavigne",
+    "title": "Complicated",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lavigneavril_gd823_14complicated-tom.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Sometimes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/spearsbritney_ch0320_sometimes.m4a"
+  },
+  {
+    "artist": "Color Me Badd",
+    "title": "I Wanna Sex You Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/colormebadd_ch035_iwannasexyouup.m4a"
+  },
+  {
+    "artist": "Cathy Dennis",
+    "title": "Just Another Dream",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/denniscathy_gd935_08justanotherdream.m4a"
+  },
+  {
+    "artist": "Christina Aguilera",
+    "title": "Beautiful",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/christina_gd1907_14beautifulalbum.m4a"
+  },
+  {
+    "artist": "JoJo",
+    "title": "Leave (Get Out)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jojo_hd555a_19leavegetout.m4a"
+  },
+  {
+    "artist": "Ashlee Simpson",
+    "title": "Shadow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ashleesimpson_hd581a_008shadow.m4a"
+  },
+  {
+    "artist": "Backstreet Boys",
+    "title": "Quit Playing Games",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/backstreetboys_chrgold56_quitplayinggamesw.m4a"
+  },
+  {
+    "artist": "98 Degrees",
+    "title": "I Do (Cherish You)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/98degrees_chrgold56_idocherishyou.m4a"
+  },
+  {
+    "artist": "Christina Aguilera",
+    "title": "Can't Hold Us Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/aguilerachristina_gd829_15cantholdusdown.m4a"
+  },
+  {
+    "artist": "Christina Aguilera",
+    "title": "Genie in a Bottle",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/aguilerachristina_ch0320_genieinabottle.m4a"
+  },
+  {
+    "artist": "BBMak",
+    "title": "Back Here",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/bbmak_chrgold59_backhere.m4a"
+  },
+  {
+    "artist": "Jessica Simpson",
+    "title": "I Think I'm in Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/simpsonjessica_ch0335_ithinkiminlovewit.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Baby One More Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/spearsbritney_ch0318_babyonemoretime.m4a"
+  },
+  {
+    "artist": "Backstreet Boys",
+    "title": "As Long As You Love Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/backstreetboys_ch0314_aslongasyouloveme.m4a"
+  },
+  {
+    "artist": "Destiny's Child",
+    "title": "Bootylicious",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/destinyschild_ch0341_bootylicious.m4a"
+  },
+  {
+    "artist": "98 Degrees",
+    "title": "Give Me Just One Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/98degrees_ch0336_givemejustonenigh.m4a"
+  },
+  {
+    "artist": "Hilary Duff",
+    "title": "Come Clean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/hilaryduff_hd549a_11comeclean.m4a"
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "I'm a Slave 4 U",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/spearsbritney_ch0344_01imaslave4u.m4a"
+  },
+  {
+    "artist": "Boyz II Men",
+    "title": "Motownphilly",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/boyziimen_ch0362_motownphilly.m4a"
+  },
+  {
+    "artist": "NSYNC",
+    "title": "I Want You Back",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/nsync_ch0315_iwantyouback.m4a"
+  },
+  {
+    "artist": "Jesse McCartney",
+    "title": "Beautiful Soul",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jessemccartney_hd582a_007beautifulsoul.m4a"
+  },
+  {
+    "artist": "Jessica Simpson",
+    "title": "With You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jessicasimpson_hd537a_09withyou.m4a"
+  },
+  {
+    "artist": "JoJo",
+    "title": "Baby It's You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jojo_hd580a_15babyitsyou.m4a"
+  },
+  {
+    "artist": "NSYNC",
+    "title": "Pop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/nsync_ch0341_01pop.m4a"
+  },
+  {
+    "artist": "B*Witched",
+    "title": "C'est La Vie",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/bwitched_bwitched_02_cestlavie.m4a"
+  },
+  {
+    "artist": "Boyz II Men",
+    "title": "It's So Hard to Say Goodbye",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boyziimen_chrgold45_itssohardtosaygoo.m4a"
+  },
   {
     "artist": "Of Monsters and Men",
     "title": "Little Talks",
