@@ -1,5 +1,75 @@
 [
   {
+    "artist": "DJ Cam",
+    "title": "No Competition",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djcam_abstractmanifesto_06_nocompetition.m4a"
+  },
+  {
+    "artist": "Jay-Jay Johanson",
+    "title": "It Hurts Me So",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/johansonjayjay_whiskey_01_ithurtsmeso.m4a"
+  },
+  {
+    "artist": "Redsnapper",
+    "title": "In Deep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/redsnapper_thetriphoptestpart2_01_indeep.m4a"
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Man Next Door",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/massiveattack_mezzanine_07_mannextdoor.m4a"
+  },
+  {
+    "artist": "Wizard of Oh",
+    "title": "Terminal Intensity",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/wizardofoh_thetriphoptestpart3_03_terminalintensity.m4a"
+  },
+  {
+    "artist": "Coldcut",
+    "title": "My Telephone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/coldcut_whatsthatnoise_04_mytelephone.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Mysterons",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/portishead_dummy_01_mysterons.m4a"
+  },
+  {
+    "artist": "Sneaker Pimps",
+    "title": "Half Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/sneakerpimps_splinter_01_halflife.m4a"
+  },
+  {
+    "artist": "Tricky",
+    "title": "Overcome",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/tricky_maxinquaye_01_overcome.m4a"
+  },
+  {
+    "artist": "Oversoul 7",
+    "title": "Nothing Like Tomorrow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/oversoul7_thetriphoptestpart3_04_nothingliketomorrow.m4a"
+  },
+  {
+    "artist": "D-Cruze",
+    "title": "Cruzin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/dcruze_thetriphoptestpart2_08_cruzin.m4a"
+  },
+  {
+    "artist": "Supreme Beings of Leisure",
+    "title": "Last Girl On Earth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/supremebeingsofleisure_supremebeingsofleisure_03_lastgirlonearth.m4a"
+  },
+  {
+    "artist": "I Monster",
+    "title": "Daydream In Blue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/imonster_theseareourchildren_12_daydreaminblue.m4a"
+  },
+  {
+    "artist": "DJ Krush",
+    "title": "Interlude",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djkrush_kakusei_08_interlude.m4a"
+  },
+  {
     "artist": "DJ Shadow",
     "title": "Napalm Brain/Scatter",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_12napalmbrainscatte.m4a"
