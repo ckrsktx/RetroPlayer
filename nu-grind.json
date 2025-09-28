@@ -1,5 +1,70 @@
 [
   {
+    "artist": "Limp Bizkit",
+    "title": "Take a Look Around R",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/limpbizkit_al338_takealookaroundra.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "Voodoo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/godsmack_al032_1603-02voodoo.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Snuff",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/slipknot_hb200937_02_snuff.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Left Behind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_iowa_08_leftbehind.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Unsainted",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_wearenotyourkind_02_unsainted.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Dead Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/slipknot_hb200841_06_deadmemories.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Before I Forget",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/slipknot_volume3thesubli_01_beforeiforget.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "New Awakening",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/killswitchengag_disarmthedescen_03_newawakening.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Never Enough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fivefingerdeathpu_hb200816_05neverenough.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Last Resort Clean Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/paparoach_al033_1607-01lastresortcleanve.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "The Emptiness Machine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_02_theemptinessmachine.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Heavy is the Crow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_04_heavyisthecrow.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Wait and Bleed",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/slipknot_al332_waitandbleed.m4a"
+  },
+  {
     "artist": "Hed PE",
     "title": "Feel Good",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hedpe_broke_03_feelgood.m4a"
