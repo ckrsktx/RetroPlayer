@@ -1,5 +1,65 @@
 [
   {
+    "artist": "DJ Shadow",
+    "title": "Lost and Found",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/djshadow_lostfoundsflkem_01_lostandfoundsfl.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Stem/Long Stem",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_07stemlongstem.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Changeling",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_04changeling.m4a"
+  },
+  {
+    "artist": "Tranquility Bass",
+    "title": "They Came In Peace",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/tranquilitybass_thetriphoptestpart1_07_theycameinpeace.m4a"
+  },
+  {
+    "artist": "David Holmes",
+    "title": "Radio 7",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/holmesdavid_letsgetkilled_07_radio7.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Midnight In A Perfect World",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_11midnightinaperfec.m4a"
+  },
+  {
+    "artist": "DJ Krush",
+    "title": "Kemuri",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/djkrush_strictlyturntablized_4_kemuri.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "The Mountain Will Fall",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/djshadow_themountainwillfall_01_themountainwillfall.m4a"
+  },
+  {
+    "artist": "Laika",
+    "title": "Looking For The Jackalope",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/laika_offbeataredhotsoundtrip_04_lookingforthejackalope.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Nobody Speak",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/djshadow_hb201628_09_nobodyspeak.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Organ Donor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_09organdonor.m4a"
+  },
+  {
+    "artist": "DJ Shadow",
+    "title": "Best Foot Forward",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/djshadow_endtroducing_01bestfootforward.m4a"
+  },
+  {
     "artist": "Amon Tobin",
     "title": "Dream Sequence",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/tobinamon_bricolage_12dreamsequence.m4a"
