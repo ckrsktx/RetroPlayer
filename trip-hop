@@ -1,5 +1,55 @@
 [
   {
+    "artist": "Beth Gibbons",
+    "title": "Lost Changes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/gibbonsbeth_livesoutgrown_04_lostchanges.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Machine Gun",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/portishead_third_08machinegun.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "The Rip",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/portishead_third_04therip.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Sour Times",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/portishead_dummy_02_sourtimes.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "All Mine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/portishead_portishead_02allmine.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Hunter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/portishead_third_02_hunter.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Numb",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/portishead_dummy_07_numb.m4a"
+  },
+  {
+    "artist": "Beth Gibbons and Rustin Man",
+    "title": "Sand River",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/gibbonsbethandrus_outofseason_05sandriver.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Revenge Of The Number",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/portishead_therebirthofcoolphive_09_revengeofthenumber.m4a"
+  },
+  {
+    "artist": "Portishead",
+    "title": "Nylon Smile",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/portishead_third_03_nylonsmile.m4a"
+  },
+  {
     "artist": "DJ Cam",
     "title": "No Competition",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/djcam_abstractmanifesto_06_nocompetition.m4a"
