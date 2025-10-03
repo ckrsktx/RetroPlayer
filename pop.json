@@ -1,5 +1,119 @@
-
 [
+  {
+    "artist": "Loreena McKennitt",
+    "title": "Kecharitomene",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/celtic/mckennittloreen_anancientmuse_05_kecharitomene.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Medellín",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/madonna_madamex_1_medellin.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "Billie Jean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/michaeljackson_numberones_03billiejean.m4a"
+  },
+  {
+    "artist": "Janet Jackson",
+    "title": "Escapade",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jacksonjanet_ch0350_escapade.m4a"
+  },
+  {
+    "artist": "Eko",
+    "title": "Celtica",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/celtic/eko_celtica_03_celtica.m4a"
+  },
+  {
+    "artist": "Whitney Houston",
+    "title": "How Will I Know",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/houstonwhitney_chrgold13_howwilliknow.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Papa Don't Preach",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/madonna_trueblue_01_papadontpreach.m4a"
+  },
+  {
+    "artist": "DJ Reitt & Shanara",
+    "title": "Canto a Babalú Ayé",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/djreittshanara_cantoababaluayeremixes_01_cantoababaluayedjreittremix.m4a"
+  },
+  {
+    "artist": "Pat Benatar",
+    "title": "Shadows of the Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/patbenatar_getnervous_01_shadowsofthenight.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Crazy for You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/madonna_chrgold18_crazyforyou.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Holiday",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/madonna_ch031_holiday.m4a"
+  },
+  {
+    "artist": "Jennifer Lopez",
+    "title": "Waiting for Tonight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lopezjennifer_chrgold58_waitingfortonight.m4a"
+  },
+  {
+    "artist": "Cyndi Lauper",
+    "title": "Time After Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/laupercyndi_shessounusual_04timeaftertime.m4a"
+  },
+  {
+    "artist": "Prophex",
+    "title": "Bachata Fever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/prophex_bachatafeversingle_01_bachatafever.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Borderline",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/madonna_chrgold19_borderlinesinglev.m4a"
+  },
+  {
+    "artist": "Tina Turner",
+    "title": "What's Love Got to Do With It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/turnertina_gd103_08whatslovegottodow.m4a"
+  },
+  {
+    "artist": "Rihanna",
+    "title": "Diamonds",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/rihanna_ha201241_11_diamonds.m4a"
+  },
+  {
+    "artist": "Café Tacuba",
+    "title": "10",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/cafetacuba_reves_07_10.m4a"
+  },
+  {
+    "artist": "Adele",
+    "title": "Rumor Has It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/adele_hb201135_07_rumorhasit.m4a"
+  },
+  {
+    "artist": "Diana Ross",
+    "title": "Upside Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/rossdiana_gd207_07upsidedown.m4a"
+  },
+  {
+    "artist": "Fine Young Cannibals",
+    "title": "She Drives Me Crazy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/fineyoungcannibal_chrgold37_shedrivesmecrazy.m4a"
+  },
+  {
+    "artist": "Dionne Warwick",
+    "title": "Walk On By",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/warwickdionne_golddisc307_15walkonby.m4a"
+  },
+  {
+    "artist": "Paul Anka",
+    "title": "You're Having My Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/ankapaul_thebestoftheuni_03_yourehavingmybaby.m4a"
+  },
   {
     "artist": "George Michael",
     "title": "Father Figure",
