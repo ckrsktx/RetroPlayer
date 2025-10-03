@@ -1,14 +1,15 @@
+
 {
-  "Alternative":  "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/AlternativeNow.json",
-  "90s":        "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/1990s.json",
-  "Nu-Grind":     "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json",
-  "New Brazil":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json",
-  "Trip-Hop":     "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop",
-  "Hip-Hop":      "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json",
-  "Cinema":   "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json",
-  "Rock":         "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
-  "Eletronic":    "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
-  "Pop":          "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
-  "Retro Dance":  "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json",
-  "Christian Rock": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/christian-rock"
+  "90s": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/1990s.json",
+  "Alternative": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/AlternativeNow.json",
+  "Christian Rock": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/christian-rock",
+  "Cinema": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/movies-90.json",
+  "Eletronic": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
+  "Hip-Hop": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json",
+  "New Brazil": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json",
+  "Nu-Grind": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/nu-grind.json",
+  "Pop": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
+  "Retro Dance": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json",
+  "Rock": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
+  "Trip-Hop": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/trip-hop"
 }
