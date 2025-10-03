@@ -1,5 +1,80 @@
 [
   {
+    "artist": "The Beatles",
+    "title": "It's All Too Much",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_yellowsubmarine_05_itsalltoomuch.m4a"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "title": "Whole Lotta Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/ledzeppelin_crgold046_wholelottalove.m4a"
+  },
+  {
+    "artist": "The Pretenders",
+    "title": "My City Was Gone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/pretendersthe_crgold004_mycitywasgone.m4a"
+  },
+  {
+    "artist": "The Police",
+    "title": "So Lonely",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/policethe_outlandosdamour_02solonely.m4a"
+  },
+  {
+    "artist": "Unknown Artist",
+    "title": "Unknown Title",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/wmvy/01522.m4a"
+  },
+  {
+    "artist": "Collective Soul",
+    "title": "Run",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/collectivesoul_dosage_7_run.m4a"
+  },
+  {
+    "artist": "Lenny Kravitz",
+    "title": "American Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kravitzlenny_al0355_730-05americanwomansing.m4a"
+  },
+  {
+    "artist": "ZZ Top",
+    "title": "La Grange",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/zztop_crgold049_lagrange.m4a"
+  },
+  {
+    "artist": "Matthew Sweet",
+    "title": "Girlfriend",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sweetmatthew_al0340_676-03girlfriend.m4a"
+  },
+  {
+    "artist": "The Raconteurs",
+    "title": "Steady As She Goes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/raconteursthe_brokenboysoldiers_01steadyasshegoes.m4a"
+  },
+  {
+    "artist": "The Doobie Brothers",
+    "title": "Rockin' Down the Highway",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/thedoobiebrothers_livefromthebeacontheatre_02_rockindownthehighway.m4a"
+  },
+  {
+    "artist": "The Smithereens",
+    "title": "Behind the Wall of Sleep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/smithereensthe_especiallyforyo_07_behindthewallofsleep.m4a"
+  },
+  {
+    "artist": "The Doors",
+    "title": "Love Her Madly",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/doorsthe_crgold070_lovehermadly.m4a"
+  },
+  {
+    "artist": "The Black Keys",
+    "title": "Lonely Boy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/blackkeysthe_hb201145_07_lonelyboy.m4a"
+  },
+  {
+    "artist": "Frank Zappa",
+    "title": "Don't Eat the Yellow Snow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/zappafrank_apostrophe_01donteattheyellows.m4a"
+  },
+  {
     "artist": "Pearl Jam",
     "title": "Black",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/pearljam_al0340_681-08black.m4a"
