@@ -1,6 +1,136 @@
 
 [
   {
+    "artist": "George Michael",
+    "title": "Father Figure",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/michaelgeorge_chrgold31_fatherfigure.m4a"
+  },
+  {
+    "artist": "Phil Collins",
+    "title": "In the Air Tonight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/collinsphil_theverybestofmtvunpluggedvol2_15_intheairtonight.m4a"
+  },
+  {
+    "artist": "Aerosmith",
+    "title": "I Don't Want to Miss a Thing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aerosmith_chrgold32_idontwanttomissat.m4a"
+  },
+  {
+    "artist": "Hall & Oates",
+    "title": "Maneater",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/hallandoates_chrgold11_maneater.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "The Way You Make Me Feel",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/jacksonmichael_chrgold14_thewayyoumakemefe.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "Beat It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/michaeljackson_numberones_04beatit.m4a"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "title": "Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/fleetwoodmac_crgold061_dreams.m4a"
+  },
+  {
+    "artist": "Michael Sembello",
+    "title": "Maniac",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/flashdance_flashdanceorigi_10_maniac.m4a"
+  },
+  {
+    "artist": "Gotye",
+    "title": "Somebody That I Used to Know",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/gotye_ha201212_09_somebodythatiusedtok.m4a"
+  },
+  {
+    "artist": "Bon Jovi",
+    "title": "Livin' on a Prayer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/bonjovi_crgold022_livinonaprayer.m4a"
+  },
+  {
+    "artist": "Pink",
+    "title": "Just Give Me a Reason",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/pink_ha201307_06_justgivemeareason.m4a"
+  },
+  {
+    "artist": "Alanis Morissette",
+    "title": "You Learn",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/morissettealanis_al0366_9501-11youlearn.m4a"
+  },
+  {
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "title": "Uptown Funk",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ronsonmark_hb201502_08_uptownfunk.m4a"
+  },
+  {
+    "artist": "Ace of Base",
+    "title": "Don't Turn Around",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aceofbase_chrgold50_dontturnaroundsin.m4a"
+  },
+  {
+    "artist": "Inner Circle",
+    "title": "Sweat (A La La La La Long)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/innercircle_ch038_sweatalalalalalon.m4a"
+  },
+  {
+    "artist": "Uncle Kracker",
+    "title": "Follow Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/unclekracker_al0364_808-04followmeradiovers.m4a"
+  },
+  {
+    "artist": "Chappell Roan",
+    "title": "Good Luck, Babe!",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/roanchappell_goodluckbabesingle_01_goodluckbabe.m4a"
+  },
+  {
+    "artist": "Train",
+    "title": "Hey, Soul Sister",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/train_ha200933_01_heysoulsister.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "Raspberry Beret",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/prince_ch0347_raspberryberet.m4a"
+  },
+  {
+    "artist": "Ace of Base",
+    "title": "All That She Wants",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aceofbase_chrgold50_allthatshewants.m4a"
+  },
+  {
+    "artist": "Gwen Stefani",
+    "title": "Hollaback Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stefanigwen_hd609a_10hollabackgirlclea.m4a"
+  },
+  {
+    "artist": "Donna Lewis",
+    "title": "I Love You Always Forever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lewisdonna_chrgold54_iloveyoualwaysfor.m4a"
+  },
+  {
+    "artist": "Gloria Gaynor",
+    "title": "I Will Survive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/gaynorgloria_ol0347_7504-12iwillsurvive.m4a"
+  },
+  {
+    "artist": "Alicia Keys",
+    "title": "Fallin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/keysalicia_ch0341_fallin.m4a"
+  },
+  {
+    "artist": "Gnarls Barkley",
+    "title": "Crazy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/gnarlsbarkley_ha200615_09crazy.m4a"
+  },
+  {
+    "artist": "Ben E. King",
+    "title": "Stand by Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/beneking_gd429_07standbyme.m4a"
+  },
+  {
     "artist": "Michael Jackson",
     "title": "Billie Jean",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/jacksonmichael_chrgold14_billiejean.m4a"
