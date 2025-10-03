@@ -1,6 +1,121 @@
 
 [
   {
+    "artist": "Boyz II Men",
+    "title": "End of the Road",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/boomerang_boomerang_06_endoftheroad.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "Man in the Mirror",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/michaeljackson_numberones_10maninthemirror.m4a"
+  },
+  {
+    "artist": "Wham!",
+    "title": "Careless Whisper",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/wham_chrgold29_carelesswhisper.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Into the Groove",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/madonna_gd231_02intothegroove.m4a"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "title": "Rock Your Body",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/justin_gd1911_15rockyourbody.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "Bad",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/michaeljackson_numberones_07bad.m4a"
+  },
+  {
+    "artist": "Haddaway",
+    "title": "What Is Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/haddaway_ch0349_whatislove.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "True Blue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/madonna_gd151_12trueblue.m4a"
+  },
+  {
+    "artist": "Crowded House",
+    "title": "Don't Dream It's Over",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/crowdedhouse_chrgold45_dontdreamitsover.m4a"
+  },
+  {
+    "artist": "Survivor",
+    "title": "Eye of the Tiger",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/rockyiii_rockyiiiorigina_01_eyeofthetiger.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Lucky Star",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/madonna_ch031_luckystar.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "When Doves Cry",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/prince_chrgold23_whendovescry.m4a"
+  },
+  {
+    "artist": "Adele",
+    "title": "Rolling in the Deep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/adele_hb201047_13_rollinginthedeep.m4a"
+  },
+  {
+    "artist": "Heart",
+    "title": "These Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/heart_chrgold12_thesedreams.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "1999",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/prince_chrgold23_1999.m4a"
+  },
+  {
+    "artist": "Queen",
+    "title": "Another One Bites the Dust",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/queen_likeomigodthe80sp_04anotheronebitesth.m4a"
+  },
+  {
+    "artist": "Eurythmics",
+    "title": "Sweet Dreams",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/eurythmics_chrgold08_sweetdreamsaremad.m4a"
+  },
+  {
+    "artist": "Bruno Mars",
+    "title": "When I Was Your Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/marsbruno_ha201303_06_wheniwasyourman.m4a"
+  },
+  {
+    "artist": "Eddie Money",
+    "title": "Take Me Home Tonight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/moneyeddie_chrgold21_takemehometonight.m4a"
+  },
+  {
+    "artist": "Phil Collins",
+    "title": "Against All Odds",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/collinsphil_chrgold06_againstalloddstak.m4a"
+  },
+  {
+    "artist": "The Weeknd",
+    "title": "Blinding Lights",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/weekndthe_blindinglightssingle_01_blindinglights.m4a"
+  },
+  {
+    "artist": "The Cardigans",
+    "title": "Lovefool",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/cardigans_firstbandonthemoo_07lovefool.m4a"
+  },
+  {
+    "artist": "Lorde",
+    "title": "Royals",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/lorde_hc201405_08_royals.m4a"
+  },
+  {
     "artist": "Eddie Vedder",
     "title": "Guaranteed",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/intothewild_intothewild_11_guaranteed.m4a"
