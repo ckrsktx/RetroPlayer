@@ -1,6 +1,111 @@
 
 [
   {
+    "artist": "Michael Jackson",
+    "title": "Billie Jean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/jacksonmichael_chrgold14_billiejean.m4a"
+  },
+  {
+    "artist": "Whitney Houston",
+    "title": "I Wanna Dance With Somebody",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/houstonwhitney_chrgold14_iwannadancewithso.m4a"
+  },
+  {
+    "artist": "Alannah Myles",
+    "title": "Black Velvet",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/mylesalannah_chrgold41_blackvelvet.m4a"
+  },
+  {
+    "artist": "The Fray",
+    "title": "How to Save a Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/greysanatomyvol2_greysanatomyvol2_01howtosavealife.m4a"
+  },
+  {
+    "artist": "Lady Gaga & Bruno Mars",
+    "title": "Die With a Smile",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/ladygagabrunomars_diewithasmilesingle_01_diewithasmile.m4a"
+  },
+  {
+    "artist": "Journey",
+    "title": "Don't Stop Believin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/journey_chrgold16_dontstopbelievin.m4a"
+  },
+  {
+    "artist": "The Police",
+    "title": "Every Breath You Take",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/policethe_crgold046_everybreathyoutak.m4a"
+  },
+  {
+    "artist": "Paula Abdul",
+    "title": "Straight Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/abdulpaula_ch034_straightup.m4a"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "title": "What Goes Around",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/timberlakejustin_ha200649_08whatgoesaround.m4a"
+  },
+  {
+    "artist": "Michael Jackson",
+    "title": "Human Nature",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/jacksonmichael_thriller_03_humannature.m4a"
+  },
+  {
+    "artist": "Natalie Imbruglia",
+    "title": "Torn",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/imbruglianatalie_chrgold57_torn.m4a"
+  },
+  {
+    "artist": "Eric Carmen",
+    "title": "Hungry Eyes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/carmeneric_gd433_03hungryeyes.m4a"
+  },
+  {
+    "artist": "Adele",
+    "title": "Set Fire to the Rain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/adele_ha201147_08_setfiretotherain.m4a"
+  },
+  {
+    "artist": "Lady Gaga",
+    "title": "Poker Face",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ladygaga_ha200904_11_pokerface.m4a"
+  },
+  {
+    "artist": "Katy Perry",
+    "title": "Teenage Dream",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/perrykaty_ha201031_12_teenagedream.m4a"
+  },
+  {
+    "artist": "A-ha",
+    "title": "Take On Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aha_chrgold49_takeonme.m4a"
+  },
+  {
+    "artist": "Alanis Morissette",
+    "title": "Hand in My Pocket",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/morissettealanis_ch0310_handinmypocket.m4a"
+  },
+  {
+    "artist": "TLC",
+    "title": "No Scrubs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/tlc_ch0319_noscrubs.m4a"
+  },
+  {
+    "artist": "Kenny Loggins",
+    "title": "Danger Zone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/logginskenny_chrgold64_dangerzone.m4a"
+  },
+  {
+    "artist": "Montell Jordan",
+    "title": "This Is How We Do It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jordanmontell_ch0364_thisishowwedoit.m4a"
+  },
+  {
+    "artist": "Blondie",
+    "title": "Heart of Glass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/blondie_chrgold54_heartofglass.m4a"
+  },
+  {
     "artist": "Madonna",
     "title": "Vogue",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/madonna_chrgold19_voguesingleversio.m4a"
