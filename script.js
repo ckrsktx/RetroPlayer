@@ -97,7 +97,7 @@ function clearStartTimeout() {
   }
   await loadPool({ resetIdx: true, stopPlayback: false });
 
-  /* INÍCIO ALEATÓRIO */
+  /* SORTEAR PRIMEIRA MÚSICA AO ABRIR A PÁGINA */
   idx = Math.floor(Math.random() * pool.length);
 
   loader.style.display = 'none';
@@ -127,7 +127,7 @@ function fillMenu() {
 
         await loadPool({ resetIdx: true, stopPlayback: true });
 
-        /* INÍCIO ALEATÓRIO */
+        /* SORTEAR PRIMEIRA MÚSICA AO TROCAR DE PLAYLIST */
         idx = Math.floor(Math.random() * pool.length);
 
         await loadTrack({ autoplay: false });
@@ -533,7 +533,7 @@ window.changePlaylist = async function (name) {
   playlistName.textContent = name;
   await loadPool({ resetIdx: true, stopPlayback: true });
 
-  /* INÍCIO ALEATÓRIO */
+  /* SORTEAR PRIMEIRA MÚSICA AO TROCAR VIA API changePlaylist */
   idx = Math.floor(Math.random() * pool.length);
 
   await loadTrack({ autoplay: false });
@@ -550,3 +550,4 @@ window._playerState = () => ({
   playedInCycleSize: playedInCycle.size,
   startTimeout: !!startTimeoutId
 });
+      
