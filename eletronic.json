@@ -1,5 +1,115 @@
 [
   {
+    "artist": "Schnauss Ulrich",
+    "title": "A Strangely Isolated Place",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/schnaussulrich_astrangelyisola_08_astrangelyisolatedpl.m4a"
+  },
+  {
+    "artist": "Orsini Gabriele",
+    "title": "Ninnananna",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/orsinigabriele_ninnanannaep_01_ninnananna.m4a"
+  },
+  {
+    "artist": "The Orb",
+    "title": "Blue Room",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/orbthe_blueroom_02_blueroomfrankdewulfr.m4a"
+  },
+  {
+    "artist": "Miles Robert",
+    "title": "Red Zone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/milesrobert_dreamland_11_redzone.m4a"
+  },
+  {
+    "artist": "Toba Ricardo",
+    "title": "Garden",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tobarricardo_hundredsgardenr_01_gardendanielaveryrem.m4a"
+  },
+  {
+    "artist": "Efdemin",
+    "title": "Parallaxis",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/efdemin_decay_09_parallaxis.m4a"
+  },
+  {
+    "artist": "Younger Brother",
+    "title": "The Receptive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/youngerbrother_aflockofbleeps_02_thereceptive.m4a"
+  },
+  {
+    "artist": "Trentemoller",
+    "title": "Moan",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/trentemoller_thelastresort_12moan.m4a"
+  },
+  {
+    "artist": "Kolsch Tiga",
+    "title": "Hal",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kolschtiga_halsingle_01_hal.m4a"
+  },
+  {
+    "artist": "Bakradze",
+    "title": "The Silence Between Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/bakradze_letterep_02_thesilencebetweenmea.m4a"
+  },
+  {
+    "artist": "Efdemin",
+    "title": "Subatomic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/efdemin_decay_06_subatomic.m4a"
+  },
+  {
+    "artist": "Tobias",
+    "title": "Cursor Item Only",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tobias_aseriesofshocks_08_cursoritemonly.m4a"
+  },
+  {
+    "artist": "Gorgon City Kaskade",
+    "title": "Go Slow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/gorgoncitykaskade_goslow_01_goslow.m4a"
+  },
+  {
+    "artist": "Summit John",
+    "title": "Tears With Paige Cavell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/summitjohn_comfortinchaos_02_tearswithpaigecavell.m4a"
+  },
+  {
+    "artist": "Synkro",
+    "title": "Don't Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/synkro_acceptance_08_dontwant.m4a"
+  },
+  {
+    "artist": "Spiritualized",
+    "title": "Ladies And Gentleme",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/spiritualized_ladiesandgentleme_01ladiesandgentleme.m4a"
+  },
+  {
+    "artist": "Otherwish",
+    "title": "Repeat Again",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/otherwish_iiiemptyspaces__repeatagain.m4a"
+  },
+  {
+    "artist": "Shek Krystian",
+    "title": "So I Honey",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/shekkrystian_destroyrebuildv_02_soihoney.m4a"
+  },
+  {
+    "artist": "Heard Right Floa",
+    "title": "Finding",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/heardrightfloa_findingfracture_01_finding.m4a"
+  },
+  {
+    "artist": "Cartagiles Cheyenne",
+    "title": "Sun Goes Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/cartagilescheyenne_sungoesdownsingle_01_sungoesdown.m4a"
+  },
+  {
+    "artist": "Tube Berger Lunochris",
+    "title": "Daily Twist",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tubebergerlunochris_dailytwistsingle_01_dailytwist.m4a"
+  },
+  {
+    "artist": "Nora En Pure",
+    "title": "Heartbeating",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/noraenpure_heartbeatingsingle_01_heartbeating.m4a"
+  },
+  {
     "artist": "Coil",
     "title": "Red Birds Will Fly Out Of",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/coil_musicktoplayint_02_redbirdswillflyoutof.m4a"
