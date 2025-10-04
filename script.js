@@ -28,17 +28,12 @@ let currentPl = '';
 
 const coverCache = new Map();
 const COVER_TIMEOUT = 8000;
-
-// 5-music rule
 const RESET_AFTER = 5;
 const recentPlayed = new Set();
 let playsSinceReset = 0;
 let lastCountedKey = null;
-
-// shuffle cycle tracker
 const playedInCycle = new Set();
 
-// start timeout id (auto-skip if not playing in 7s)
 let startTimeoutId = null;
 const START_TIMEOUT_MS = 7000;
 
@@ -60,8 +55,8 @@ async function fetchJsonWithTimestamp(url) {
 function normalizeText(s) {
   if (!s) return '';
   return ('' + s).toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // remove accents
-    .replace(/[^\w\s]/g, '') // remove punctuation
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^\w\s]/g, '')
     .replace(/\s+/g, ' ').trim();
 }
 
@@ -97,7 +92,7 @@ function clearStartTimeout() {
   }
   await loadPool({ resetIdx: true, stopPlayback: false });
 
-  /* SORTEAR PRIMEIRA MÚSICA AO ABRIR A PÁGINA */
+  /* SORTEAR PRIMEIRA FAIXA (F5 ou primeira entrada) */
   idx = Math.floor(Math.random() * pool.length);
 
   loader.style.display = 'none';
@@ -127,7 +122,7 @@ function fillMenu() {
 
         await loadPool({ resetIdx: true, stopPlayback: true });
 
-        /* SORTEAR PRIMEIRA MÚSICA AO TROCAR DE PLAYLIST */
+        /* SORTEAR PRIMEIRA FAIXA AO TROCAR PLAYLIST */
         idx = Math.floor(Math.random() * pool.length);
 
         await loadTrack({ autoplay: false });
@@ -151,12 +146,23 @@ document.addEventListener('click', e => {
   if (!e.target.closest('#menuBtn') && !e.target.closest('#dropMenu')) dropMenu.style.display = 'none';
 });
 
-/* ========== SHUFFLE ========== */
+/* ========== SHUFFLE (sem reiniciar lista nem trocar música atual) ========== */
 shufBtn.onclick = () => {
   shuffleOn = !shuffleOn;
   shufBtn.classList.toggle('active', shuffleOn);
   shufBtn.setAttribute('aria-pressed', String(shuffleOn));
-  applyShuffle();
+  /* apenas redefine o pool das próximas faixas */
+  if (shuffleOn) {
+    pool = shuffleArray(originalPool);
+  } else {
+    pool = [...originalPool];
+  }
+  /* mantém a música atual no mesmo índice */
+  const curKey = safeKeyForTrack(currentTrack());
+  const found = pool.findIndex(t => safeKeyForTrack(t) === curKey);
+  idx = found >= 0 ? found : 0;
+  playedInCycle.clear();          // novo ciclo
+  preloadNext();
 };
 
 function shuffleArray(a) {
@@ -168,27 +174,7 @@ function shuffleArray(a) {
   return arr;
 }
 
-function applyShuffle() {
-  if (!originalPool || !originalPool.length) { pool = []; return; }
-  if (shuffleOn) {
-    pool = shuffleArray(originalPool);
-  } else {
-    pool = [...originalPool];
-  }
-  const curKey = safeKeyForTrack(currentTrack());
-  const found = pool.findIndex(t => safeKeyForTrack(t) === curKey);
-  idx = found >= 0 ? found : 0;
-
-  recentPlayed.clear();
-  playsSinceReset = 0;
-  lastCountedKey = null;
-  playedInCycle.clear();
-  clearStartTimeout();
-  loadTrack({ autoplay: false }).catch(() => {});
-  preloadNext();
-}
-
-/* ========== POOL (load playlist file) ========== */
+/* ========== POOL ========== */
 async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
   try {
     const url = playlists[currentPl] || playlists[Object.keys(playlists)[0]];
@@ -205,9 +191,10 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
         cover: item.cover || item.artwork || item.image || ''
       };
     }).filter(it => it.url);
-    if (resetIdx) idx = 0;
     if (stopPlayback) { a.pause(); a.currentTime = 0; }
-    applyShuffle();
+    /* define pool conforme estado do shuffle, sem recriar índice */
+    pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
+    if (resetIdx) idx = 0;
     recentPlayed.clear();
     playsSinceReset = 0;
     lastCountedKey = null;
@@ -219,7 +206,7 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
   }
 }
 
-/* ========== COVER FETCH / REFINEMENT ========== */
+/* ========== COVER (sem flick) ========== */
 async function getCoverForTrack(t) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
@@ -307,7 +294,7 @@ async function getCoverForTrack(t) {
   return FALLBACK;
 }
 
-/* ========== PRELOAD NEXT (cache-only) ========== */
+/* ========== PRELOAD NEXT ========== */
 async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
@@ -332,7 +319,7 @@ function currentTrack() {
   return pool && pool[idx];
 }
 
-/* ========== LOAD & PLAY ========== */
+/* ========== LOAD & PLAY (capa só aparece depois de pronta) ========== */
 async function loadTrack({ autoplay = false } = {}) {
   if (isLoading) return;
   const t = currentTrack();
@@ -350,37 +337,30 @@ async function loadTrack({ autoplay = false } = {}) {
   a.pause();
   a.currentTime = 0;
   capa.style.opacity = '0';
+
   tit.textContent = t.title || '—';
   art.textContent = t.artist || '—';
   a.src = t.url;
-  capa.src = FALLBACK;
 
-  try {
-    const cover = await getCoverForTrack(t);
-    capa.src = cover || FALLBACK;
-  } catch (e) {
-    capa.src = FALLBACK;
-  } finally {
-    capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
-    capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
-    updateMediaSession();
-    preloadNext();
-    clearStartTimeout();
+  /* capa só entra depois de decidir */
+  let cover = FALLBACK;
+  try { cover = await getCoverForTrack(t); } catch (e) {}
+  capa.src = cover;
+  capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
+  capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
 
-    if (autoplay) {
-      a.play().catch(err => {
-        console.warn('play() rejected on attempt', err);
-      });
-      startTimeoutId = setTimeout(() => {
-        if (a.paused || a.readyState < 3) {
-          console.warn('Track did not start within', START_TIMEOUT_MS, 'ms — skipping to next');
-          goToNext(true).catch(() => {});
-        }
-        clearStartTimeout();
-      }, START_TIMEOUT_MS);
-    }
-    updatePlayButton();
+  updateMediaSession();
+  preloadNext();
+
+  if (autoplay) {
+    a.play().catch(err => console.warn('play fail', err));
+    /* timeout só após play() */
+    startTimeoutId = setTimeout(() => {
+      if (a.paused || a.readyState < 3) goToNext(true).catch(() => {});
+      clearStartTimeout();
+    }, START_TIMEOUT_MS);
   }
+  updatePlayButton();
 }
 
 /* ========== PLAY BUTTON UI ========== */
@@ -426,13 +406,11 @@ a.addEventListener('playing', () => {
     }
   }
   playedInCycle.add(key);
-  if (playedInCycle.size >= pool.length) {
-    playedInCycle.clear();
-  }
+  if (playedInCycle.size >= pool.length) playedInCycle.clear();
   updatePlayButton();
 });
 
-/* ========== NEXT / PREV with 5-track + strict shuffle-cycle logic ========== */
+/* ========== NEXT / PREV ========== */
 async function goToNext(autoplay = true) {
   if (!pool.length) return;
   clearStartTimeout();
@@ -445,8 +423,7 @@ async function goToNext(autoplay = true) {
     if (unplayed.length === 0) {
       idx = (idx + 1) % pool.length;
     } else {
-      const choice = unplayed[Math.floor(Math.random() * unplayed.length)];
-      idx = choice;
+      idx = unplayed[Math.floor(Math.random() * unplayed.length)];
     }
   } else {
     idx = (idx + 1) % pool.length;
@@ -474,8 +451,7 @@ async function goToPrev(autoplay = true) {
 
 next.onclick = () => goToNext(true);
 prev.onclick = () => goToPrev(true);
-
-a.addEventListener('ended', () => { goToNext(true); });
+a.addEventListener('ended', () => goToNext(true));
 
 /* ========== MEDIA SESSION ========== */
 function updateMediaSession() {
@@ -501,7 +477,7 @@ const obs = new MutationObserver(() => {
 obs.observe(tit, { childList: true, characterData: true, subtree: true });
 obs.observe(art, { childList: true, characterData: true, subtree: true });
 
-/* ========== WAKE LOCK (opcional) ========== */
+/* ========== WAKE LOCK ========== */
 let wakeLock = null;
 async function requestWakeLock() {
   try { if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); } catch (e) {}
@@ -512,14 +488,14 @@ a.addEventListener('pause', () => {
   wakeLock = null;
 });
 
-/* ========== KEYBOARD SHORTCUTS ========== */
+/* ========== KEYBOARD ========== */
 document.addEventListener('keydown', e => {
   if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
   if (e.code === 'ArrowRight') { next.click(); }
   if (e.code === 'ArrowLeft') { prev.click(); }
 });
 
-/* ========== PUBLIC util: changePlaylist ========== */
+/* ========== PUBLIC ========== */
 window.changePlaylist = async function (name) {
   if (!playlists[name]) throw new Error('playlist não encontrada: ' + name);
   a.pause();
@@ -532,14 +508,11 @@ window.changePlaylist = async function (name) {
   currentPl = name;
   playlistName.textContent = name;
   await loadPool({ resetIdx: true, stopPlayback: true });
-
-  /* SORTEAR PRIMEIRA MÚSICA AO TROCAR VIA API changePlaylist */
   idx = Math.floor(Math.random() * pool.length);
-
   await loadTrack({ autoplay: false });
 };
 
-/* ========== DEBUG util ========== */
+/* ========== DEBUG ========== */
 window._playerState = () => ({
   idx,
   shuffleOn,
