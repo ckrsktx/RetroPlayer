@@ -1,5 +1,95 @@
 [
   {
+    "artist": "Type O Negative",
+    "title": "Christian Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/typeonegative_bloodykisses_02_christianwoman.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Diamond Eyes Boom Lay Boom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201047_03_diamondeyesboomlaybo.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Hey You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_heyyousingle_1_heyyou.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "The Devil in I",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_hb201435_03_thedevilini.m4a"
+  },
+  {
+    "artist": "All That Remains",
+    "title": "Stand Up Stand Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/allthatremains_hb201236_05_standupstandup.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Open Your Eyes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_hb201629_02_openyoureyes.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Coming Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeath_hb201219_09_comingdown.m4a"
+  },
+  {
+    "artist": "Ghost",
+    "title": "Rats",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ghost_hb201816_01_rats.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Born for Greatness",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_crookedteeth_02_bornforgreatness.m4a"
+  },
+  {
+    "artist": "Highly Suspect",
+    "title": "16",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/highlysuspect_mcid_02_16.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "My Own Summer Shove I",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_al319_myownsummershovei.m4a"
+  },
+  {
+    "artist": "Halestorm",
+    "title": "Do Not Disturb",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/halestorm_hb201842_01_donotdisturb.m4a"
+  },
+  {
+    "artist": "Trivium",
+    "title": "Villainy Thrives",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/trivium_hb201428_02_villainythrives.m4a"
+  },
+  {
+    "artist": "Theory of a Deadman",
+    "title": "Angel",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/theoryofadeadma_hb201505_02_angel.m4a"
+  },
+  {
+    "artist": "In Flames",
+    "title": "Resin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/inflames_colony_08resin.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Same Damn Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_hb201437_08_samedamnlife.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Torn to Pieces",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_hb201405_01_torntopieces.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "When Legends Rise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/godsmack_hb201838_04_whenlegendsrise.m4a"
+  },
+  {
     "artist": "Stone Sour",
     "title": "Zzyzx Rd",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stonesour_hb200738_02zzyzxrd.m4a"
