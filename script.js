@@ -96,6 +96,10 @@ function clearStartTimeout() {
     return;
   }
   await loadPool({ resetIdx: true, stopPlayback: false });
+
+  /* INÍCIO ALEATÓRIO */
+  idx = Math.floor(Math.random() * pool.length);
+
   loader.style.display = 'none';
   await loadTrack({ autoplay: false });
   preloadNext();
@@ -114,14 +118,20 @@ function fillMenu() {
         a.currentTime = 0;
         currentPl = g;
         playlistName.textContent = g;
+
         recentPlayed.clear();
         playsSinceReset = 0;
         lastCountedKey = null;
         playedInCycle.clear();
         clearStartTimeout();
+
         await loadPool({ resetIdx: true, stopPlayback: true });
+
+        /* INÍCIO ALEATÓRIO */
+        idx = Math.floor(Math.random() * pool.length);
+
         await loadTrack({ autoplay: false });
-        await preloadNext();
+        preloadNext();
         dropMenu.style.display = 'none';
       } catch (e) {
         console.error('erro mudando playlist', e);
@@ -301,6 +311,246 @@ async function getCoverForTrack(t) {
 async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
+  if (shuffleOn) {
+    for (let i = 0; i < 20; i++) {
+      const cand = Math.floor(Math.random() * pool.length);
+      if (cand !== idx && !playedInCycle.has(safeKeyForTrack(pool[cand]))) {
+        nextIdx = cand;
+        break;
+      }
+    }
+  }
+  const nextT = pool[nextIdx];
+  if (!nextT) return;
+  const key = safeKeyForTrack(nextT);
+  if (coverCache.has(key)) return;
+  getCoverForTrack(nextT).catch(() => {});
+}
+
+/* ========== CURRENT TRACK HELPERS ========== */
+function currentTrack() {
+  return pool && pool[idx];
+}
+
+/* ========== LOAD & PLAY ========== */
+async function loadTrack({ autoplay = false } = {}) {
+  if (isLoading) return;
+  const t = currentTrack();
+  if (!t) {
+    tit.textContent = '–';
+    art.textContent = '–';
+    a.removeAttribute('src');
+    capa.src = FALLBACK;
+    capa.style.opacity = '1';
+    updatePlayButton();
+    return;
+  }
+
+  isLoading = true;
+  a.pause();
+  a.currentTime = 0;
+  capa.style.opacity = '0';
+  tit.textContent = t.title || '—';
+  art.textContent = t.artist || '—';
+  a.src = t.url;
+  capa.src = FALLBACK;
+
+  try {
+    const cover = await getCoverForTrack(t);
+    capa.src = cover || FALLBACK;
+  } catch (e) {
+    capa.src = FALLBACK;
+  } finally {
+    capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
+    capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
+    updateMediaSession();
+    preloadNext();
+    clearStartTimeout();
+
+    if (autoplay) {
+      a.play().catch(err => {
+        console.warn('play() rejected on attempt', err);
+      });
+      startTimeoutId = setTimeout(() => {
+        if (a.paused || a.readyState < 3) {
+          console.warn('Track did not start within', START_TIMEOUT_MS, 'ms — skipping to next');
+          goToNext(true).catch(() => {});
+        }
+        clearStartTimeout();
+      }, START_TIMEOUT_MS);
+    }
+    updatePlayButton();
+  }
+}
+
+/* ========== PLAY BUTTON UI ========== */
+function updatePlayButton() {
+  if (a && !a.paused && !a.ended) {
+    playBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+    playBtn.setAttribute('aria-pressed', 'true');
+  } else {
+    playBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+    playBtn.setAttribute('aria-pressed', 'false');
+  }
+  document.title = `${tit.textContent} – ${art.textContent}`;
+}
+
+function togglePlay() {
+  if (a.paused) {
+    a.play().catch(err => { console.warn('play failed', err); updatePlayButton(); });
+  } else {
+    a.pause();
+  }
+  updatePlayButton();
+}
+
+playBtn.onclick = togglePlay;
+
+a.addEventListener('play', updatePlayButton);
+a.addEventListener('pause', () => { updatePlayButton(); clearStartTimeout(); });
+a.addEventListener('waiting', updatePlayButton);
+
+a.addEventListener('playing', () => {
+  clearStartTimeout();
+  const t = currentTrack();
+  const key = safeKeyForTrack(t);
+  if (!key) return;
+  if (lastCountedKey !== key) {
+    recentPlayed.add(key);
+    playsSinceReset++;
+    lastCountedKey = key;
+    if (playsSinceReset >= RESET_AFTER) {
+      recentPlayed.clear();
+      playsSinceReset = 0;
+      lastCountedKey = null;
+    }
+  }
+  playedInCycle.add(key);
+  if (playedInCycle.size >= pool.length) {
+    playedInCycle.clear();
+  }
+  updatePlayButton();
+});
+
+/* ========== NEXT / PREV with 5-track + strict shuffle-cycle logic ========== */
+async function goToNext(autoplay = true) {
+  if (!pool.length) return;
+  clearStartTimeout();
+  if (shuffleOn) {
+    let unplayed = pool.map((_, i) => i).filter(i => i !== idx && !playedInCycle.has(safeKeyForTrack(pool[i])));
+    if (unplayed.length === 0) {
+      playedInCycle.clear();
+      unplayed = pool.map((_, i) => i).filter(i => i !== idx);
+    }
+    if (unplayed.length === 0) {
+      idx = (idx + 1) % pool.length;
+    } else {
+      const choice = unplayed[Math.floor(Math.random() * unplayed.length)];
+      idx = choice;
+    }
+  } else {
+    idx = (idx + 1) % pool.length;
+  }
+  await loadTrack({ autoplay });
+}
+
+async function goToPrev(autoplay = true) {
+  if (!pool.length) return;
+  clearStartTimeout();
+  if (shuffleOn) {
+    let candidate = idx;
+    let attempts = 0;
+    const MAX = 40;
+    do {
+      candidate = Math.floor(Math.random() * pool.length);
+      attempts++;
+    } while (candidate === idx && attempts < MAX);
+    idx = candidate;
+  } else {
+    idx = (idx - 1 + pool.length) % pool.length;
+  }
+  await loadTrack({ autoplay });
+}
+
+next.onclick = () => goToNext(true);
+prev.onclick = () => goToPrev(true);
+
+a.addEventListener('ended', () => { goToNext(true); });
+
+/* ========== MEDIA SESSION ========== */
+function updateMediaSession() {
+  if ('mediaSession' in navigator) {
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: tit.textContent || '',
+        artist: art.textContent || '',
+        artwork: [{ src: capa.src || FALLBACK, sizes: '512x512', type: 'image/png' }]
+      });
+      navigator.mediaSession.setActionHandler('play', () => a.play());
+      navigator.mediaSession.setActionHandler('pause', () => a.pause());
+      navigator.mediaSession.setActionHandler('previoustrack', () => prev.click());
+      navigator.mediaSession.setActionHandler('nexttrack', () => next.click());
+    } catch (e) { console.warn('mediaSession fail', e); }
+  }
+}
+
+/* ========== OBSERVE CHANGES ========== */
+const obs = new MutationObserver(() => {
+  document.title = `${tit.textContent} – ${art.textContent}`;
+});
+obs.observe(tit, { childList: true, characterData: true, subtree: true });
+obs.observe(art, { childList: true, characterData: true, subtree: true });
+
+/* ========== WAKE LOCK (opcional) ========== */
+let wakeLock = null;
+async function requestWakeLock() {
+  try { if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); } catch (e) {}
+}
+a.addEventListener('play', requestWakeLock);
+a.addEventListener('pause', () => {
+  if (wakeLock && wakeLock.release) wakeLock.release().catch(() => {});
+  wakeLock = null;
+});
+
+/* ========== KEYBOARD SHORTCUTS ========== */
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
+  if (e.code === 'ArrowRight') { next.click(); }
+  if (e.code === 'ArrowLeft') { prev.click(); }
+});
+
+/* ========== PUBLIC util: changePlaylist ========== */
+window.changePlaylist = async function (name) {
+  if (!playlists[name]) throw new Error('playlist não encontrada: ' + name);
+  a.pause();
+  a.currentTime = 0;
+  recentPlayed.clear();
+  playsSinceReset = 0;
+  lastCountedKey = null;
+  playedInCycle.clear();
+  clearStartTimeout();
+  currentPl = name;
+  playlistName.textContent = name;
+  await loadPool({ resetIdx: true, stopPlayback: true });
+
+  /* INÍCIO ALEATÓRIO */
+  idx = Math.floor(Math.random() * pool.length);
+
+  await loadTrack({ autoplay: false });
+};
+
+/* ========== DEBUG util ========== */
+window._playerState = () => ({
+  idx,
+  shuffleOn,
+  currentPl,
+  poolLength: pool.length,
+  playsSinceReset,
+  recentPlayedSize: recentPlayed.size,
+  playedInCycleSize: playedInCycle.size,
+  startTimeout: !!startTimeoutId
+});
+1) % pool.length;
   if (shuffleOn) {
     for (let i = 0; i < 20; i++) {
       const cand = Math.floor(Math.random() * pool.length);
