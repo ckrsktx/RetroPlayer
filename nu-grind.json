@@ -1,5 +1,80 @@
 [
   {
+    "artist": "Stone Sour",
+    "title": "Zzyzx Rd",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stonesour_hb200738_02zzyzxrd.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "The Enemy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/godsmack_iv_03_theenemy.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Tell Me Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumma_02tellmebaby.m4a"
+  },
+  {
+    "artist": "Buckcherry",
+    "title": "Everything",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/buckcherry_ha200707_07everything.m4a"
+  },
+  {
+    "artist": "The Killers",
+    "title": "Read My Mind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/killersthe_ha200708_08readmymind.m4a"
+  },
+  {
+    "artist": "The Raconteurs",
+    "title": "Hands",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/raconteursthe_brokenboysoldiers_02hands.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Everything Changes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/staind_ha200622_10everythingchanges.m4a"
+  },
+  {
+    "artist": "Mastodon",
+    "title": "Colony of Birchmen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/mastodon_bloodmountain_07colonyofbirchmen.m4a"
+  },
+  {
+    "artist": "Korn",
+    "title": "Creep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/korn_mtvunplugged_05_creep.m4a"
+  },
+  {
+    "artist": "Bullet For My Valentine",
+    "title": "All These Things I Hate",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/bulletformyvale_thepoison_11_allthesethingsihate.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Just Stop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_tenthousandfists_02_juststop.m4a"
+  },
+  {
+    "artist": "Evanescence",
+    "title": "Lithium",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/evanescence_ha200703_07lithium.m4a"
+  },
+  {
+    "artist": "Saliva",
+    "title": "Ladies and Gentlemen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/saliva_bloodstainedlovestory_01_ladiesandgentlemen.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "Riot",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/threedaysgrace_hb200804_06riot.m4a"
+  },
+  {
+    "artist": "Breaking Benjamin",
+    "title": "Breath",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/breakingbenjamin_ha200715_09breath.m4a"
+  },
+  {
     "artist": "Limp Bizkit",
     "title": "Take a Look Around R",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/limpbizkit_al338_takealookaroundra.m4a"
