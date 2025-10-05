@@ -523,4 +523,27 @@ window._playerState = () => ({
   playedInCycleSize: playedInCycle.size,
   startTimeout: !!startTimeoutId
 });
+
+
+/* ===== CPU WAKE LOCK + HEARTBEAT (evita quit com tela apagada) ===== */
+let cpuLock = null;
+async function lockCPU() {
+  try {
+    if ('wakeLock' in navigator && 'cpu' in WakeLockType) {
+      cpuLock = await navigator.wakeLock.request('cpu');
+      cpuLock.addEventListener('release', () => cpuLock = null);
+    }
+  } catch (e) {}
+}
+a.addEventListener('play', lockCPU);
+a.addEventListener('pause', () => {
+  if (cpuLock) cpuLock.release().catch(() => {});
+  cpuLock = null;
+});
+
+/* heartbeat – mantém aba viva */
+setInterval(() => {
+  if (!a.paused && a.src) fetch('https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/keepalive.txt', { mode: 'no-cors' });
+}, 25_000);
+
       
