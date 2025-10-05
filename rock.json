@@ -1,5 +1,120 @@
 [
   {
+    "artist": "Soundgarden",
+    "title": "Outshined",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_al0363_799-06outshinedlpversio.m4a"
+  },
+  {
+    "artist": "Tool",
+    "title": "Sober",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tool_al336_soberamendedalbum.m4a"
+  },
+  {
+    "artist": "Alice in Chains",
+    "title": "Man in the Box",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/aliceinchains_facelift_02_maninthebox.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Under the Bridge",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/redhotchilipepper_al0365_9001-08underthebridgealb.m4a"
+  },
+  {
+    "artist": "Live",
+    "title": "Lightning Crashes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/live_al312_lightningcrashes.m4a"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "title": "Bullet With Butterfly Wings",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al0350_702-12bulletwithbutterf.m4a"
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "Learn to Fly",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/foofighters_al031_1601-10learntofly.m4a"
+  },
+  {
+    "artist": "3 Doors Down",
+    "title": "Kryptonite",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/3doorsdown_al033_1606-01kryptonite.m4a"
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "title": "Plush",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/stonetemplepilots_al311_plushacoustictake.m4a"
+  },
+  {
+    "artist": "The White Stripes",
+    "title": "Seven Nation Army",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/whitestripesthe_elephant_01sevennationarmy.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Burn It Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_hb201217_03_burnitdown.m4a"
+  },
+  {
+    "artist": "Nirvana",
+    "title": "Come As You Are",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nirvana_al323_comeasyouare.m4a"
+  },
+  {
+    "artist": "Foster the People",
+    "title": "Pumped Up Kicks",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fosterthepeople_hb201105_08_pumpedupkicks.m4a"
+  },
+  {
+    "artist": "Alice in Chains",
+    "title": "Would?",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/aliceinchains_al0342_709-10would.m4a"
+  },
+  {
+    "artist": "Twenty One Pilots",
+    "title": "Ride",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/twentyonepilots_blurryface_07_ride.m4a"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "title": "Today",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al0363_799-04today.m4a"
+  },
+  {
+    "artist": "Fall Out Boy",
+    "title": "My Songs Know What You Did In The Dark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/falloutboy_hb201306_08_mysongsknowwhatyoudi.m4a"
+  },
+  {
+    "artist": "Panic! At The Disco",
+    "title": "This Is Gospel",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/panicatthedisco_tooweirdtolivet_00_thisisgospel.m4a"
+  },
+  {
+    "artist": "Sublime",
+    "title": "Santeria",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sublime_al0361_795-03santeria.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "When I Come Around",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/greenday_al0348_696-10whenicomearoundal.m4a"
+  },
+  {
+    "artist": "Stone Temple Pilots",
+    "title": "Vasoline",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/stonetemplepilots_al0347_693-09vasoline.m4a"
+  },
+  {
+    "artist": "Nirvana",
+    "title": "About a Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nirvana_al338_aboutagirlalbumve.m4a"
+  },
+  {
+    "artist": "Twenty One Pilots",
+    "title": "Car Radio",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/twentyonepilots_hb201411_09_carradio.m4a"
+  },
+  {
     "artist": "The Beatles",
     "title": "It's All Too Much",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_yellowsubmarine_05_itsalltoomuch.m4a"
