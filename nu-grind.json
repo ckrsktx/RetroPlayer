@@ -1,5 +1,60 @@
 [
   {
+    "artist": "Kid Rock",
+    "title": "I Am the Bullgod Davi",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kidrock_al333_iamthebullgoddavi.m4a"
+  },
+  {
+    "artist": "Alter Bridge",
+    "title": "Addicted to Pain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/alterbridge_hb201333_10_addictedtopain.m4a"
+  },
+  {
+    "artist": "Audioslave",
+    "title": "Your Time Has Come",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/audioslave_outofexile_01yourtimehascome.m4a"
+  },
+  {
+    "artist": "Saliva",
+    "title": "Click Click Boom Album",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/saliva_al0358_745-11clickclickboomalb.m4a"
+  },
+  {
+    "artist": "Velvet Revolver",
+    "title": "Slither",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/velvetrevolver_hd580a_12slither.m4a"
+  },
+  {
+    "artist": "Fozzy",
+    "title": "Let the Madness Begin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/fozzy_chasingthegrail_05_letthemadnessbegin.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Adrenaline",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201331_02_adrenaline.m4a"
+  },
+  {
+    "artist": "Clutch",
+    "title": "Pure Rock Fury",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/clutch_purerockfury_02_purerockfury.m4a"
+  },
+  {
+    "artist": "Adelitas Way",
+    "title": "Invincible",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/adelitasway_hb200921_04_invincible.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Swerve City",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/deftones_hb201312_01_swervecity.m4a"
+  },
+  {
+    "artist": "Union Underground",
+    "title": "Turn Me On Mr Deadman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/unionunderground_al0357_739-04turnmeonmrdeadman.m4a"
+  },
+  {
     "artist": "Tool",
     "title": "Opiate Album Version",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tool_al336_opiatealbumversio.m4a"
