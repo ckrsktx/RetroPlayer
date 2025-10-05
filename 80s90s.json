@@ -1,5 +1,120 @@
 [
   {
+    "artist": "Pat Benatar",
+    "title": "Love Is a Battlefield",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/benatarpat_completeeighties1_01loveisabattlefiel.m4a"
+  },
+  {
+    "artist": "The Police",
+    "title": "Wrapped Around Your Finger",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/policethe_chrgold22_wrappedaroundyour.m4a"
+  },
+  {
+    "artist": "Rob Base & DJ E-Z Rock",
+    "title": "It Takes Two",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/baserobanddjezroc_ch0323_ittakestwo.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "Sign o' the Times",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/prince_signothetimes_01_signothetimes.m4a"
+  },
+  {
+    "artist": "Jermaine Stewart",
+    "title": "We Don't Have to Take Our Clothes Off",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/stewartjermaine_franticromantic_00_wedonthavetotakeourc.m4a"
+  },
+  {
+    "artist": "Billy Squier",
+    "title": "Lonely Is the Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/squierbilly_crgold016_lonelyisthenight.m4a"
+  },
+  {
+    "artist": "'Til Tuesday",
+    "title": "Voices Carry",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/tiltuesday_ch0348_voicescarry.m4a"
+  },
+  {
+    "artist": "Milli Vanilli",
+    "title": "Baby Don't Forget My Number",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/millivanilli_allornothing_07_babydontforgetmynumb.m4a"
+  },
+  {
+    "artist": "Elton John",
+    "title": "I Don't Wanna Go On With You Like That",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/johnelton_chrgold63_idontwannagoonwit.m4a"
+  },
+  {
+    "artist": "Rockwell",
+    "title": "Somebody's Watching Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/rockwell_somebodyswatchingme_09_somebodyswatchingme.m4a"
+  },
+  {
+    "artist": "Talk Talk",
+    "title": "It's My Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/talktalk_completeeighties1_03itsmylife.m4a"
+  },
+  {
+    "artist": "Pet Shop Boys",
+    "title": "West End Girls",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/petshopboys_ch0351_westendgirls.m4a"
+  },
+  {
+    "artist": "Greg Kihn Band",
+    "title": "Jeopardy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/kihngregband_likeomigodthe80sp_01jeopardy.m4a"
+  },
+  {
+    "artist": "DeBarge",
+    "title": "Rhythm of the Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/debarge_chrgold38_rhythmofthenight.m4a"
+  },
+  {
+    "artist": "Belinda Carlisle",
+    "title": "Mad About You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/carlislebelinda_chrgold03_madaboutyou.m4a"
+  },
+  {
+    "artist": "The B-52's",
+    "title": "Private Idaho",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/b52sthe_timecapsule_06privateidaho.m4a"
+  },
+  {
+    "artist": "The Plimsouls",
+    "title": "A Million Miles Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/plimsoulsthe_sedatedintheeight_01amillionmilesaway.m4a"
+  },
+  {
+    "artist": "Bananarama",
+    "title": "Cruel Summer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/bananarama_ch0332_cruelsummer.m4a"
+  },
+  {
+    "artist": "The Split Enz",
+    "title": "I Got You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/splitenz_truecolours_01_igotyou.m4a"
+  },
+  {
+    "artist": "Taco",
+    "title": "Puttin' On the Ritz",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/taco_likeomigodthe80sp_21puttinontheritz.m4a"
+  },
+  {
+    "artist": "The Bangles",
+    "title": "Walk Like an Egyptian",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/banglesthe_ch031_walklikeanegyptia.m4a"
+  },
+  {
+    "artist": "Thompson Twins",
+    "title": "Lies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/thompsontwins_likeomigodthe80sp_05lies.m4a"
+  },
+  {
+    "artist": "Madness",
+    "title": "House of Fun",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/madness_completeeighties2_09houseoffun.m4a"
+  },
+  {
     "artist": "The Verve",
     "title": "Bitter Sweet Symphony",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/vervethe_urbanhymns_01bittersweetsympho.m4a"
