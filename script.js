@@ -546,5 +546,27 @@ setInterval(() => {
   if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' });
 }, 25_000);
 
+/* ===== REDUZ FONT QUANDO TÍTULO > 30 CHAR ===== */
+function ajustaFonteTitulo() {
+  const tit = $('#tit');
+  const base = 1.05;                 // rem original
+  const min = 0.80;                  // rem mínimo
+  const limite = 30;                 // chars
+  const chars = tit.textContent.length;
+
+  if (chars > limite) {
+    const novo = Math.max(min, base - (chars - limite) * 0.015);
+    tit.style.fontSize = novo + 'rem';
+  } else {
+    tit.style.fontSize = base + 'rem';   // volta ao padrão
+  }
+}
+
+/* executa sempre que o título mudar */
+const titObs = new MutationObserver(ajustaFonteTitulo);
+titObs.observe($('#tit'), { childList: true, characterData: true, subtree: true });
+
+/* primeira vez */
+ajustaFonteTitulo();
 
       
