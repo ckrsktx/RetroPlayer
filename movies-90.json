@@ -1,5 +1,75 @@
 [
   {
+    "artist": "The Beatles",
+    "title": "Hey Jude",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_pastmastersvol2_07_heyjude.m4a"
+  },
+  {
+    "artist": "Spandau Ballet",
+    "title": "True",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/spandauballet_thenewlovesongsco_18true.m4a"
+  },
+  {
+    "artist": "The Faculty OST",
+    "title": "Stay Young",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/thefaculty_thefacultymusicfromthedimensionmotionpicture_12_stayyoung.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Queen Amidala and the Naboo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_13_queenamidalaandthena.m4a"
+  },
+  {
+    "artist": "Cliff Martinez",
+    "title": "Bride of Deluxe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/drive_driveoriginalmo_19_brideofdeluxe.m4a"
+  },
+  {
+    "artist": "Pretty Reckless, The",
+    "title": "Make Me Wanna Die",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklesst_hb201119_09_makemewannadie.m4a"
+  },
+  {
+    "artist": "The Proclaimers",
+    "title": "I'm Gonna Be (500 Miles)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/theproclaimers_completeeighties5_12imgonnabe500miles.m4a"
+  },
+  {
+    "artist": "The Beatles",
+    "title": "I've Got a Feeling",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/beatlesthe_letitbe_08_ivegotafeeling.m4a"
+  },
+  {
+    "artist": "Kitt Eartha",
+    "title": "C'est Si Bon",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/kitteartha_radiohitsfromthe5_09cestsibon.m4a"
+  },
+  {
+    "artist": "Frost Max",
+    "title": "Good Morning",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/frostmax_hb201831_08_goodmorning.m4a"
+  },
+  {
+    "artist": "Frank Sinatra",
+    "title": "Isle of Capri",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/swingingpop/sinatrafrank_comeflywithme_03isleofcapri.m4a"
+  },
+  {
+    "artist": "The Chiffons",
+    "title": "One Fine Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/chiffonsthe_thenewlovesongsco_14onefineday.m4a"
+  },
+  {
+    "artist": "Dirty Dancing OST",
+    "title": "Stay",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/dirtydancing_dirtydancingori_10_stay.m4a"
+  },
+  {
+    "artist": "Cinderella Man OST",
+    "title": "Mae",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/cinderellaman_cinderellamanor_03_mae.m4a"
+  },
+  {
     "artist": "John Williams",
     "title": "High School Teacher",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/savingprivatery_savingprivatery_08_highschoolteacher.m4a"
