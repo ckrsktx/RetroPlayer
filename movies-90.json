@@ -1,5 +1,164 @@
-
 [
+  {
+    "artist": "John Williams",
+    "title": "High School Teacher",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/savingprivatery_savingprivatery_08_highschoolteacher.m4a"
+  },
+  {
+    "artist": "Singles OST",
+    "title": "Chloe Dancer/Crown of Thorns",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/singles_singlesoriginal_06_chloedancercrownofth.m4a"
+  },
+  {
+    "artist": "John Barry",
+    "title": "Main Title/Looks Like a Suicide",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/danceswithwolve_danceswithwolve_01_maintitlelookslikeas.m4a"
+  },
+  {
+    "artist": "Maurice Jarre",
+    "title": "Ghost",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/ghost_ghostoriginalmo_02_ghost.m4a"
+  },
+  {
+    "artist": "James Horner",
+    "title": "A Promise Kept",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/titanic_titanicoriginal_11_apromisekept.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "Theme from Edward Scissorhands",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/edwardscissorha_edwardscissorha_27_themefromedwardsciss.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Queen Amidala and the Naboo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_13_queenamidalaandthena.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "End Titles",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/batmanreturns_batmanreturnsor_19_endtitles.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Approaching the Enemy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/savingprivatery_savingprivatery_05_approachingtheenemy.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "The Final Confrontation",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/sleepyhollow_sleepyhollowori_17_thefinalconfrontatio.m4a"
+  },
+  {
+    "artist": "Andrew Lloyd Webber",
+    "title": "Requiem for Evita",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/evita_evitaoriginalmo_01_requiemforevita.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Theme from Schindler's List",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/schindlerslist_schindlerslisto_01_themefromschindlersl.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Duel of the Fates",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_02_duelofthefates.m4a"
+  },
+  {
+    "artist": "Mudhoney & Sir Mix-a-Lot",
+    "title": "Freak Momma",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/mudhoneysirmixa_judgementnightm_08_freakmomma.m4a"
+  },
+  {
+    "artist": "Graeme Revell",
+    "title": "Golgotha Tenement Blues",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/crowthe_thecroworiginal_02_golgothatenementblue.m4a"
+  },
+  {
+    "artist": "Nicola Piovani",
+    "title": "La Notte di Fuga",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/lifeisbeautiful_lifeisbeautiful_06_lanottedifuga.m4a"
+  },
+  {
+    "artist": "Brian Eno",
+    "title": "Deep Blue Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/trainspotting_trainspottingor_02_deepblueday.m4a"
+  },
+  {
+    "artist": "James Horner",
+    "title": "The Epidemic's Toll",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/balto_baltooriginalmo_10_theepidemicstoll.m4a"
+  },
+  {
+    "artist": "Dust Brothers",
+    "title": "Psycho Boy Jack",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/fightclub_fightcluborigin_06_psychoboyjack.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Theme from Schindler's List (Reprise)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/schindlerslist_schindlerslisto_14_themefromschindlersl.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "The Robbery",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/edwardscissorha_edwardscissorha_16_therobbery.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "Edward Returns in Shame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/edwardscissorha_edwardscissorha_17_edwardreturnsinshame.m4a"
+  },
+  {
+    "artist": "Nicola Piovani",
+    "title": "Il Treno nel Buio",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/lifeisbeautiful_lifeisbeautiful_09_iltrenonelbuio.m4a"
+  },
+  {
+    "artist": "George Fenton",
+    "title": "Drunks",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/groundhogday_groundhogday_06_drunks.m4a"
+  },
+  {
+    "artist": "Randy Edelman",
+    "title": "100 Seagulls and 1 Shark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/jamesandthegian_jamesandthegian_14_100seagullsand1shark.m4a"
+  },
+  {
+    "artist": "Éric Serra",
+    "title": "Forever James",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/goldeneye_goldeneyeorigin_15_foreverjames.m4a"
+  },
+  {
+    "artist": "Jerry Goldsmith",
+    "title": "Star Trek Voyager Main Title",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/startrekvoyager_startrekorigina_01_startrekvoyagermaint.m4a"
+  },
+  {
+    "artist": "Los Lobos",
+    "title": "Bulletproof",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/desperado_desperadoorigin_10_bulletproof.m4a"
+  },
+  {
+    "artist": "Mark Mothersbaugh",
+    "title": "Hardest Geometry Problem",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/rushmore_rushmoreorigina_01_hardestgeometryprobl.m4a"
+  },
+  {
+    "artist": "Michael Nyman",
+    "title": "The Mood That Passes Through You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/pianothe_thepianoorigina_11_themoodthatpassesthr.m4a"
+  },
+  {
+    "artist": "John Corigliano",
+    "title": "II. Vienna - The Monastery",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/redviolinthe_theredviolinori_06_iiviennathemonastery.m4a"
+  },
+  {
+    "artist": "Éric Serra",
+    "title": "Our Lady of Smolensk",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/goldeneye_goldeneyeorigin_07_ourladyofsmolensk.m4a"
+  },
   {
     "artist": "Boyz II Men",
     "title": "End of the Road",
