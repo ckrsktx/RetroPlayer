@@ -543,7 +543,8 @@ a.addEventListener('pause', () => {
 
 /* heartbeat – mantém aba viva */
 setInterval(() => {
-  if (!a.paused && a.src) fetch('https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/keepalive.txt', { mode: 'no-cors' });
+  if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' });
 }, 25_000);
+
 
       
