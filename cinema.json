@@ -1,5 +1,145 @@
 [
   {
+    "artist": "John Williams",
+    "title": "The Miracle of the Ark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/indianajonesthe_indianajonesthe_08_themiracleoftheark.m4a"
+  },
+  {
+    "artist": "Lennie Niehaus",
+    "title": "Claudia's Theme",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/unforgiven_varsesarabandea_03_claudiastheme.m4a"
+  },
+  {
+    "artist": "Eddie Vedder",
+    "title": "Hard Sun",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/intothewild_intothewild_07_hardsun.m4a"
+  },
+  {
+    "artist": "Halloween Sound Effects",
+    "title": "Haunted House Classic Halloween Sounds",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/halloween/halloweensounds_300halloweensoundeffects_218_hauntedhouseclassichalloweensounds.m4a"
+  },
+  {
+    "artist": "The Jungle Book OST",
+    "title": "The Bare Necessities",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/junglebookthe_thejunglebookor_04_thebarenecessities.m4a"
+  },
+  {
+    "artist": "London Symphony Orchestra",
+    "title": "Superman March",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/londonsymphonyo_johnwilliamsali_10_supermanmarchfromsup.m4a"
+  },
+  {
+    "artist": "Madonna",
+    "title": "Die Another Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/dieanotherday_dieanotherdayor_01_dieanotherday.m4a"
+  },
+  {
+    "artist": "Andrew Lloyd Webber",
+    "title": "Buenos Aires",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/evita_evitaoriginalmo_05_buenosaires.m4a"
+  },
+  {
+    "artist": "Simon & Garfunkel",
+    "title": "The Only Living Boy in New York",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/simongarfunkel_gardenstate_10_theonlylivingboyinne.m4a"
+  },
+  {
+    "artist": "John Williams",
+    "title": "Quidditch Third Year",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/harrypotterandt_harrypotterandt_13_quidditchthirdyear.m4a"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "Streets of Philadelphia",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/philadelphia_philadelphiaori_01_streetsofphiladelphi.m4a"
+  },
+  {
+    "artist": "Kenny Loggins",
+    "title": "Footloose",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/footloose_footlooseorigin_01_footloose.m4a"
+  },
+  {
+    "artist": "Carter Burwell",
+    "title": "The Snake Pit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/truegrit_truegritorigina_16_thesnakepit.m4a"
+  },
+  {
+    "artist": "The Sound of Music OST",
+    "title": "Overture/Preludium/Dix",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/thesoundofmusic_thesoundofmusic_02_overturepreludiumdix.m4a"
+  },
+  {
+    "artist": "Pro Sound Effects Library",
+    "title": "Evil Lurks on Halloween",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/halloween/prosoundeffectslibrary_halloweenhauntedhouse_18_evillurksonhalloween.m4a"
+  },
+  {
+    "artist": "Marilyn Monroe",
+    "title": "I Wanna Be Loved by You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/monroemarilyn_somelikeithot_02_iwannabelovedbyyou.m4a"
+  },
+  {
+    "artist": "Animal House OST",
+    "title": "Louie Louie",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/animalhouse_animalhouseorig_02_louielouie.m4a"
+  },
+  {
+    "artist": "Ennio Morricone",
+    "title": "Gabriel's Oboe 2",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/missionthe_themissionorigi_13_gabrielsoboe2.m4a"
+  },
+  {
+    "artist": "Animal House OST",
+    "title": "Money (That's What I Want)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/animalhouse_animalhouseorig_09_moneythatswhatiwant.m4a"
+  },
+  {
+    "artist": "Cinderella Man OST",
+    "title": "Tillie's Downtown Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/cinderellaman_cinderellamanor_08_tilliesdowntownnow.m4a"
+  },
+  {
+    "artist": "Animal House OST",
+    "title": "Let's Dance",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/animalhouse_animalhouseorig_10_letsdance.m4a"
+  },
+  {
+    "artist": "The Sound of Music OST",
+    "title": "Entr'acte",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/thesoundofmusic_thesoundofmusic_14_entracte.m4a"
+  },
+  {
+    "artist": "Mychael Danna",
+    "title": "The Whale",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/lifeofpi_lifeofpiorigina_18_thewhale.m4a"
+  },
+  {
+    "artist": "Pocahontas OST",
+    "title": "Steady as the Beating Drum",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/pocahontas_pocahontasorigi_04_steadyasthebeatingdr.m4a"
+  },
+  {
+    "artist": "The Who",
+    "title": "Tommy Can You Hear Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/tommy_tommyoriginalmo_16_tommycanyouhearme.m4a"
+  },
+  {
+    "artist": "Willy Wonka & the Chocolate Factory OST",
+    "title": "Oompa Loompa (Augustus)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/willywonkathech_willywonkathech_08_ooompaloompaaugustus.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "Busted",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/hitchcock_hitchcockorigin_21_busted.m4a"
+  },
+  {
+    "artist": "Danny Elfman",
+    "title": "In Bed",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/hitchcock_hitchcockorigin_06_inbed.m4a"
+  },
+  {
     "artist": "The Beatles",
     "title": "Hey Jude",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_pastmastersvol2_07_heyjude.m4a"
