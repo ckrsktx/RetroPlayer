@@ -1,1 +1,83 @@
 
+[
+  {
+    "artist": "John Williams",
+    "title": "Augie's Great Municipal Band",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_17_augiesgreatmunicipal.m4a"
+  },
+  {
+    "artist": "Philharmonia Orchestra",
+    "title": "Overture to Guillaume Tell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicalfull/philharmoniaorc_rossinioverture_09_overturetoguillaumet.m4a"
+  },
+  {
+    "artist": "Leningrad Philharmonic",
+    "title": "Symphony No. 5 in E Minor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/leningradphilha_symphoniesnos45_02_symphonyno5ineminoro.m4a"
+  },
+  {
+    "artist": "Pinchas Zukerman",
+    "title": "Violin Concerto in D Op. 6",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/zukermanpinchas_beethovenviolin_03_violinconcertoindop6.m4a"
+  },
+  {
+    "artist": "Aldo Ciccolini",
+    "title": "3 Gymnopédies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/ciccolinialdo_satieoeuvrespou_01_3gymnopedies.m4a"
+  },
+  {
+    "artist": "English Chamber Orchestra",
+    "title": "Symphony No. 35 in D Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/englishchambero_symphonies32353_04_symphonyno35indmajor.m4a"
+  },
+  {
+    "artist": "Orchestre Symphonique",
+    "title": "A Midsummer Night's Dream",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/orchestresympho_40famousmarches_09_amidsummernightsdrea.m4a"
+  },
+  {
+    "artist": "Philharmonic Orchestra",
+    "title": "Sobre las Olas",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/philharmonicorc_mialmamexicanam_08_sobrelasolas.m4a"
+  },
+  {
+    "artist": "English Baroque Soloists",
+    "title": "Suite for Orchestra No. 1",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/englishbaroques_watermusic_12_suitefororchestrano1.m4a"
+  },
+  {
+    "artist": "BBC Concert Orchestra",
+    "title": "Habanera from Carmen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/bbcconcertorche_operawithoutwor_16_habanerafromcarmen.m4a"
+  },
+  {
+    "artist": "Staatskapelle Dresden",
+    "title": "Le Nozze di Figaro K. 4",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/staatskapelledres_mozart250cd1_01lenozzedifigarok4.m4a"
+  },
+  {
+    "artist": "Simone Dinnerstein",
+    "title": "Jesu, Joy of Man's Desiring",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/dinnersteinsimo_bachastrangebea_15_jesujoyofmansdesirin.m4a"
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Tchaikovsky: The Nutcracker",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/variousartists_100masterpieces3_15tchaikovskythe.m4a"
+  },
+  {
+    "artist": "Nigel Kennedy",
+    "title": "Hungarian Dance No. 5",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/kennedynigel_classickennedy_04hungariandanceno5.m4a"
+  },
+  {
+    "artist": "Lang Lang",
+    "title": "Kinderszenen Op. 151",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/langlang_memory_08kinderszenenop151.m4a"
+  },
+  {
+    "artist": "Herbert von Karajan",
+    "title": "Pictures at an Exhibition",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/herbertvonkarajan_bolerorapsodieesp_06picturesatanexhib.m4a"
+  }
+]
