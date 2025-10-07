@@ -599,10 +599,27 @@ Object.assign(toast.style, {
 });
 document.body.appendChild(toast);
 
-function showToast() {
-  toast.style.opacity = '1';
-  setTimeout(() => toast.style.opacity = '0', 3000);
-}
+/* toast já existe; apenas troque o trecho de estilo por: */
+Object.assign(toast.style, {
+  position: 'fixed',
+  /* centraliza em relação à capa */
+  top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`,
+  left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`,
+  transform: 'translate(-50%,-50%)',
+  background: 'rgba(0,0,0,.55)',
+  backdropFilter: 'blur(10px)',
+  color: '#fff',
+  padding: '1.2rem 1.8rem',
+  borderRadius: '1rem',
+  fontSize: '1.05rem',
+  textAlign: 'center',
+  lineHeight: '1.4',
+  zIndex: '999',
+  pointerEvents: 'none',
+  opacity: '0',
+  transition: 'opacity .35s ease'
+});
+
 
 /* intercepta os botões next/prev */
 [next, prev].forEach(btn =>
