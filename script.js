@@ -620,4 +620,66 @@ function showToast() {
     }
   })
 );
+
+/* ===== BALÃO QUADRINHO ===== */
+const balloon = document.createElement('div');
+balloon.innerHTML = 'Escolha a playlist ;)';
+Object.assign(balloon.style, {
+  position: 'fixed',
+  top: '4.2rem',                 /* abaixo dos 3 pontinhos */
+  right: '1.2rem',
+  background: 'rgba(0,0,0,.65)',
+  backdropFilter: 'blur(10px)',
+  color: '#fff',
+  padding: '.6rem 1rem',
+  borderRadius: '.7rem',
+  fontSize: '.9rem',
+  zIndex: '35',
+  pointerEvents: 'none',
+  opacity: '0',
+  transition: 'opacity .35s ease',
+  clipPath: 'polygon(0 0,100% 0,100% calc(100% - .6rem),calc(100% - 1.2rem) calc(100% - .6rem),1.2rem calc(100% - .6rem),0 100%)' /* seta para cima */
+});
+document.body.appendChild(balloon);
+
+let balloonShown = false;
+let playsForBalloon = 0;
+
+function showBalloon() {
+  if (balloonShown) return;
+  balloonShown = true;
+  balloon.style.opacity = '1';
+}
+function hideBalloon() {
+  balloonShown = false;
+  balloon.style.opacity = '0';
+}
+
+/* mostra 1× ao entrar */
+setTimeout(showBalloon, 1200);
+
+/* esconde quando abrir menu ou escolher playlist */
+[menuBtn, dropMenu].forEach(el =>
+  el.addEventListener('click', hideBalloon)
+);
+
+/* contador: a cada 5 músicas mostra de novo */
+function trackBalloon() {
+  playsForBalloon++;
+  if (playsForBalloon >= 5) {
+    playsForBalloon = 0;
+    showBalloon();
+    setTimeout(hideBalloon, 4000);   // auto-fecha depois de 4s
+  }
+}
+
+/* pluga no contador que já existe (playing) */
+const originalPlaying = a.addEventListener.bind(a);
+a.addEventListener('playing', () => {
+  /* executa o que já estava lá */
+  const evt = new Event('playing');
+  a.dispatchEvent(evt);
+  trackBalloon();
+});
+
  
