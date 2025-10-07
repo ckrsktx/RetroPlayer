@@ -621,65 +621,89 @@ function showToast() {
   })
 );
 
-/* ===== BALÃO QUADRINHO ===== */
-const balloon = document.createElement('div');
-balloon.innerHTML = 'Escolha a playlist ;)';
-Object.assign(balloon.style, {
+/* ===== BALÃO QUADRINHO “Escolha a playlist ;)” ===== */
+const balao = document.createElement('div');
+balao.id = 'balaoPlaylist';
+balao.innerHTML = 'Escolha a playlist&nbsp;)';
+document.body.appendChild(balao);
+
+/* estilos do balão (quadrinho + seta apontando para os 3 riscos) */
+Object.assign(balao.style, {
   position: 'fixed',
-  top: '4.2rem',                 /* abaixo dos 3 pontinhos */
-  right: '1.2rem',
+  top: '4.8rem',              /* embaixo dos 3 riscos */
+  right: '1.4rem',
   background: 'rgba(0,0,0,.65)',
-  backdropFilter: 'blur(10px)',
+  backdropFilter: 'blur(8px)',
   color: '#fff',
   padding: '.6rem 1rem',
   borderRadius: '.7rem',
-  fontSize: '.9rem',
+  fontSize: '.92rem',
+  whiteSpace: 'nowrap',
   zIndex: '35',
   pointerEvents: 'none',
   opacity: '0',
-  transition: 'opacity .35s ease',
-  clipPath: 'polygon(0 0,100% 0,100% calc(100% - .6rem),calc(100% - 1.2rem) calc(100% - .6rem),1.2rem calc(100% - .6rem),0 100%)' /* seta para cima */
+  transition: 'opacity .3s ease'
 });
-document.body.appendChild(balloon);
 
-let balloonShown = false;
-let playsForBalloon = 0;
-
-function showBalloon() {
-  if (balloonShown) return;
-  balloonShown = true;
-  balloon.style.opacity = '1';
-}
-function hideBalloon() {
-  balloonShown = false;
-  balloon.style.opacity = '0';
-}
-
-/* mostra 1× ao entrar */
-setTimeout(showBalloon, 1200);
-
-/* esconde quando abrir menu ou escolher playlist */
-[menuBtn, dropMenu].forEach(el =>
-  el.addEventListener('click', hideBalloon)
-);
-
-/* contador: a cada 5 músicas mostra de novo */
-function trackBalloon() {
-  playsForBalloon++;
-  if (playsForBalloon >= 5) {
-    playsForBalloon = 0;
-    showBalloon();
-    setTimeout(hideBalloon, 4000);   // auto-fecha depois de 4s
+/* seta CSS */
+const seta = document.createElement('style');
+seta.textContent = `
+  #balaoPlaylist::before {
+    content: "";
+    position: absolute;
+    top: -.45rem;
+    right: 1.1rem;
+    width: 0;
+    height: 0;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-bottom: .5rem solid rgba(0,0,0,.65);
   }
+`;
+document.head.appendChild(seta);
+
+/* controle de exibição */
+let jaMostrou = localStorage.getItem('balaoMostrado') === 'true';
+let pulosNaPlaylist = 0;
+let ultimoSkip = 0;
+const JANELA = 1500;   // ms entre skips para considerar “rapido”
+
+function mostraBalao() {
+  if (jaMostrou) return;
+  balao.style.opacity = '1';
+}
+function escondeBalao() {
+  balao.style.opacity = '0';
+  localStorage.setItem('balaoMostrado', 'true');
+  jaMostrou = true;
 }
 
-/* pluga no contador que já existe (playing) */
-const originalPlaying = a.addEventListener.bind(a);
-a.addEventListener('playing', () => {
-  /* executa o que já estava lá */
-  const evt = new Event('playing');
-  a.dispatchEvent(evt);
-  trackBalloon();
+/* mostra 1x ao entrar (se ainda não viu) */
+if (!jaMostrou) {
+  setTimeout(mostraBalao, 800);   // delay suave
+}
+
+/* esconde quando ESCOLHER playlist */
+dropMenu.addEventListener('click', e => {
+  if (e.target.classList.contains('menuItem')) escondeBalao();
 });
+
+/* detecta 5 pulos rápidos NA MESMA playlist */
+[next, prev].forEach(btn =>
+  btn.addEventListener('click', () => {
+    const agora = Date.now();
+    if (agora - ultimoSkip < JANELA) {
+      pulosNaPlaylist++;
+    } else {
+      pulosNaPlaylist = 1;       // reset fora da janela
+    }
+    ultimoSkip = agora;
+    if (pulosNaPlaylist >= 5) {
+      pulosNaPlaylist = 0;
+      localStorage.removeItem('balaoMostrado'); // permite mostrar de novo
+      mostraBalao();
+    }
+  })
+);
 
  
