@@ -64,17 +64,24 @@ body {
   right: 1rem;
   width: 240px;
   max-height: 70vh;
-  overflow-y: auto;
-  background: rgba(20,20,20,.6);
+  overflow-y: auto;            /* mantém rolagem */
+  background: rgba(20, 20, 20, .6);
   backdrop-filter: blur(14px);
   border-radius: .8rem;
-  border: 1px solid rgba(255,255,255,.06);
+  border: 1px solid rgba(255, 255, 255, .06);
   padding: .4rem 0;
   display: none;
   flex-direction: column;
   gap: .25rem;
   z-index: 30;
+
+  /* ESCONDE A BARRA */
+  scrollbar-width: none;       /* Firefox */
 }
+#dropMenu::-webkit-scrollbar {
+  display: none;               /* Chrome / Safari / Edge */
+}
+
 .menuItem {
   padding: .6rem 1rem;
   font-size: .88rem;
