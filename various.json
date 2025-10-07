@@ -1,1 +1,52 @@
-
+[
+  {
+    "artist": "John Williams",
+    "title": "Augie's Great Municipal Band",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_17_augiesgreatmunicipal.m4a"
+  },
+  {
+    "artist": "Kamakawiwo'ole, Israel",
+    "title": "Somewhere Over the Rainbow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hawaiian/kamakawiwooleis_facingfuture_14_somewhereovertherain.m4a"
+  },
+  {
+    "artist": "Vaughan, Stevie Ray",
+    "title": "Crossfire",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/vaughanstevieray_crgold035_crossfire.m4a"
+  },
+  {
+    "artist": "Owl City",
+    "title": "Fireflies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/owlcity_hb200929_06_fireflies.m4a"
+  },
+  {
+    "artist": "Jones, Norah",
+    "title": "Happy Pills",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/jonesnorah_hb201212_18_happypills.m4a"
+  },
+  {
+    "artist": "Taylor, James",
+    "title": "Fire and Rain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/taylorjames_crgold067_fireandrain.m4a"
+  },
+  {
+    "artist": "Ohio Players",
+    "title": "Fire",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/ohioplayers_gd7506_10fire.m4a"
+  },
+  {
+    "artist": "Alabama",
+    "title": "Old Flame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/alabama_cw032_1103-03oldflame.m4a"
+  },
+  {
+    "artist": "Presley, Elvis",
+    "title": "Burning Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/presleyelvis_gd407_08burninglove.m4a"
+  },
+  {
+    "artist": "Buckingham, Lindsey",
+    "title": "Holiday Road",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/buckinghamlinds_nationallampoon_01_holidayroad.m4a"
+  }
+]
