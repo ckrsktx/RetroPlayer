@@ -1,5 +1,175 @@
 [
   {
+    "artist": "The Fall",
+    "title": "Hip Priest",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/fallthe_50000fallfanscant_11hippriest.m4a"
+  },
+  {
+    "artist": "The Smiths",
+    "title": "How Soon Is Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/thesmiths_thebritboxdisc1_01howsoonisnow.m4a"
+  },
+  {
+    "artist": "Wham!",
+    "title": "Everything She Wants",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/wham_chrgold30_everythingshewant.m4a"
+  },
+  {
+    "artist": "Phil Collins",
+    "title": "In the Air Tonight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/collinsphil_gd921_05intheairtonight.m4a"
+  },
+  {
+    "artist": "The Gap Band",
+    "title": "You Dropped a Bomb on Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/gapbandthe_ch034_youdroppedabombon.m4a"
+  },
+  {
+    "artist": "Jody Watley",
+    "title": "Looking for a New Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/watleyjody_jodywatley_01_lookingforanewlove.m4a"
+  },
+  {
+    "artist": "Don Henley",
+    "title": "The Boys of Summer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/henleydon_buildingtheperfec_09donhenley.m4a"
+  },
+  {
+    "artist": "Bruce Hornsby & The Range",
+    "title": "The Way It Is",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/hornsbybruce_chrgold13_thewayitis.m4a"
+  },
+  {
+    "artist": "38 Special",
+    "title": "Hold On Loosely",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/38special_crgold067_holdonloosely.m4a"
+  },
+  {
+    "artist": "Foreigner",
+    "title": "Urgent",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/foreigner_crgold047_urgent.m4a"
+  },
+  {
+    "artist": "Toto",
+    "title": "Africa",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/toto_gd917_01africa.m4a"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "Dancing in the Dark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/springsteenbruce_chrgold26_dancinginthedark.m4a"
+  },
+  {
+    "artist": "Marvin Gaye",
+    "title": "Sexual Healing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/gayemarvin_gd437_06sexualhealing.m4a"
+  },
+  {
+    "artist": "Sly Fox",
+    "title": "Let's Go All the Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/slyfox_completeeighties4_04letsgoalltheway.m4a"
+  },
+  {
+    "artist": "The Bangles",
+    "title": "Eternal Flame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/bangles_chrgold32_eternalflame.m4a"
+  },
+  {
+    "artist": "Katrina and The Waves",
+    "title": "Walking on Sunshine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/katrinaandthewave_gd530_05walkingonsunshine.m4a"
+  },
+  {
+    "artist": "Steve Perry",
+    "title": "Oh Sherrie",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/perrysteve_chrgold22_ohsherrie.m4a"
+  },
+  {
+    "artist": "Eddy Grant",
+    "title": "Electric Avenue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/granteddy_ch0332_electricavenue.m4a"
+  },
+  {
+    "artist": "Cyndi Lauper",
+    "title": "True Colors",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/laupercyndi_gd217_17truecolors.m4a"
+  },
+  {
+    "artist": "The Time",
+    "title": "Jungle Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/time_ch032_junglelove.m4a"
+  },
+  {
+    "artist": "Scandal",
+    "title": "Goodbye to You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/scandal_likeomigodthe80sp_20goodbyetoyou.m4a"
+  },
+  {
+    "artist": "The Human League",
+    "title": "Keep Feeling Fascination",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/humanleaguethe_fascinationep_10_keepfeelingfascinati.m4a"
+  },
+  {
+    "artist": "A Flock of Seagulls",
+    "title": "I Ran (So Far Away)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/aflockofseagulls_newwavehitsvol1_04iransofaraway.m4a"
+  },
+  {
+    "artist": "The Outfield",
+    "title": "Your Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/outfield_ch0352_yourlove.m4a"
+  },
+  {
+    "artist": "Bryan Adams",
+    "title": "Summer of '69",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/adamsbryan_ch031_summerof69.m4a"
+  },
+  {
+    "artist": "Eurythmics",
+    "title": "Sweet Dreams (Are Made of This)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/eurythmics_gd921_12sweetdreamsaremad.m4a"
+  },
+  {
+    "artist": "Rick James",
+    "title": "Super Freak",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jamesrick_ch036_superfreakpart1.m4a"
+  },
+  {
+    "artist": "Stray Cats",
+    "title": "Stray Cat Strut",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/straycats_straycats_08_straycatstrut.m4a"
+  },
+  {
+    "artist": "Elvis Costello",
+    "title": "Pump It Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/costelloelvis_thisyearsmodel199_04pumpitup.m4a"
+  },
+  {
+    "artist": "The Clash",
+    "title": "Wrong 'Em Boyo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/clashthe_londoncalling_11wrongemboyo.m4a"
+  },
+  {
+    "artist": "Genesis",
+    "title": "Misunderstanding",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/genesis_gd545_09misunderstanding.m4a"
+  },
+  {
+    "artist": "John Cafferty & The Beaver Brown Band",
+    "title": "On the Dark Side",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/caffertyjohn_gd594_05onthedarkside.m4a"
+  },
+  {
+    "artist": "Tom Petty and The Heartbreakers",
+    "title": "Don't Do Me Like That",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/pettytom_damnthetorpedoes_06dontdomelikethat.m4a"
+  },
+  {
+    "artist": "The Go-Go's",
+    "title": "We Got the Beat",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/gogosthe_ch0328_wegotthebeat.m4a"
+  },
+  {
     "artist": "Pat Benatar",
     "title": "Love Is a Battlefield",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/benatarpat_completeeighties1_01loveisabattlefiel.m4a"
