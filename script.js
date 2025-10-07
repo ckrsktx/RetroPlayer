@@ -621,45 +621,32 @@ function showToast() {
   })
 );
 
-/* ===== BALÃO QUADRINHO “Escolha a playlist ;)” ===== */
+/* ===== TEXTO SIMPLES “Escolha a playlist ;)” ===== */
 (() => {
-  const jaMostrou = sessionStorage.getItem('balaoMenu');
-  if (jaMostrou) return;               // já exibiu nesta sessão
-
   const menu = $('#menuBtn');
   if (!menu) return;
 
-  /* cria o balão */
-  const balao = document.createElement('div');
-  balao.innerHTML = 'Escolha a playlist&nbsp;&nbsp;)';
-  Object.assign(balao.style, {
+  const texto = document.createElement('div');
+  texto.innerHTML = 'Escolha a playlist ;)';
+  Object.assign(texto.style, {
     position: 'fixed',
-    top: '4.2rem',               /* logo abaixo dos 3 riscos */
+    top: '4.2rem',
     right: '1.2rem',
-    background: 'rgba(0,0,0,.55)',
-    backdropFilter: 'blur(10px)',
-    color: '#fff',
-    padding: '.6rem 1rem',
-    borderRadius: '.8rem',
-    fontSize: '.9rem',
-    zIndex: '35',
-    pointerEvents: 'none',
+    color: 'var(--fg)',
+    fontSize: '.85rem',
     opacity: '0',
     transition: 'opacity .35s ease',
-    /* seta apontando para cima */
-    clipPath: 'polygon(0 0,100% 0,100% calc(100% - .6rem),calc(50% + .4rem) calc(100% - .6rem),50% 100%,calc(50% - .4rem) calc(100% - .6rem),0 calc(100% - .6rem))'
+    zIndex: '35',
+    pointerEvents: 'none'
   });
-  document.body.appendChild(balao);
+  document.body.appendChild(texto);
 
-  /* aparece suave */
-  requestAnimationFrame(() => balao.style.opacity = '1');
+  requestAnimationFrame(() => texto.style.opacity = '1');
 
-  /* some quando abrir o menu e marca sessão */
   const esconde = () => {
-    balao.style.opacity = '0';
-    sessionStorage.setItem('balaoMenu', '1');
+    texto.style.opacity = '0';
     menu.removeEventListener('click', esconde);
-    setTimeout(() => balao.remove(), 400);
+    setTimeout(() => texto.remove(), 400);
   };
   menu.addEventListener('click', esconde);
 })();
