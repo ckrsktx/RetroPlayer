@@ -1,5 +1,140 @@
 [
   {
+    "artist": "Tangerine Dream",
+    "title": "Phaedra",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/tangerinedream_phaedra_01_phaedra.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Poison",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigythe_musicforthejilt_08_poison.m4a"
+  },
+  {
+    "artist": "Florence and The Machine",
+    "title": "Drumming Song",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/florenceandthem_lungs_00_drummingsongboy8bitr.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Voodoo People",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigythe_musicforthejilt_05_voodoopeople.m4a"
+  },
+  {
+    "artist": "Kayzo and Gammer",
+    "title": "Forever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kayzoandgammer_foreversingle_01_forever.m4a"
+  },
+  {
+    "artist": "Bassnectar",
+    "title": "Wildstyle Method",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/bassnectar_wildstyle_02_wildstylemethod.m4a"
+  },
+  {
+    "artist": "Mike Posner",
+    "title": "Cooler Than Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/posnermike_coolerthanmesingle_02_coolerthanmebosonremix.m4a"
+  },
+  {
+    "artist": "Technimatic",
+    "title": "Sphere",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/technimatic_intersectionep_04_sphere.m4a"
+  },
+  {
+    "artist": "Friction Ktee",
+    "title": "Jupiter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/frictionktee_wayofthewarrior_03_jupitermefjusremix.m4a"
+  },
+  {
+    "artist": "Nero",
+    "title": "Innocence",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/nero_welcomereality_07_innocence.m4a"
+  },
+  {
+    "artist": "Skream",
+    "title": "Filth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/skream_top50tracksofte_38_filth.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Out Of Space",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/prodigythe_theirlawthesingle_04outofspace.m4a"
+  },
+  {
+    "artist": "Deadboy",
+    "title": "Nova",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/deadboy_blaquewerkep_04_nova.m4a"
+  },
+  {
+    "artist": "Eptic",
+    "title": "Dimension 7",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/eptic_theend_01_dimension7.m4a"
+  },
+  {
+    "artist": "Snails and Herobust",
+    "title": "Pump This",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/snailsandherobust_pumpthisremixes_02_pumpthisgetterremix.m4a"
+  },
+  {
+    "artist": "Friction Dimension",
+    "title": "Kinetic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/frictiondimensi_frictionvsvol3_01_kinetic.m4a"
+  },
+  {
+    "artist": "Major Lazer",
+    "title": "Jah No Partial",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/majorlazer_freetheuniverse_04_jahnopartial.m4a"
+  },
+  {
+    "artist": "Flaxen",
+    "title": "Tape N Vinyl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/flaxen_silenceinarbore_01_tapenvinyl.m4a"
+  },
+  {
+    "artist": "Deadmau5",
+    "title": "Ghosts N Stuff",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/deadmau5_cheapthrills_3_ghostsnstuffneromix.m4a"
+  },
+  {
+    "artist": "Excision and Downlink",
+    "title": "Existence",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/excisionanddownlink_existenceep_01_existencevip.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Breathe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigy_al338_breathe.m4a"
+  },
+  {
+    "artist": "KD",
+    "title": "Electronic Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kd_findparadise_1_electronicmemories.m4a"
+  },
+  {
+    "artist": "The Chainsmokers",
+    "title": "Save Yourself",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/chainsmokersthe_sickboythisfeeling_2_saveyourself.m4a"
+  },
+  {
+    "artist": "Krewella",
+    "title": "Live For The Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/krewella_liveforthenightremixes_03_liveforthenightpegboardnerdsremix.m4a"
+  },
+  {
+    "artist": "Ducky",
+    "title": "Addicted To Your Distance",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ducky_addictedtoyourdistancesingle_01_addictedtoyourdistance.m4a"
+  },
+  {
+    "artist": "Dada Life",
+    "title": "Kick Out The Epic Motherfker",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/dadalife_kickouttheepicmotherfkerremixes_02_kickouttheepicmotherfkerdatsikremix.m4a"
+  },
+  {
+    "artist": "Bassnectar",
+    "title": "Vava Voom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bassnectar_ha201215_06_vavavoom.m4a"
+  },
+  {
     "artist": "The Crystal Method",
     "title": "Trip Like I Do",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thecrystalmethod_vegas_01triplikeido.m4a"
