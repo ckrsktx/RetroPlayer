@@ -1,5 +1,160 @@
 [
-  {
+{
+  "artist": "The Simpsons",
+  "title": "Do the Bartman",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/comedy/simpsonsthe_thesimpsonssing_01_dothebartmanvbarthom.m4a"
+},
+{
+  "artist": "Earth, Wind and Fire",
+  "title": "Boogie Wonderland",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/earthwindandfire_discodancedisc2_09boogiewonderland.m4a"
+},
+{
+  "artist": "The Hollies",
+  "title": "He Ain't Heavy, He's My Brother",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/holliesthe_gd301_05heaintheaveyhesmy.m4a"
+},
+{
+  "artist": "Buckley, Jeff",
+  "title": "Hallelujah",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/buckleyjeff_ha200813_01hallelujah.m4a"
+},
+{
+  "artist": "School of Rock Cast",
+  "title": "School of Rock",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/schoolofrock_schoolofrockori_01_schoolofrock.m4a"
+},
+{
+  "artist": "Mazzy Star",
+  "title": "Fade Into You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/mazzystar_mrc328_fadeintoyou.m4a"
+},
+{
+  "artist": "Atlantic Starr",
+  "title": "Secret Lovers",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/atlanticstarr_chrgold38_secretlovers.m4a"
+},
+{
+  "artist": "Hansard, Glen and Markéta Irglová",
+  "title": "Falling Slowly",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/hansgardglenandma_ha200809_07fallingslowly.m4a"
+},
+{
+  "artist": "The Beatles",
+  "title": "Two of Us",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_letitberemaster_01_twoofus.m4a"
+},
+{
+  "artist": "Empire Cast",
+  "title": "You're So Beautiful",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/empirecast_empireoriginalsoundtrackseason1deluxeedition_11_youresobeautiful.m4a"
+},
+{
+  "artist": "Spinal Tap",
+  "title": "Big Bottom",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/spinaltap_thisisspinaltap_07_bigbottom.m4a"
+},
+{
+  "artist": "Jett, Joan",
+  "title": "Light of Day",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/jettjoan_lightofdayoriginalmotionpicturesoundtrack_01_lightofday.m4a"
+},
+{
+  "artist": "The Muppets",
+  "title": "Rainbow Connection",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/themuppetmovie1979_themuppetmovie1979originalmotionpicturesoundtrack_01_rainbowconnection.m4a"
+},
+{
+  "artist": "Bread",
+  "title": "Make It With You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/bread_onthewaters_01_makeitwithyou.m4a"
+},
+{
+  "artist": "Doobie Brothers",
+  "title": "China Grove",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/doobiebrothers_ol0326_501-01chinagrove.m4a"
+},
+{
+  "artist": "The Motels",
+  "title": "Only the Lonely",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/motelsthe_chrgold32_onlythelonely.m4a"
+},
+{
+  "artist": "Young, Neil",
+  "title": "Only Love Can Break Your Heart",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/youngneil_afterthegoldrush_03onlylovecanbreaky.m4a"
+},
+{
+  "artist": "Cyrus, Miley",
+  "title": "If We Were a Movie",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/cyrusmiley_hannahmontana3_01_ifwewereamovie.m4a"
+},
+{
+  "artist": "Sly and the Family Stone",
+  "title": "Family Affair",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/slyandthefamilyst_golddiskupdate6_23familyaffair.m4a"
+},
+{
+  "artist": "The Wonders",
+  "title": "That Thing You Do",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/wondersthe_thatthingyoudooriginalmotionpicturesoundtrack_15_thatthingyoudo.m4a"
+},
+{
+  "artist": "England Dan and John Ford Coley",
+  "title": "It's Sad to Belong",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/englanddanandjohnfordcoley_dowdyferryroad_02_itssadtobelong.m4a"
+},
+{
+  "artist": "Boyz II Men",
+  "title": "It's So Hard to Say Goodbye to Yesterday",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/boyziimen_chrgold45_itssohardtosaygoo.m4a"
+},
+{
+  "artist": "The Archies",
+  "title": "Sugar, Sugar",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/archies_ol0342_6522-06sugarsugar.m4a"
+},
+{
+  "artist": "The Rutles",
+  "title": "Cheese and Onions",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/rutlesthe_therutles_11_cheeseandonions.m4a"
+},
+{
+  "artist": "Bye Bye Birdie Cast",
+  "title": "One Last Kiss",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/broadway/byebyebirdie196_byebyebirdie196_17_onelastkiss.m4a"
+},
+{
+  "artist": "A Mighty Wind Cast",
+  "title": "Start Me Up",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/amightywind_amightywindorig_14_startmeup.m4a"
+},
+{
+  "artist": "Josie and the Pussycats",
+  "title": "Every Beat of My Heart",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/josieandthepussycats_josieandthepussycats_01_everybeatofmyheart.m4a"
+},
+{
+  "artist": "Alvin and the Chipmunks",
+  "title": "Witch Doctor",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/alvinandthechipmunks2007_alvinandthechipmunksoriginalmotionpicturesoundtrack_15_witchdoctorclassicversion.m4a"
+},
+{
+  "artist": "The Lonely Island",
+  "title": "Finest Girl (Bin Laden Song)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/lonelyislandthe_popstarneverstopneverstopping_05_finestgirlbinladensong.m4a"
+},
+{
+  "artist": "Presley, Elvis",
+  "title": "Heartbreak Hotel",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/presleyelvis_ol0336_605-13heartbreakhotel.m4a"
+},
+{
+  "artist": "The Ladybugs",
+  "title": "How Do You Do It",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/punk/ladybugsthe_girlsinthegarag_17_howdoyoudoit.m4a"
+},
+{
   "artist": "Moody Blues",
   "title": "Your Wildest Dreams",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/moodyblues_gd103_03yourwildestdreams.m4a"
