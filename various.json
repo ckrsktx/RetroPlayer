@@ -1,5 +1,125 @@
 [
   {
+  "artist": "Moody Blues",
+  "title": "Your Wildest Dreams",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/moodyblues_gd103_03yourwildestdreams.m4a"
+},
+{
+  "artist": "Thorogood, George",
+  "title": "Bad to the Bone",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/thorogoodgeorge_crgold039_badtothebone.m4a"
+},
+{
+  "artist": "Streisand, Barbra",
+  "title": "No More Tears (Enough Is Enough)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/streisandbarbra_wet_13_nomoretearsenoughise.m4a"
+},
+{
+  "artist": "Clapton, Eric",
+  "title": "Tears in Heaven",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/claptoneric_unplugged_04_tearsinheaven.m4a"
+},
+{
+  "artist": "Warwick, Dionne",
+  "title": "That's What Friends Are For",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/warwickdionne_chrgold48_thatswhatfriendsa.m4a"
+},
+{
+  "artist": "Berlin",
+  "title": "Take My Breath Away",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/berlin_chrgold03_takemybreathawayl.m4a"
+},
+{
+  "artist": "The Who",
+  "title": "I Can See for Miles",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/whothe_crgold050_icanseeformiles.m4a"
+},
+{
+  "artist": "Meat Loaf",
+  "title": "Two Out of Three Ain't Bad",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/meatloaf_chrgold36_twooutofthreeaint.m4a"
+},
+{
+  "artist": "Gibson, Debbie",
+  "title": "Out of the Blue",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/gibsondebbie_outoftheblue_01_outoftheblue.m4a"
+},
+{
+  "artist": "Stewart, Amii",
+  "title": "Knock on Wood",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/stewartamii_gd2302_07knockonwood.m4a"
+},
+{
+  "artist": "Babyface",
+  "title": "When Can I See You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/babyface_chrgold41_whencaniseeyou.m4a"
+},
+{
+  "artist": "Lowe, Nick",
+  "title": "Cruel to Be Kind",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/lowenick_labouroflust_1_crueltobekind.m4a"
+},
+{
+  "artist": "Staple Singers",
+  "title": "Let's Do It Again",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/staplesingers_gd1745_11letsdoitagain.m4a"
+},
+{
+  "artist": "Blues Brothers",
+  "title": "Minnie the Moocher",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/bluesbrothersth_thebluesbrother_09_minniethemoocher.m4a"
+},
+{
+  "artist": "Sugarloaf",
+  "title": "Don't Call Us, We'll Call You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/sugarloaf_haveanicedayvol14_02dontcalluswellcal.m4a"
+},
+{
+  "artist": "Three Dog Night",
+  "title": "Black and White",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/threedognight_ol0345_7022-12blackwhite.m4a"
+},
+{
+  "artist": "Brown, James",
+  "title": "I Got Ants in My Pants",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/soul/brownjames_startimedisc3soul_13igotantsinmypants.m4a"
+},
+{
+  "artist": "Los Bravos",
+  "title": "Black Is Black",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/losbravos_ol0322_422-21blackisblack.m4a"
+},
+{
+  "artist": "Blue Swede",
+  "title": "Hooked on a Feeling",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/blueswede_ol0344_7004-09hookedonafeeling.m4a"
+},
+{
+  "artist": "Pied Pipers, The",
+  "title": "Mairzy Doats",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/swingingpop/piedpipersthe_mairzydoatssingle_01_mairzydoats.m4a"
+},
+{
+  "artist": "Sinatra, Nancy",
+  "title": "These Boots Are Made for Walkin'",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/sinatranancy_gd6501_02thesebootsaremade.m4a"
+},
+{
+  "artist": "Yoakam, Dwight",
+  "title": "It Only Hurts When I Cry",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/yoakamdwight_tc0238_1123-06itonlyhurtswhenic.m4a"
+},
+{
+  "artist": "Charles, Ray",
+  "title": "Hit the Road Jack",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/charlesray_gd408_01hittheroadjack.m4a"
+},
+{
+  "artist": "Miller, Roger",
+  "title": "Do-Wacka-Do",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/millerroger_jukeboxhitsvol4_10dowackado.m4a"
+},
+  {
     "artist": "John Williams",
     "title": "Augie's Great Municipal Band",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_17_augiesgreatmunicipal.m4a"
