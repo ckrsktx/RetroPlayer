@@ -1,5 +1,160 @@
 [
   {
+    "artist": "T.I.",
+    "title": "Dead and Gone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ti_ha200850_18_deadandgone.m4a"
+  },
+  {
+    "artist": "Dr. Dre",
+    "title": "Dre Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/drdre_dredaysingle_01_dreday.m4a"
+  },
+  {
+    "artist": "Lil Wayne",
+    "title": "Mrs. Officer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lilwayne_ha200847_11_mrsofficer.m4a"
+  },
+  {
+    "artist": "John Legend",
+    "title": "Ordinary People",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/legendjohn_607a_ordinarypeople.m4a"
+  },
+  {
+    "artist": "Usher",
+    "title": "Caught Up (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/usher_hd593a_19caughtupremix.m4a"
+  },
+  {
+    "artist": "Jay-Z",
+    "title": "Empire State of Mind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jayz_ha200939_07_empirestateofmind.m4a"
+  },
+  {
+    "artist": "8Ball",
+    "title": "You Don't Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/8ball_hd559a_15youdontwant.m4a"
+  },
+  {
+    "artist": "Jay-Z",
+    "title": "Run This Town",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jayz_ha200931_13_runthistown.m4a"
+  },
+  {
+    "artist": "Mario",
+    "title": "Let Me Love You (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/mario_hd601a_14letmeloveyouremix.m4a"
+  },
+  {
+    "artist": "Birdman",
+    "title": "Money to Blow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/birdman_ha200947_09_moneytoblow.m4a"
+  },
+  {
+    "artist": "Lil Wayne",
+    "title": "Bring It Back",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lilwayne_hd560a_12bringitback.m4a"
+  },
+  {
+    "artist": "Keri Hilson",
+    "title": "Knock You Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/hilsonkeri_ha200912_15_knockyoudown.m4a"
+  },
+  {
+    "artist": "Usher",
+    "title": "Here I Stand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/usher_hereistand_17_hereistand.m4a"
+  },
+  {
+    "artist": "Lil Wayne",
+    "title": "Lollipop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lilwayne_ha200812_12lollipop.m4a"
+  },
+  {
+    "artist": "Juvenile",
+    "title": "Bounce Back",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/juvenilefeat_hd585a_12bounceback.m4a"
+  },
+  {
+    "artist": "Akon",
+    "title": "I Wanna Love You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/akon_ha200643_12iwannaluvyou.m4a"
+  },
+  {
+    "artist": "En Vogue",
+    "title": "Don't Let Go (Love)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/envogue_ch0312_dontletgolove.m4a"
+  },
+  {
+    "artist": "Master P",
+    "title": "I Need Dubs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/masterp_hitdisc620_13ineeddubs.m4a"
+  },
+  {
+    "artist": "Lil Wayne",
+    "title": "How to Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lilwayne_ha201123_13_howtolove.m4a"
+  },
+  {
+    "artist": "Avant",
+    "title": "When It Hurts",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/avant_ha200833_17_whenithurts.m4a"
+  },
+  {
+    "artist": "Everlast",
+    "title": "Broken",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/everlast_hd569a_05broken.m4a"
+  },
+  {
+    "artist": "Young Jeezy",
+    "title": "Go Getta",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/youngjeezy_ha200701_13gogetta.m4a"
+  },
+  {
+    "artist": "Nelly feat. Jaheim",
+    "title": "My Place",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/nellyfeatjaheim_hd575a_19myplace.m4a"
+  },
+  {
+    "artist": "Yo Gotti",
+    "title": "5 Star",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/yogotti_ha200930_16_5star.m4a"
+  },
+  {
+    "artist": "Field Mob",
+    "title": "So What",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fieldmob_ha200609_14sowhat.m4a"
+  },
+  {
+    "artist": "LL Cool J",
+    "title": "Hush",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/llcooljfeat7_hd582a_14hush.m4a"
+  },
+  {
+    "artist": "Mary J. Blige",
+    "title": "The One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/maryjblige_ha200931_14_theone.m4a"
+  },
+  {
+    "artist": "Wiz Khalifa",
+    "title": "Young, Wild & Free",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/wizkhalifa_ha201146_08_youngwildfree.m4a"
+  },
+  {
+    "artist": "Beyoncé",
+    "title": "Diva",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/beyonce_ha200902_13_diva.m4a"
+  },
+  {
+    "artist": "Weezer",
+    "title": "Beverly Hills",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/weezer_hd617a_10beverlyhills.m4a"
+  },
+  {
+    "artist": "Carpenter & Sabrina",
+    "title": "Espresso (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/carpentersabrina_espressosingle_01_espressoclean.m4a"
+  },
+  {
     "artist": "Lil Wayne",
     "title": "Believe Me",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lilwayne_ha201419_08_believeme.m4a"
