@@ -1,5 +1,6 @@
 
 { 
+  "Home | Mix": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/home.json",
   "60s | 70s": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/60s70s.json",
   "80s | 90s": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/80s90s.json",
   "Alternative | Now": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/AlternativeNow.json",
@@ -14,6 +15,6 @@
   "Nu-Metal | Metalcore": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/numetal.json",
   "Pop | Adult": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
   "Retro | Dance | Club": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json",
-  "Rock | Metal | Hard | Heavy": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json",
-  "Various | Others": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/various.json"
+  "Rock | Metal | Hard | Heavy": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json"
+  
 }
