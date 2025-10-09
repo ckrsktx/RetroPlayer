@@ -1,5 +1,155 @@
 [
   {
+    "artist": "Jane's Addiction",
+    "title": "Three Days",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/janesaddiction_ritualdelohabitua_06threedays.m4a"
+  },
+  {
+    "artist": "Tool",
+    "title": "The Pot",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/tool_10000days_05_thepot.m4a"
+  },
+  {
+    "artist": "Pearl Jam",
+    "title": "Yellow Ledbetter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/pearljam_jeremycdsingle_03yellowledbetter.m4a"
+  },
+  {
+    "artist": "Ben Folds",
+    "title": "Rockin' the Suburbs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/foldsben_al337_rockinthesuburbsr.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Believe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/staind_hb200826_04_believe.m4a"
+  },
+  {
+    "artist": "Smashing Pumpkins",
+    "title": "1979",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al312_1979.m4a"
+  },
+  {
+    "artist": "Fastball",
+    "title": "The Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/fastball_al0346_722-07theway.m4a"
+  },
+  {
+    "artist": "Soundgarden",
+    "title": "Spoonman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_al0347_691-13spoonman.m4a"
+  },
+  {
+    "artist": "Blink-182",
+    "title": "Adam's Song",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al033_1606-06adamssong.m4a"
+  },
+  {
+    "artist": "Shiny Toy Guns",
+    "title": "You Are the One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/shinytoyguns_ha200733_08youaretheone.m4a"
+  },
+  {
+    "artist": "Wheatus",
+    "title": "Teenage Dirtbag",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/wheatus_al324_teenagedirtbag.m4a"
+  },
+  {
+    "artist": "Alice in Chains",
+    "title": "Heaven Beside You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/aliceinchains_al327_heavenbesideyou.m4a"
+  },
+  {
+    "artist": "Incubus",
+    "title": "Drive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/incubus_al036_1611-16drivealbumversion.m4a"
+  },
+  {
+    "artist": "Bowling for Soup",
+    "title": "Ohio",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bowlingforsoup_hd622a_10ohio.m4a"
+  },
+  {
+    "artist": "Fall Out Boy",
+    "title": "Sugar, We're Goin Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/falloutboy_hitdisc621_10sugarweregoindown.m4a"
+  },
+  {
+    "artist": "The Offspring",
+    "title": "Original Prankster",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/offspring_al036_1611-07originalprankster.m4a"
+  },
+  {
+    "artist": "Sum 41",
+    "title": "We're All to Blame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/sum41_hd584a_009werealltoblame.m4a"
+  },
+  {
+    "artist": "Depeche Mode",
+    "title": "Dream On",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/depechemode_al037_1613-17dreamonedit.m4a"
+  },
+  {
+    "artist": "Dave Matthews Band",
+    "title": "I Did It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/davematthewsband_al037_1612-13ididit.m4a"
+  },
+  {
+    "artist": "Wavves",
+    "title": "Beach Demon",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/wavves_wavvves_02_beachdemon.m4a"
+  },
+  {
+    "artist": "Taking Back Sunday",
+    "title": "MakeDamnSure",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/takingbacksunday_ha200632_09makedamnsure.m4a"
+  },
+  {
+    "artist": "Modest Mouse",
+    "title": "Float On",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/modestmouse_goodnewsfor_03floaton.m4a"
+  },
+  {
+    "artist": "Finger Eleven",
+    "title": "Paralyzer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fingereleven_ha200712_04paralyzer.m4a"
+  },
+  {
+    "artist": "Simple Plan",
+    "title": "Welcome to My Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/simpleplan_hd584a_10welcometomylife.m4a"
+  },
+  {
+    "artist": "Box Car Racer",
+    "title": "I Feel So",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/boxcarracer_al0361_751-08ifeelsoguitarintr.m4a"
+  },
+  {
+    "artist": "Blink-182",
+    "title": "Josie",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al334_josieeverythingsg.m4a"
+  },
+  {
+    "artist": "Green Day",
+    "title": "Basket Case",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/greenday_al0347_694-05basketcase.m4a"
+  },
+  {
+    "artist": "Blink-182",
+    "title": "All the Small Things",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al031_1601-07allthesmallthings.m4a"
+  },
+  {
+    "artist": "Blink-182",
+    "title": "The Rock Show",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/blink182_al039_1617-06therockshow.m4a"
+  },
+  {
+    "artist": "R.E.M.",
+    "title": "Dream All I Have to Do",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/rem_lifesrichpagean_17_dreamallihavetodo.m4a"
+  },
+  {
     "artist": "Soundgarden",
     "title": "Outshined",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_al0363_799-06outshinedlpversio.m4a"
