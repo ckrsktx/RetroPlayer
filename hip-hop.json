@@ -1,5 +1,140 @@
 [
   {
+    "artist": "Lil Wayne",
+    "title": "Believe Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lilwayne_ha201419_08_believeme.m4a"
+  },
+  {
+    "artist": "Wale",
+    "title": "Clappers",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/wale_ha201337_14_clappers.m4a"
+  },
+  {
+    "artist": "Future & Metro Boomin",
+    "title": "Like That",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/futuremetroboomin_wedonttrustyou_06_likethat.m4a"
+  },
+  {
+    "artist": "Wale",
+    "title": "The Matrimony",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/wale_hc201524_09_thematrimony.m4a"
+  },
+  {
+    "artist": "Ginuwine",
+    "title": "Differences",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/ginuwine_ch0342_differences.m4a"
+  },
+  {
+    "artist": "Ciara",
+    "title": "I Bet",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/ciara_hc201519_08_ibet.m4a"
+  },
+  {
+    "artist": "Kehlani",
+    "title": "Folded",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/kehlani_foldedsingle_01_folded.m4a"
+  },
+  {
+    "artist": "Ariana Grande",
+    "title": "We Can't Be Friends (Wait For Your Love)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/grandeariana_eternalsunshine_10_wecantbefriendswaitforyourlove.m4a"
+  },
+  {
+    "artist": "Jennifer Hudson",
+    "title": "I Can't Describe (The Way I Feel)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/hudsonjennifer_hc201344_08_icantdescribethewayi.m4a"
+  },
+  {
+    "artist": "Fiona Melanie",
+    "title": "Give It To Me Right",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fionamelanie_ha200907_17_giveittomeright.m4a"
+  },
+  {
+    "artist": "Pop Smoke",
+    "title": "Dior",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/popsmoke_meetthewoo_06_dior.m4a"
+  },
+  {
+    "artist": "Eminem",
+    "title": "Godzilla",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/eminem_musictobemurderedby_7_godzilla.m4a"
+  },
+  {
+    "artist": "Playboi Carti & The Weeknd",
+    "title": "Rather Lie",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/playboicartiweekndthe_music_08_ratherlie.m4a"
+  },
+  {
+    "artist": "Cardi B",
+    "title": "Outside (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/cardib_amithedrama_12_outsideclean.m4a"
+  },
+  {
+    "artist": "Trey Songz",
+    "title": "Gotta Go",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/treysongz_hd642_06gottago.m4a"
+  },
+  {
+    "artist": "Drake",
+    "title": "What Did I Miss",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/drake_whatdidimisssingle_01_whatdidimiss.m4a"
+  },
+  {
+    "artist": "SZA",
+    "title": "Saturn",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/sza_saturnsingle_01_saturn.m4a"
+  },
+  {
+    "artist": "Latto",
+    "title": "Somebody (Radio)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/latto_somebodysingle_01_somebodyradio.m4a"
+  },
+  {
+    "artist": "SZA",
+    "title": "BMF (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/sza_sosdeluxelana_05_bmfclean.m4a"
+  },
+  {
+    "artist": "Justin Bieber",
+    "title": "Daisies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bieberjustin_swag_02_daisies.m4a"
+  },
+  {
+    "artist": "GloRilla",
+    "title": "TGIF",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/glorilla_tgifsingle_01_tgif.m4a"
+  },
+  {
+    "artist": "Coco Jones",
+    "title": "Taste",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/jonescoco_whynotmore_01_taste.m4a"
+  },
+  {
+    "artist": "Justin Bieber",
+    "title": "Yukon (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bieberjustin_swag_03_yukonclean.m4a"
+  },
+  {
+    "artist": "Tyler The Creator",
+    "title": "Sugar On My Tongue (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tylerthecreator_donttaptheglass_02_sugaronmytongueclean.m4a"
+  },
+  {
+    "artist": "Lil Durk",
+    "title": "Can't Hide It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lildurk_deepthoughts_11_canthideit.m4a"
+  },
+  {
+    "artist": "21 Savage",
+    "title": "NHIE",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/21savage_americandream_04_nhie.m4a"
+  },
+  {
+    "artist": "Shoreline Mafia, OhGeesy, Fenix Flexin",
+    "title": "Rockin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/shorelinemafiaohgeesyfenixflexin_rockinsingle_01_rockin.m4a"
+  },
+  {
     "artist": "Outkast",
     "title": "Aquemini",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/outkast_aquemini_05aquemini.m4a"
